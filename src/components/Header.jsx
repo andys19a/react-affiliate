@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../css/Header.css';  
 
 
@@ -6,13 +7,11 @@ function Header(){
     return (
     <header className="header">
         <nav>
-            <ul>
-                <li>Meny1</li>
-                <li>Meny2</li>       
-                <li>Meny3</li>
-                <li>Meny4</li>
-        
-            </ul>
+            <ul className='nav-list'>
+                <li> <Link to="/">Meny1</Link></li>
+                <li> <Link to="/about">Meny2</Link></li>
+                <li> <Link to="/contact">Meny3</Link></li>
+            </ul>       
         </nav>
         </header>
 
