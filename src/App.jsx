@@ -1,8 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import About from "./pages/About";
+import Results from "./pages/Results";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";  
+import "./App.css";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import Start from "./pages/Start";
+import Recension from "./pages/Recension";
+import Faq from "./pages/Faq";
+
+
+
+
 
 function App() {
   return (
@@ -10,7 +20,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} /> 
-          <Route path="about" element={<About />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:id" element={<BlogPost />} />
+          <Route path="results" element={<Results />} /> 
+          <Route path="start" element={<Start />} />
+          <Route path="recension" element={<Recension />} />    
+          <Route path="faq" element={<Faq />} />  
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>

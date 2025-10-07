@@ -1,0 +1,32 @@
+.affiliate-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 1200px; /* samma bredd som ditt innehåll */
+  padding: 0 1rem; /* lite sidmarginal för mobil */
+}
+
+.affiliate-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.affiliate-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .affiliate-banner {
+    margin: 1.5rem auto;
+  }
+
+  .affiliate-image {
+    border-radius: 4px;
+  }
+}

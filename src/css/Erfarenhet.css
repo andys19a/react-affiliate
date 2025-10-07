@@ -1,0 +1,62 @@
+.Recension {
+  max-width: 850px;
+  margin: 3rem auto;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  line-height: 1.7;
+  color: #333;
+  font-family: "Inter", sans-serif;
+}
+
+.Recension h1 {
+  text-align: center;
+  color: #007acc;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.Recension p {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.Recension ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.Recension li {
+  background: #f6faff;
+  border-left: 4px solid #007acc;
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.Recension li strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #005fa3;
+  font-size: 1.05rem;
+}
+
+.summary-box {
+  background: #eaf5ff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.summary-box p {
+  margin-bottom: 1rem;
+}
+
+.recommend {
+  font-weight: 600;
+  color: #004b82;
+}
