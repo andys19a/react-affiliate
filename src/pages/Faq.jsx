@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../css/Faq.css";
+import AffiliateButton from "../components/AffiliateButton";
 
 function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -61,9 +62,13 @@ function Faq() {
               <div className="faq-answer">
                 <p>{faq.answer}</p>
               </div>
+              
             )}
+            
           </div>
         ))}
+        <AffiliateButton />
+
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import "../css/Start.css";
+import AffiliateButton from "../components/AffiliateButton";
 
 
 function Start() {
@@ -39,7 +40,7 @@ function Start() {
             </ol>
             <p>Genom att följa dessa steg kan du komma igång med valuebetting och börja dra nytta av de möjligheter som erbjuds inom sportbetting.</p>  
 
-
+            <AffiliateButton />
         </div>   
 
 

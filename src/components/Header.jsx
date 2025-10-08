@@ -1,3 +1,5 @@
+
+
 import { Link } from "react-router-dom";
 import "../css/Header.css";  
 import logo from "../images/logo.png"; // 👈 importera loggan
@@ -17,7 +19,6 @@ function Header() {
           <li><Link to="/recension">Recension</Link></li>
           <li><Link to="/blog">Blogg</Link></li>
           <li><Link to="/faq">FAQ</Link></li>
-          <li><Link to="/contact">Kontakt</Link></li>
 
         </ul>
 

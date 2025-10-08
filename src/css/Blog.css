@@ -1,67 +1,195 @@
+/* === LISTVY (Blog.jsx) === */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
 .blog-card {
   display: flex;
-  background: #f9faff;
-  border-radius: 8px;
+  gap: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  align-items: center;
-  gap: 1rem;
 }
 
 .blog-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
+/* 🔹 Thumbnail */
 .blog-thumb {
-  width: 180px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 6px;
+  width: 280px;
+  height: 180px;
+  object-fit: cover; /* bibehåller skärpan och beskär snyggt */
+  border-right: 3px solid #007acc;
   flex-shrink: 0;
+  image-rendering: auto;
 }
 
+/* 🔹 Textdel */
 .blog-content {
-  padding: 1rem;
-  flex: 1;
-}
-
-.blog-header {
+  padding: 1rem 1.2rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
 }
 
 .blog-header h2 {
-  color: #007acc;
-  font-size: 1.2rem;
-  margin: 0;
+  margin: 0 0 0.3rem 0;
+  color: #004b82;
 }
 
 .blog-header .date {
-  font-size: 0.9rem;
   color: #777;
+  font-size: 0.9rem;
 }
 
-.blog-card .excerpt {
-  margin-bottom: 0.75rem;
+.excerpt {
   color: #333;
+  line-height: 1.5;
+  margin: 1rem 0;
 }
 
 .read-more {
-  background: #007acc;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 4px;
-  cursor: pointer;
+  color: #007acc;
   font-weight: 600;
   text-decoration: none;
 }
 
 .read-more:hover {
-  background: #005fa3;
+  text-decoration: underline;
+}
+
+/* === HERO-BILD (BlogPost.jsx) === */
+.blog-hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;       /* ✅ bibehåller kvalitet */
+  background-position: center;  /* ✅ centrerar bilden */
+  background-repeat: no-repeat;
+  filter: brightness(0.9);
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.overlay .date {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* === Responsiv === */
+@media (max-width: 768px) {
+  .blog-card {
+    flex-direction: column;
+  }
+
+.blog-thumb {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top center; /* 👈 fokuserar på övre delen */
+  border-right: 3px solid #007acc;
+  flex-shrink: 0;
+  image-rendering: crisp-edges; /* 👈 skarpare rendering */
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0); /* fixar vissa suddproblem */
+}
+
+
+  .blog-hero {
+    height: 250px;
+  }
+}
+
+/* === ENKELT BLOGGINLÄGG (BlogPost.jsx) === */
+
+.blog-post {
+  max-width: 850px;
+  margin: 3rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  line-height: 1.7;
+  color: #333;
+}
+
+.blog-post h1 {
+  color: #004b82;
+  margin-top: 1rem;
+}
+
+.blog-post-thumb {
+  width: 100%;
+  height: 380px;
+  object-fit: contain; /* 👈 ändrat från cover till contain för att bevara hela bilden */
+  background: #000; /* ger snygg inramning om bilden inte fyller hela */
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.blog-post .date {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post .content {
+  font-size: 1.05rem;
+  color: #222;
+  line-height: 1.7;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsiv */
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 1.5rem;
+  }
+
+  .blog-post-thumb {
+    height: 220px;
+  }
+
+  .blog-post h1 {
+    font-size: 1.5rem;
+  }
 }
 

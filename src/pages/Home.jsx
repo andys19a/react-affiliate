@@ -1,4 +1,5 @@
 import AffiliateBanner from "../components/AffiliateBanner";
+import AffiliateButton from "../components/AffiliateButton";
 import Table from "../components/Tabel";
 import "../css/Home.css"; // valfritt om du vill styla sektionerna
 import HeroImage from "../images/Hero-affiliate.png";
@@ -17,7 +18,7 @@ function Home() {
           och hitta de spel som har positiv förväntad avkastning – precis som en
           professionell investerare gör på börsen.
         </p>
-        <AffiliateBanner />
+
       </section>
 
       <section className="experience">
@@ -73,6 +74,8 @@ function Home() {
           Med <strong>RebelBetting Premium</strong> får du tillgång till alla dessa metoder
           och ett smidigt gränssnitt som gör det enkelt att följa resultat, vinster och ROI.
         </p>
+
+      <AffiliateBanner />
       </section>
 
       <section className="comparison">
@@ -91,7 +94,7 @@ function Home() {
           Testa <strong>RebelBetting</strong> gratis och upptäck hur du kan bygga en
           stabil inkomst från betting – utan tur, bara matematik.
         </p>
-        <AffiliateBanner />
+        <AffiliateButton />
       </section>
     </div>
   );

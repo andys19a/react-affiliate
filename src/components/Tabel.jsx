@@ -15,10 +15,10 @@ const Table = () => {
       surebetting: "Obegränsat"
     },
     {
-      name: "Pris",
-      basic: "999kr/mån",
-      premium: "2500kr/mån",
-      surebetting: "2500kr/mån"
+      name: "Pris (beroende på valuta)",
+      basic: "1100kr/mån",
+      premium: "2300kr/mån",
+      surebetting: "2300kr/mån"
     }
   ];
 

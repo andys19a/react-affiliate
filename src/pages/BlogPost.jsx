@@ -20,36 +20,24 @@ function BlogPost() {
     return (
       <div className="blog-page">
         <h2>Artikeln kunde inte hittas</h2>
-        <Link to="/blog" className="back-link">
-          ← Tillbaka till bloggen
-        </Link>
+        <Link to="/blog" className="back-link">← Tillbaka till bloggen</Link>
       </div>
     );
   }
 
   return (
-    <div className="blog-page">
-      <div
-        className="blog-hero"
-        style={{ backgroundImage: `url(${post.image})` }}
-      >
-        <div className="overlay">
-          <h1>{post.title}</h1>
-          <p className="date">
-            {new Date(post.date).toLocaleDateString()}
-          </p>
-        </div>
-      </div>
+    <div className="blog-page blog-post">
+      <img src={post.image} alt={post.title} className="blog-post-thumb" />
+      <h1>{post.title}</h1>
+      <p className="date">{new Date(post.date).toLocaleDateString()}</p>
 
-      <article className="blog-post">
-        <p className="content">{post.content}</p>
-        <Link to="/blog" className="back-link">
-          ← Tillbaka till bloggen
-        </Link>
-      </article>
+      <p className="content">{post.content}</p>
+
+      <Link to="/blog" className="back-link">← Tillbaka till bloggen</Link>
     </div>
   );
 }
 
 export default BlogPost;
+
 

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import AffiliateBanner from "../components/AffiliateBanner";
 import resultatImg from "../images/resultat.png";
+import AffiliateButton from "../components/AffiliateButton.jsx";
 import "../css/Results.css";
 
 function Results() {
@@ -29,7 +30,7 @@ function Results() {
     if (visible && !animated) {
       setAnimated(true);
       let start = 0;
-      const target = 138;
+      const target = 190000;
       const duration = 1500;
       const stepTime = 20;
       const steps = duration / stepTime;
@@ -64,7 +65,7 @@ function Results() {
       >
         <img src={resultatImg} alt="Resultatgraf" />
         <p className="caption">
-          Exempel på min resultatkurva – stabil och ökande avkastning med hjälp av RebelBetting.
+          Exempel på mina resultat – stabil och ökande avkastning med hjälp av RebelBetting.
         </p>
       </section>
 
@@ -72,10 +73,10 @@ function Results() {
         <h2>Sammanfattning av resultaten</h2>
         <ul>
           <li>
-            <strong>+{roi}%</strong> total ROI sedan start
+            <strong>+{roi}kr</strong> sedan start
           </li>
           <li><strong>25–35%</strong> genomsnittlig månadsavkastning</li>
-          <li><strong>Över 9 000 spel</strong> placerade med hjälp av RebelBetting</li>
+          <li><strong>Över 10 000 spel</strong> placerade med hjälp av RebelBetting</li>
           <li><strong>95 %+</strong> av spelen värdepositiva (EV+)</li>
         </ul>
         <p>
