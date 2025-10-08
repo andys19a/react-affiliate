@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../css/Blog.css";
+import AffiliateButton from "../components/AffiliateButton";
 
 function BlogPost() {
   const { id } = useParams();
@@ -32,7 +33,7 @@ function BlogPost() {
       <p className="date">{new Date(post.date).toLocaleDateString()}</p>
 
       <p className="content">{post.content}</p>
-
+      <AffiliateButton />
       <Link to="/blog" className="back-link">← Tillbaka till bloggen</Link>
     </div>
   );
