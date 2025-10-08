@@ -4,21 +4,21 @@ const Table = () => {
      const features = [
     {
       name: "Antal spel per dag",
-      basic: "Obegränsat",
-      premium: "Obegränsat",
-      surebetting: "Obegränsat"
+      Trial: "50 om dagem",
+      Starter: "Obegränsat",
+      Pro: "Obegränsat"
     },
     {
       name: "Value per bet",
-      basic: "1-4%",
-      premium: "obegränsat",
-      surebetting: "Obegränsat"
+      Trial: "1-5%",
+      Starter: "1-7%",
+      Pro: "Obegränsat"
     },
     {
       name: "Pris (beroende på valuta)",
-      basic: "1100kr/mån",
-      premium: "2300kr/mån",
-      surebetting: "2300kr/mån"
+      Trial: "Gratis",
+      Starter: "1300kr/mån",
+      Pro: "2300kr/mån"
     }
   ];
 
