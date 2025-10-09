@@ -32,7 +32,11 @@ function BlogPost() {
       <h1>{post.title}</h1>
       <p className="date">{new Date(post.date).toLocaleDateString()}</p>
 
-      <p className="content">{post.content}</p>
+  <div className="content">
+  {post.content.split('\n\n').map((paragraph, index) => (
+    <p key={index}>{paragraph}</p>
+  ))}
+  </div>
       <AffiliateButton />
       <Link to="/blog" className="back-link">← Tillbaka till bloggen</Link>
     </div>
