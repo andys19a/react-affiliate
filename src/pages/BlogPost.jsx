@@ -32,11 +32,11 @@ function BlogPost() {
       <h1>{post.title}</h1>
       <p className="date">{new Date(post.date).toLocaleDateString()}</p>
 
-  <div className="content">
-  {post.content.split('\n\n').map((paragraph, index) => (
-    <p key={index}>{paragraph}</p>
-  ))}
-  </div>
+        <div
+          className="content"
+         dangerouslySetInnerHTML={{ __html: post.content }}
+        ></div>
+
       <AffiliateButton />
       <Link to="/blog" className="back-link">← Tillbaka till bloggen</Link>
     </div>
@@ -44,5 +44,8 @@ function BlogPost() {
 }
 
 export default BlogPost;
+
+
+
 
 

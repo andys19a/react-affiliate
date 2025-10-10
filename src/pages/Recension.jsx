@@ -1,5 +1,6 @@
 import "../css/Erfarenhet.css";
 import RecensionBild from "../images/Recension-bild.png";
+import AffiliateButton from "../components/AffiliateButton";
 
 function Erfarenhet() {
   return (
@@ -61,6 +62,7 @@ function Erfarenhet() {
           av sportsbetting och är villiga att lägga ner tid och ansträngning för
           att bli framgångsrika.
         </p>
+        <AffiliateButton />
       </div>
     </div>
   );
