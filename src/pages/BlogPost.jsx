@@ -34,7 +34,7 @@ function BlogPost() {
 
         <div
           className="content"
-         dangerouslySetInnerHTML={{ __html: post.content }}
+         dangerouslySetInnerHTML={{ __html: post.content.replace(/\n\n/g, "</p><p>") + "</p>" }}
         ></div>
 
       <AffiliateButton />
