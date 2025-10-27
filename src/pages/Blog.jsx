@@ -36,12 +36,24 @@ function Blog() {
     }
   };
 
-  return (
+return (
+  <>
+    {/* SEO-meta för sidan /blog */}
+    <title>ProfitPlay – Om Value Betting (guider & recensioner)</title>
+    <meta
+      name="description"
+      content="ProfitPlay – lär dig value betting, bankroll management och hur du slår spelbolagen med matematik. Guider, recensioner och smarta strategier."
+    />
+    <meta
+      name="keywords"
+      content="value betting, RebelBetting, bankroll management, betting strategi, sure betting, tjäna pengar på betting, slå spelbolagen"
+    />
+
     <div className="blog-page">
       <h1>Om Value Betting</h1>
       <p className="intro">
-        Lär dig grunderna, strategin och psykologin bakom value betting – skrivet
-        av en erfaren RebelBetting-användare.
+        Lär dig grunderna och strategin inom value betting – Få en fördel mot
+        spelbolagen genom att utnyttja deras felaktiga odds.
       </p>
 
       <div className="blog-list">
@@ -64,12 +76,13 @@ function Blog() {
         ))}
       </div>
 
-      {/* Navigeringspilar */}
       <div className="pagination">
         <button onClick={prevPage} disabled={currentPage === 1}>
           ← Föregående
         </button>
-        <span>Sida {currentPage} av {Math.ceil(posts.length / postsPerPage)}</span>
+        <span>
+          Sida {currentPage} av {Math.ceil(posts.length / postsPerPage)}
+        </span>
         <button
           onClick={nextPage}
           disabled={currentPage === Math.ceil(posts.length / postsPerPage)}
@@ -78,7 +91,8 @@ function Blog() {
         </button>
       </div>
     </div>
-  );
+  </>
+);
 }
 
 export default Blog;

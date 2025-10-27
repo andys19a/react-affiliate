@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import AffiliateBanner from "../components/AffiliateBanner";
 import resultatImg from "../images/resultat.png";
-import AffiliateButton from "../components/AffiliateButton.jsx";
 import "../css/Results.css";
 
 function Results() {
@@ -13,13 +12,10 @@ function Results() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting) {
-          setVisible(true);
-        }
+        if (entries[0].isIntersecting) setVisible(true);
       },
       { threshold: 0.3 }
     );
-
     if (imageRef.current) observer.observe(imageRef.current);
     return () => observer.disconnect();
   }, []);
@@ -48,54 +44,76 @@ function Results() {
   }, [visible, animated]);
 
   return (
-    <div className="results-page">
-      <section className="intro">
-        <h1>Mina resultat</h1>
-        <p>
-          Här kan du se mina faktiska resultat från <strong>value betting</strong> under
-          de senaste åren. Jag har använt <strong>RebelBetting</strong> i över två år
-          och har konsekvent genererat vinster varje månad tack vare en långsiktig strategi
-          och tydlig bankrollhantering.
-        </p>
-      </section>
+    <>
+      {/* === SEO-meta för /results === */}
+      <title>Resultat – Min value betting-resa med RebelBetting | ProfitPlay</title>
+      <meta
+        name="description"
+        content="Se mina faktiska resultat från value betting. Stabil avkastning månad för månad med hjälp av RebelBetting, disciplin och bankroll management."
+      />
+      <meta
+        name="keywords"
+        content="value betting resultat, RebelBetting resultat, ROI betting, bankroll management, tjäna pengar på betting"
+      />
 
-      <section
-        className={`results-image ${visible ? "visible" : ""}`}
-        ref={imageRef}
-      >
-        <img src={resultatImg} alt="Resultatgraf" />
-        <p className="caption">
-          Exempel på mina resultat – stabil och ökande avkastning med hjälp av RebelBetting.
-        </p>
-      </section>
+      {/* Open Graph (delningsförhandsvisning) */}
+      <meta property="og:title" content="Resultat från value betting – ProfitPlay" />
+      <meta
+        property="og:description"
+        content="Graf och sammanfattning av mina resultat med value betting och RebelBetting. Statistik, ROI och nyckeltal."
+      />
+      <meta property="og:type" content="article" />
+      <meta property="og:image" content="/images/resultat.png" />
+      <meta property="og:url" content="https://profitplay.se/results" />
 
-      <section className="summary">
-        <h2>Sammanfattning av resultaten</h2>
-        <ul>
-          <li>
-            <strong>+{roi}kr</strong> sedan start
-          </li>
-          <li><strong>25–35%</strong> genomsnittlig månadsavkastning</li>
-          <li><strong>Över 10 000 spel</strong> placerade med hjälp av RebelBetting</li>
-          <li><strong>95 %+</strong> av spelen värdepositiva (EV+)</li>
-        </ul>
-        <p>
-          Det viktigaste inom value betting är att vara konsekvent och inte låta kortsiktiga
-          resultat påverka strategin. Långsiktigt slår matematik alltid känsla.
-        </p>
-      </section>
+      <div className="results-page">
+        <section className="intro">
+          <h1>Mina resultat</h1>
+          <p>
+            Här kan du se mina faktiska resultat från <strong>value betting</strong> under
+            de senaste åren. Jag har använt <strong>RebelBetting</strong> i över två år
+            och har konsekvent genererat vinster varje månad tack vare en långsiktig strategi
+            och tydlig bankrollhantering.
+          </p>
+        </section>
 
-      <section className="cta">
-        <h2>Vill du uppnå liknande resultat?</h2>
-        <p>
-          Prova <strong>RebelBetting</strong> gratis och upptäck hur du också kan bygga
-          en stabil inkomst med smart betting – utan tur, bara statistik.
-        </p>
-        <AffiliateBanner />
-      </section>
-    </div>
+        <section
+          className={`results-image ${visible ? "visible" : ""}`}
+          ref={imageRef}
+        >
+          <img src={resultatImg} alt="Resultatgraf" />
+          <p className="caption">
+            Exempel på mina resultat – stabil och ökande avkastning med hjälp av RebelBetting.
+          </p>
+        </section>
+
+        <section className="summary">
+          <h2>Sammanfattning av resultaten</h2>
+          <ul>
+            <li>
+              <strong>+{roi} kr</strong> sedan start
+            </li>
+            <li><strong>25–35%</strong> genomsnittlig månadsavkastning</li>
+            <li><strong>Över 10 000 spel</strong> placerade med hjälp av RebelBetting</li>
+            <li><strong>95 %+</strong> av spelen värdepositiva (EV+)</li>
+          </ul>
+          <p>
+            Det viktigaste inom value betting är att vara konsekvent och inte låta kortsiktiga
+            resultat påverka strategin. Långsiktigt slår matematik alltid känsla.
+          </p>
+        </section>
+
+        <section className="cta">
+          <h2>Vill du uppnå liknande resultat?</h2>
+          <p>
+            Prova <strong>RebelBetting</strong> gratis och upptäck hur du också kan bygga
+            en stabil inkomst med smart betting – utan tur, bara statistik.
+          </p>
+          <AffiliateBanner />
+        </section>
+      </div>
+    </>
   );
 }
 
 export default Results;
-

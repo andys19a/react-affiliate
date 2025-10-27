@@ -37,7 +37,19 @@ function Faq() {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  return (
+return (
+  <>
+    {/* SEO-meta för sidan /faq */}
+    <title>ProfitPlay – Vanliga frågor (FAQ)</title>
+    <meta
+      name="description"
+      content="Vanliga frågor om value betting, bankroll management, limiteringar och hur ProfitPlay arbetar med strategier."
+    />
+    <meta
+      name="keywords"
+      content="value betting FAQ, vanliga frågor betting, RebelBetting frågor, bankroll frågor"
+    />
+
     <div className="faq-page">
       <h1>Vanliga frågor</h1>
       <p className="intro">
@@ -62,16 +74,15 @@ function Faq() {
               <div className="faq-answer">
                 <p>{faq.answer}</p>
               </div>
-              
             )}
-            
           </div>
         ))}
-        <AffiliateButton />
 
+        <AffiliateButton />
       </div>
     </div>
-  );
+  </>
+);
 }
 
 export default Faq;
