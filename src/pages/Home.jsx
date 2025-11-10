@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import AffiliateBanner from "../components/AffiliateBanner";
 import AffiliateButton from "../components/AffiliateButton";
 import Table from "../components/Tabel";
-import "../css/Home.css"; 
+import "../css/Home.css";
 import HeroImage from "../images/Hero-affiliate.png";
 
 function Home() {
@@ -11,85 +12,150 @@ function Home() {
       <title>ProfitPlay – Tjäna pengar på Value Betting & RebelBetting</title>
       <meta
         name="description"
-        content="Lär dig hur du kan tjäna pengar på sportsbetting med value betting. ProfitPlay visar hur RebelBetting fungerar och hur du kan bygga stabil avkastning varje månad."
+        content="Lär dig value betting steg för steg. ProfitPlay visar hur RebelBetting fungerar, hur du hanterar bankroll och hur du bygger stabil avkastning över tid."
       />
       <meta
         name="keywords"
-        content="value betting, RebelBetting, tjäna pengar på betting, slå spelbolagen, sportsbetting strategi, sure betting, arbitrage betting"
+        content="value betting, RebelBetting, tjäna pengar på betting, slå spelbolagen, sportsbetting strategi, sure betting, arbitrage betting, bankroll management"
       />
+      <link rel="canonical" href="https://profitplay.se/" />
 
-      {/* 🔹 Open Graph (för delning på sociala medier) */}
+      {/* Open Graph */}
+      <meta property="og:site_name" content="ProfitPlay" />
       <meta property="og:title" content="ProfitPlay – Tjäna pengar på Value Betting" />
       <meta
         property="og:description"
-        content="ProfitPlay lär dig hur value betting fungerar och hur du kan slå spelbolagen med matematik. Utforska guider, recensioner och verktyg som RebelBetting."
+        content="Guider, recensioner och strategier för value betting. Lär dig slå spelbolagen med matematik och rätt verktyg."
       />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="/images/Hero-affiliate.png" />
       <meta property="og:url" content="https://profitplay.se/" />
 
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="ProfitPlay – Tjäna pengar på Value Betting" />
+      <meta
+        name="twitter:description"
+        content="Lär dig value betting, bankroll management och hur RebelBetting fungerar."
+      />
+      <meta name="twitter:image" content="/images/Hero-affiliate.png" />
+
+      {/* === Strukturerad data (JSON-LD) === */}
+      {/* Organization + WebSite med SearchAction */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "name": "ProfitPlay",
+                "url": "https://profitplay.se/",
+                "logo": "https://profitplay.se/images/Hero-affiliate.png"
+              },
+              {
+                "@type": "WebSite",
+                "name": "ProfitPlay",
+                "url": "https://profitplay.se/",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://profitplay.se/blog?query={search_term_string}",
+                  "query-input": "required name=search_term_string"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Hem",
+                    "item": "https://profitplay.se/"
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
+
       {/* === Innehåll === */}
       <div className="home-page">
         <section className="intro">
-          <h1>Bli lönsam inom sportbetting!</h1>
-          <img src={HeroImage} alt="Value Betting" className="hero-image" />
-          <p>
-            Det finns ett par sätt att tjäna pengar på inom sportsbetting, att sitta 5 minuter innan premier league start och lägga att favoriten vinner är inte ett av dem. 
-            För att tjäna pengar på sikt måste du kontinuerligt hitta sätt att få ett övertag mot spelbolagen. Det är inget konstigt eller svårt, det gäller att förstå sannolikheten och hur värde påverkar.
-            Är du som 99,9% av alla människor och inte kan räkna ut sannolikheten på egen hand och slå spelbolagen själv? Inga problem, det finns verktyg som gör det åt dig. Där har jag använt Rebelbetting som erbjuder både value betting och sure betting.
-            Jag har använt value betting framförallt och gjort en stabil avkastning varje månad i över 2 år.
+          <h1>Value Betting – så blir du lönsam på riktigt</h1>
+          <p className="subhead">
+            Lär dig en metod som bygger på <strong>matematik, sannolikhet och disciplin</strong> – inte tur.
+            Vi visar hur du använder RebelBetting och smart <em>bankroll management</em> för att växa hållbart.
           </p>
-          <p>
-            Value betting är en smartare och mer systematisk metod för sportsbetting
-            där du utnyttjar felaktiga odds hos spelbolagen. Med hjälp av verktyg som
-            <strong> RebelBetting </strong> kan du analysera tusentals matcher varje dag
-            och hitta de spel som har positiv förväntad avkastning – det enda man behöver göra är att place spelen som visas i listan hos rebelbetting, super enkelt!
-          </p>
+
+          <img
+            src={HeroImage}
+            alt="Value betting – graf och mynt som symboliserar stabil avkastning"
+            className="hero-image"
+            loading="eager"
+            width="1280"
+            height="720"
+          />
+
+          {/* Snabba vägar till nyckelsidor (interna länkar högt upp) */}
+          <nav className="quick-links" aria-label="Snabblänkar">
+            <Link to="/recension" className="chip">Recension av RebelBetting</Link>
+
+            <Link to="/results" className="chip"> Mina resultat</Link>
+
+            <Link to="/start" className="chip"> Kom igång</Link>
+
+            <Link to="/blog" className="chip"> Guider & artiklar</Link>
+          </nav>
+
+          <ul className="usp-list">
+            <li>🔍 Hitta <strong>felsatta odds</strong> med verktyg som RebelBetting</li>
+            <li>📈 Spela på <strong>positivt värde (EV+)</strong> – vinn på sikt</li>
+            <li>🛡️ Skydda kassan med <Link to="/blog/5">bankroll management</Link></li>
+            <li>🧠 Undvik misstag – lär dig <Link to="/blog/7">psykologin bakom betting</Link></li>
+          </ul>
         </section>
 
         <section className="experience">
           <h2>Min erfarenhet inom value betting</h2>
           <p>
-            Jag har använt RebelBetting i över två år och har sett fantastiska resultat.
-            Genom att följa strategin konsekvent och hantera bankrullen på rätt sätt
-            har jag kunnat skapa en stabil avkastning varje månad – helt utan gissningar
-            eller “feeling”. Det handlar om statistik, sannolikhet och disciplin. Det enda jag gjort är att följa spelen som visas i listan och lägga dem hos spelbolagen. Samt tagit hjälp av kundsupport när det känns tyngre och fått rekomendationer på vad man kan testa.
+            Jag har använt <strong>RebelBetting</strong> i över två år med stabil, månatlig avkastning.
+            Metoden bygger på att konsekvent spela värde och låta sannolikheten göra jobbet.
+            Läs mer i min <Link to="/recension">recension</Link> och se <Link to="/results">resultaten</Link>.
           </p>
         </section>
 
         <section className="who">
-          <h2>Vem kan använda value betting?</h2>
+          <h2>Vem passar value betting för?</h2>
           <p>
-            Value betting passar alla som vill ta betting på allvar – oavsett om du är
-            nybörjare eller erfaren spelare. Du behöver inte ha avancerad kunskap om sport
-            eller statistik, eftersom mjukvaran gör det mesta av jobbet åt dig.
+            För dig som vill ta betting seriöst. Du behöver inte kunna avancerad statistik –
+            mjukvaran gör analysen. Du fokuserar på att <em>följa strategin</em> och lägga spelen.
           </p>
           <p>
-            Det enda du behöver är lite tid varje dag för att lägga spelen och en vilja att
-            följa strategin. RebelBetting sköter analysen – du placerar bara spelen som
-            visas i listan.
+            Är du ny? Börja här: <Link to="/start">Kom igång med value betting</Link>.
           </p>
         </section>
 
         <section className="methods">
-          <h2>Hur man tjänar pengar från betting</h2>
+          <h2>Metoder som fungerar</h2>
           <p>
-            Det finns flera sätt att tjäna pengar på betting, men value betting har visat
-            sig vara det mest konsekvent lönsamma över tid. Eftersom vad man gör är att utnyttja när spelbolagen sätter fel odds så det handlar mer om matematik än tur eller att du behöver specilisera dig inom ett lag för att få en edge. Det hade krävts otroligt mycket tid och kapitla för att lyckas med en sån strategi.
+            Det finns flera sätt att tjäna pengar på betting, men value betting är mest hållbart.
+            Du utnyttjar felprissatta odds istället för att gissa resultat. Sure betting (arbitrage)
+            kan också fungera som komplement.
           </p>
           <ul>
             <li>
-              <strong>Value Betting:</strong> hitta felaktiga odds och spela där oddset är
-              högre än den verkliga sannolikheten.
+              <strong>Value Betting:</strong> spela när <em>verklig sannolikhet</em> &gt; <em>implicit odds</em>.
             </li>
             <li>
-              <strong>Sure Betting (Arbitrage):</strong> säkra vinster genom att spela på
-              alla utfall hos olika bolag.
+              <strong>Sure Betting (Arbitrage):</strong> säkra små vinster genom att täcka alla utfall.
+              Läs jämförelsen: <Link to="/blog/8">Value betting vs Sure betting</Link>.
             </li>
           </ul>
           <p>
-            Med <strong>RebelBetting Premium</strong> får du tillgång till alla dessa metoder
-            och ett smidigt gränssnitt som gör det enkelt att följa resultat, vinster och ROI. Samt obegränsat med spel, alla spel som finns tillgängliga kommer visas för dig.
+            Med <strong>RebelBetting Premium</strong> får du realtidsvärden, insatsrekommendationer och
+            smidig statistik. Se vår <Link to="/recension">recension</Link> innan du väljer plan.
           </p>
 
           <AffiliateBanner />
@@ -98,18 +164,73 @@ function Home() {
         <section className="comparison">
           <h2>Jämförelse mellan versioner</h2>
           <p>
-            Här kan du se skillnaden mellan den vanliga versionen, Premium och Surebetting.
-            Premium ger dig fler spelmöjligheter, snabbare uppdateringar och tillgång till
-            fler marknader. personligen tycker jag att premium är det bästa valet för de flesta som är bekant med verktyget och förstått konceptet.
+            Här ser du skillnaden mellan standard, Premium och Surebetting. Premium passar oftast flest:
+            fler spel, snabbare uppdateringar och bredare marknader.
           </p>
           <Table />
+        </section>
+
+        {/* FAQ – synligt innehåll + FAQPage JSON-LD */}
+        <section className="faq-home">
+          <h2>Vanliga frågor om value betting</h2>
+          <details>
+            <summary>Är value betting lagligt?</summary>
+            <p>Ja, value betting är en laglig metod. Du spelar på vanliga spelbolag men med en
+              statistisk strategi. Följ alltid lokala regler och ansvarsfullt spelande.</p>
+          </details>
+          <details>
+            <summary>Hur stor bankrulle behöver jag?</summary>
+            <p>Det beror på mål och risknivå. Läs vår guide om <Link to="/blog/5">bankroll management</Link> för att hitta rätt nivå.</p>
+          </details>
+          <details>
+            <summary>Kan jag börja som helt ny?</summary>
+            <p>Absolut. Börja med <Link to="/start">kom igång-guiden</Link> och läs vår
+              <Link to="/recension"> recension av RebelBetting</Link> för att förstå flödet.</p>
+          </details>
+
+          {/* FAQ JSON-LD */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Är value betting lagligt?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Ja. Du spelar på licensierade spelbolag med en statistisk metod. Följ lokala regler och spela ansvarsfullt."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Hur stor bankrulle behöver jag?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Det beror på mål och risk. En vanlig start är några tusen kronor med små insatser per spel (1–3 %). Se vår guide om bankroll management."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Kan jag börja som helt ny?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Ja. Följ vår kom igång-guide och läs recensionen av RebelBetting för att förstå processen från första dagen."
+                    }
+                  }
+                ]
+              })
+            }}
+          />
         </section>
 
         <section className="cta">
           <h2>Börja med value betting idag</h2>
           <p>
             Testa <strong>RebelBetting</strong> gratis och upptäck hur du kan bygga en
-            stabil inkomst från betting – utan tur, bara matematik.
+            stabil avkastning – utan tur, bara sannolikhet.
           </p>
           <AffiliateButton />
         </section>
@@ -119,3 +240,4 @@ function Home() {
 }
 
 export default Home;
+
