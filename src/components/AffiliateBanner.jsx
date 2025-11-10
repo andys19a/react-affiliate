@@ -6,13 +6,16 @@ function AffiliateBanner() {
       <a
         href="https://www.rebelbetting.com/valuebetting?x=datatrixet&amp;a_bid=df3338f4"
         target="_blank"
-        rel="nofollow sponsored"
+        rel="noopener noreferrer nofollow sponsored"
       >
         <img
           src="//affiliates.rebelbetting.com/accounts/default1/banners/df3338f4.png"
-          alt="Value betting by RebelBetting - the easiest way to make money on sports"
-          title="Value betting by RebelBetting - the easiest way to make money on sports"
+          alt="Value betting by RebelBetting – the easiest way to make money on sports"
+          title="Value betting by RebelBetting – the easiest way to make money on sports"
           className="affiliate-image"
+          loading="lazy"
+          width="728"
+          height="90"
         />
       </a>
 
@@ -23,10 +26,12 @@ function AffiliateBanner() {
         width="1"
         height="1"
         alt=""
+        referrerPolicy="no-referrer"
       />
     </div>
   );
 }
 
 export default AffiliateBanner;
+
 

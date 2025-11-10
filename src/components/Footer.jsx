@@ -10,11 +10,15 @@ function Footer() {
           <h3>Om sidan</h3>
           <p>
             Denna sida handlar om <strong>Value Betting</strong> – hur du kan använda
-            statistik och strategi för att slå oddsen.  
-            Jag delar mina erfarenheter och resultat från över 2 års användning av
-            <a href="https://www.rebelbetting.com/valuebetting?x=datatrixet&amp;a_bid=df3338f4" 
-               target="_blank" 
-               rel="nofollow sponsored"> RebelBetting</a>.
+            statistik och strategi för att slå oddsen. Jag delar mina erfarenheter och
+            resultat från över 2 års användning av
+            <a
+              href="https://www.rebelbetting.com/valuebetting?x=datatrixet&amp;a_bid=df3338f4"
+              target="_blank"
+              rel="noopener noreferrer nofollow sponsored"
+            >
+              {" "}RebelBetting
+            </a>.
           </p>
         </div>
 
@@ -26,7 +30,7 @@ function Footer() {
             <li><Link to="/results">Resultat</Link></li>
             <li><Link to="/blog">Blogg</Link></li>
             <li><Link to="/start">Kom igång</Link></li>
-            <li><Link to="/erfarenhet">Recension</Link></li>
+            <li><Link to="/recension">Recension</Link></li>
             <li><Link to="/faq">FAQ</Link></li>
             <li><Link to="/contact">Kontakt</Link></li>
           </ul>
@@ -50,7 +54,7 @@ function Footer() {
 
       {/* Nedre rad */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Value Betting Sverige. Alla rättigheter förbehållna.</p>
+        <p>© {new Date().getFullYear()} ProfitPlay. Alla rättigheter förbehållna.</p>
       </div>
     </footer>
   );
