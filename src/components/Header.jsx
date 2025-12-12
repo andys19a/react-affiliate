@@ -14,11 +14,13 @@ function Header() {
 
         <ul className="nav-list">
           <li><Link to="/">Hem</Link></li>
+          <li><Link to="/kategori">Kategorier</Link></li>
           <li><Link to="/results">Resultat</Link></li>
           <li><Link to="/start">Kom igång</Link></li>
           <li><Link to="/recension">Recension</Link></li>
           <li><Link to="/blog">Blogg</Link></li>
           <li><Link to="/faq">FAQ</Link></li>
+          <li><Link to="/sitemap">Sitemap</Link></li>
 
         </ul>
 
