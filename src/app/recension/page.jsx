@@ -1,6 +1,46 @@
 import AffiliateButton from '@/components/AffiliateButton'
 import '@/css/Erfarenhet.css'
 
+const productLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'RebelBetting',
+  description:
+    'Recension av RebelBetting med fokus på value betting, strategi och långsiktiga resultat.',
+  image: 'https://profitplay.se/images/Recension-bild.png',
+  brand: { '@type': 'Brand', name: 'RebelBetting' },
+  review: {
+    '@type': 'Review',
+    author: { '@type': 'Person', name: 'ProfitPlay' },
+    datePublished: '2024-01-15',
+    reviewBody:
+      'Detaljerad recension av hur RebelBetting fungerar i praktiken, med tips om strategi, risk och verktyg.',
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '4.8',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    reviewCount: '1',
+  },
+  offers: [
+    { name: 'Trial', price: '0', currency: 'SEK' },
+    { name: 'Starter', price: '1300', currency: 'SEK' },
+    { name: 'Pro', price: '2300', currency: 'SEK' },
+  ].map((offer) => ({
+    '@type': 'Offer',
+    name: `${offer.name} plan`,
+    priceCurrency: offer.currency,
+    price: offer.price,
+    availability: 'https://schema.org/InStock',
+    url: 'https://profitplay.se/recension',
+  })),
+}
+
 export const metadata = {
   title: 'Recension av Value Betting – Min erfarenhet med RebelBetting | ProfitPlay',
   description:
@@ -20,8 +60,18 @@ export const metadata = {
 export default function RecensionPage() {
   return (
     <div className="Recension">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}
+      />
+
       <h1>Recension av Value Betting</h1>
       <img src="/images/Recension-bild.png" alt="Value Betting" className="hero-image" />
+
+      <p className="rating-note">
+        Mitt betyg på RebelBetting: <strong>4.8 / 5</strong> baserat på min egen
+        långsiktiga användning.
+      </p>
 
       <p>
         Jag har använt value betting i över två år och har konsekvent genererat

@@ -17,9 +17,54 @@ export const metadata = {
   },
 }
 
+const productLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'RebelBetting',
+  description:
+    'Jämförelse av RebelBettings olika planer med fokus på value betting och felsatta odds.',
+  image: 'https://profitplay.se/images/Hero-affiliate.png',
+  brand: { '@type': 'Brand', name: 'RebelBetting' },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    reviewCount: '1',
+  },
+  review: {
+    '@type': 'Review',
+    author: { '@type': 'Person', name: 'ProfitPlay' },
+    datePublished: '2024-01-15',
+    reviewBody:
+      'Praktisk genomgång av RebelBetting och hur verktyget hjälper till att hitta värdebettingmöjligheter.',
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '4.8',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  },
+  offers: [
+    { name: 'Trial', price: '0', currency: 'SEK' },
+    { name: 'Starter', price: '1300', currency: 'SEK' },
+    { name: 'Pro', price: '2300', currency: 'SEK' },
+  ].map((offer) => ({
+    '@type': 'Offer',
+    name: `${offer.name} plan`,
+    priceCurrency: offer.currency,
+    price: offer.price,
+    availability: 'https://schema.org/InStock',
+    url: 'https://profitplay.se/',
+  })),
+}
+
 export default function HomePage() {
   return (
     <div className="home-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}
+      />
+
       <section className="intro">
         <h1>Value Betting – så blir du lönsam på riktigt</h1>
         <p className="subhead">
@@ -28,11 +73,7 @@ export default function HomePage() {
         </p>
 
         <img
-<<<<<<< HEAD:src/app/page.jsx
           src="/images/Hero-affiliate.png"
-=======
-          src={HeroIllustration}
->>>>>>> origin/main:src/pages/Homes.jsx
           alt="Value betting – graf och mynt som symboliserar stabil avkastning"
           className="hero-image"
           loading="eager"
@@ -93,7 +134,7 @@ export default function HomePage() {
           </li>
         </ul>
         <p>
-          Med <strong>RebelBetting Premium</strong> får du realtidsvärden, insatsrekommendationer och
+          Med <strong>RebelBetting Premium</strong> får du realtidsväringar, insatsrekommendationer och
           smidig statistik. Se vår <Link href="/recension">recension</Link> innan du väljer plan.
         </p>
 

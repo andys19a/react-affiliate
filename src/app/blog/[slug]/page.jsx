@@ -27,6 +27,24 @@ export async function generateMetadata({ params }) {
   }
 }
 
+const articleFaqs = [
+  {
+    question: 'Är value betting lagligt?',
+    answer:
+      'Ja. Du spelar hos licensierade spelbolag men väljer bara odds där sannolikheten är till din fördel.',
+  },
+  {
+    question: 'Behöver jag avancerad statistik för att börja?',
+    answer:
+      'Nej. Verktyg som RebelBetting gör grovarbetet åt dig – du fokuserar på att följa strategin och bankrullen.',
+  },
+  {
+    question: 'Hur hanterar jag risken?',
+    answer:
+      'Sätt en tydlig insatsprocent av din kassa (t.ex. 1–3%) och håll dig till den även när resultaten svänger.',
+  },
+]
+
 export default function BlogPost({ params }) {
   const post = getPostBySlug(params.slug)
   if (!post) notFound()
@@ -49,8 +67,40 @@ export default function BlogPost({ params }) {
     ? post.content
     : '<p>' + post.content.replace(/\n\n/g, '</p><p>') + '</p>'
 
+  const datePublished = new Date(post.date).toISOString()
+
+  const articleLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.meta_description,
+    image: post.image,
+    author: { '@type': 'Person', name: 'ProfitPlay' },
+    datePublished,
+    dateModified: datePublished,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://profitplay.se/blog/${post.slug}`,
+    },
+  }
+
+  const faqLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: articleFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  }
+
   return (
     <div className="blog-page blog-post">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleLd, faqLd]) }}
+      />
+
       <Breadcrumbs
         items={[
           { to: '/', label: 'Hem' },
@@ -68,6 +118,16 @@ export default function BlogPost({ params }) {
         className="content"
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
+
+      <section className="article-faq">
+        <h2>Vanliga frågor om value betting</h2>
+        {articleFaqs.map((faq) => (
+          <details key={faq.question}>
+            <summary>{faq.question}</summary>
+            <p>{faq.answer}</p>
+          </details>
+        ))}
+      </section>
 
       <section className="context-panels">
         <div className="context-panel">

@@ -19,7 +19,15 @@
 
 .Recension p {
   font-size: 1.05rem;
-  margin-bottom: 1.5rem;    
+  margin-bottom: 1.5rem;
+}
+
+.rating-note {
+  background: #f6faff;
+  border-left: 4px solid #007acc;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
 }
 
 .Recension ul {
