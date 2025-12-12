@@ -20,7 +20,6 @@ function Header() {
           <li><Link to="/recension">Recension</Link></li>
           <li><Link to="/blog">Blogg</Link></li>
           <li><Link to="/faq">FAQ</Link></li>
-          <li><Link to="/sitemap">Sitemap</Link></li>
 
         </ul>
 
