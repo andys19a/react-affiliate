@@ -5,6 +5,7 @@ body {
   margin: 0;
   background-color: #fafafa;
   color: #222;
+  font-size: 16px;
 }
 
 body {
@@ -13,6 +14,15 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+}
+
+main {
+  padding: 0 1rem 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h1, h2, h3 {
