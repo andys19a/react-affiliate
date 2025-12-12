@@ -1,14 +1,15 @@
 import "../css/Start.css";
 import AffiliateButton from "../components/AffiliateButton";
+import HeroAffiliate from "../images/Hero-affiliate.png";
 
 function Start() {
   return (
     <>
       {/* === SEO-meta för sidan /start === */}
-      <title>Kom igång med Value Betting – Steg för steg guide | ProfitPlay</title>
+      <title>Value betting: kom igång – steg-för-steg-guide 2025</title>
       <meta
         name="description"
-        content="Lär dig hur du kommer igång med value betting steg för steg. ProfitPlay visar hur RebelBetting fungerar och hur du kan börja tjäna pengar på sportsbetting."
+        content="Lär dig value betting steg för steg med uppdaterad guide 2025. Följ checklistan, jämför verktyg och börja spela smartare redan idag."
       />
       <meta
         name="keywords"
@@ -16,10 +17,10 @@ function Start() {
       />
 
       {/* 🔹 Open Graph (för sociala medier) */}
-      <meta property="og:title" content="Kom igång med Value Betting – ProfitPlay" />
+      <meta property="og:title" content="Value betting: kom igång – ProfitPlay" />
       <meta
         property="og:description"
-        content="Steg för steg-guide till value betting. Lär dig hur RebelBetting fungerar och börja slå spelbolagen med matematik och strategi."
+        content="Steg-för-steg-guide till value betting. Lär dig hur RebelBetting fungerar och börja slå spelbolagen med matematik och strategi."
       />
       <meta property="og:type" content="article" />
       <meta property="og:image" content="/images/Hero-affiliate.png" />
@@ -27,59 +28,164 @@ function Start() {
 
       {/* === Innehåll === */}
       <div className="Start">
-        <h1>Kom igång med valuebetting</h1>
-        <p>
-          Här är en steg-för-steg guide för att komma igång med valuebetting:
-        </p>
-        <ol>
-          <li>
-            <strong>Välj en pålitlig plattform:</strong> Börja med att välja en
-            pålitlig valuebetting-plattform som RebelBetting. De erbjuder
-            verktyg och resurser för att hjälpa dig hitta
-            värdebettingmöjligheter.
-          </li>
-          <li>
-            <strong>Skapa ett konto:</strong> Registrera dig på den valda
-            plattformen och skapa ett konto. Följ deras instruktioner för att
-            komma igång.
-          </li>
-          <li>
-            <strong>Lär dig grunderna:</strong> Ta dig tid att förstå grunderna
-            i valuebetting. Läs guider, titta på videor och delta i forum för
-            att få en bättre förståelse för konceptet.
-          </li>
-          <li>
-            <strong>Analysera odds:</strong> Använd plattformens verktyg för att
-            analysera odds och identifiera värdebettingmöjligheter. Jämför
-            oddsen från olika bookmakers för att hitta de bästa erbjudandena.
-          </li>
-          <li>
-            <strong>Hantera din bankrulle:</strong> Sätt upp en bankrulle och
-            bestäm hur mycket du är villig att satsa. Använd en konsekvent
-            satsningsstrategi för att minimera riskerna.
-          </li>
-          <li>
-            <strong>Placera dina spel:</strong> När du har identifierat en
-            värdebettingmöjlighet, placera ditt spel enligt din strategi. Var
-            noga med att följa plattformens riktlinjer och regler.
-          </li>
-          <li>
-            <strong>Följ upp och justera:</strong> Håll koll på dina resultat
-            och analysera dina spel. Justera din strategi vid behov för att
-            förbättra dina chanser till framgång.
-          </li>
-          <li>
-            <strong>Var tålmodig och disciplinerad:</strong> Valuebetting är en
-            långsiktig strategi. Var tålmodig och disciplinerad i ditt
-            tillvägagångssätt för att maximera dina vinster över tid.
-          </li>
-        </ol>
-        <p>
-          Genom att följa dessa steg kan du komma igång med valuebetting och
-          börja dra nytta av de möjligheter som erbjuds inom sportbetting.
-        </p>
+        <div className="page-meta">
+          <span className="badge">Uppdaterad: februari 2025</span>
+          <p className="lede">
+            Hoppa rakt in i value betting med en tydlig plan. Den här guiden är
+            uppdaterad med de senaste tipsen för 2025 så att du kan starta
+            snabbt och minimera misstag.
+          </p>
+        </div>
 
-        <AffiliateButton />
+        <div className="hero">
+          <div>
+            <h1>Value betting: kom igång</h1>
+            <p>
+              Få en strukturerad väg in i value betting – från första insättning
+              till dina första hundra spel. Vi kombinerar strategi, verktyg och
+              disciplin så du slipper gissa.
+            </p>
+            <div className="hero-cta">
+              <AffiliateButton />
+              <p className="cta-note">Testa verktyget riskfritt och följ guiden steg för steg.</p>
+            </div>
+          </div>
+          <img
+            src={HeroAffiliate}
+            alt="Illustration av value betting-guide med statistik och odds"
+            className="hero-image"
+          />
+        </div>
+
+        <section>
+          <h2>Steg-för-steg: börja value betta idag</h2>
+          <ol className="step-list">
+            <li>
+              <strong>Välj plattform och konto:</strong> RebelBetting är
+              nybörjarvänligt och visar var värdet finns i realtid.
+            </li>
+            <li>
+              <strong>Ställ in bankrullen:</strong> Avsätt en separat kassa och
+              riskera högst 1–2 % per spel för stabil tillväxt.
+            </li>
+            <li>
+              <strong>Analysera oddsen:</strong> Följ rekommendationerna i
+              verktyget och sortera på sporter där du har bäst ROI.
+            </li>
+            <li>
+              <strong>Placera och logga spelen:</strong> Sikta på volym – 500+
+              spel ger en pålitlig ROI och jämnare kurva.
+            </li>
+            <li>
+              <strong>Utvärdera varje vecka:</strong> Tweaka insatsnivå och
+              marknader, men håll dig till planen för att undvika tilt.
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Jämförelse: manuell vs. automatiserad value betting</h2>
+          <div className="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Metod</th>
+                  <th>Tidsåtgång</th>
+                  <th>Träffsäkerhet</th>
+                  <th>Passar bäst för</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Manuell analys</td>
+                  <td>2–3 timmar/dag</td>
+                  <td>Varierande – kräver erfarenhet</td>
+                  <td>Erfarna spelare med egen modell</td>
+                </tr>
+                <tr>
+                  <td>Automatiserad via RebelBetting</td>
+                  <td>20–30 minuter/dag</td>
+                  <td>Stabil – filtrerar ut felsatta odds</td>
+                  <td>Nybörjare och proffs som vill skala</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section className="pros-cons">
+          <div>
+            <h3>Fördelar</h3>
+            <ul>
+              <li>Matematisk edge som inte bygger på tur.</li>
+              <li>Automatiska larm för nya värdespel.</li>
+              <li>Statistik som gör det enkelt att optimera.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Nackdelar</h3>
+            <ul>
+              <li>Kräver disciplin och volym innan ROI syns.</li>
+              <li>Vissa spelbolag kan begränsa konton vid vinst.</li>
+              <li>Abonnemangskostnad – räkna hem den med volym.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Checklista för långsiktigt resultat</h2>
+          <ul className="bullet-grid">
+            <li>Minst 1 000 spel per kvartal för tillförlitlig statistik.</li>
+            <li>Dokumentera ROI per sport och bookmaker varje månad.</li>
+            <li>Justera insatsstorlek först efter 200–300 spel.</li>
+            <li>Följ spelplanen även efter korta perioder med minus.</li>
+            <li>Rotera mellan 3–5 spelbolag för bättre odds och mindre risk för limitering.</li>
+          </ul>
+        </section>
+
+        <section className="faq">
+          <h2>FAQ: vanliga frågor om value betting</h2>
+          <div className="faq-item">
+            <h3>Hur mycket kapital behöver jag för value betting?</h3>
+            <p>
+              Börja med en separat kassa på minst 3 000–5 000 kr så att 1–2 % per
+              spel ger rimliga insatser. Lägg aldrig in pengar du inte kan vara
+              utan.
+            </p>
+          </div>
+          <div className="faq-item">
+            <h3>Hur snabbt kan jag se resultat?</h3>
+            <p>
+              Förvänta dig inte snabba vinster. Sikta på 500–1 000 spel för att
+              jämna ut variansen och se den sanna ROI:n. Det tar oftast 4–8
+              veckor.
+            </p>
+          </div>
+          <div className="faq-item">
+            <h3>Vilka sporter fungerar bäst för value betting?</h3>
+            <p>
+              Fotboll och tennis har hög volym och ofta felprissatta odds. Börja
+              där och filtrera bort sporter där din ROI ligger under målet.
+            </p>
+          </div>
+          <div className="faq-item">
+            <h3>Hur undviker jag att bli limiterad av spelbolag?</h3>
+            <p>
+              Variera insatsstorlek något, spela på flera marknader och fördela
+              dina spel över flera spelbolag. Bygg en rutin så att du inte sticker
+              ut med identiska belopp varje gång.
+            </p>
+          </div>
+        </section>
+
+        <section className="cta-section">
+          <h2>Redo att börja? Följ guiden och testa verktyget</h2>
+          <p>
+            Du har planen – nu är det dags att sätta den i spel. Öppna ett konto,
+            följ checklistan och låt verktyget hitta värdespelen åt dig.
+          </p>
+          <AffiliateButton />
+        </section>
       </div>
     </>
   );
