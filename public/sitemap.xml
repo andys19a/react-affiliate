@@ -1,6 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.profitplay.se/</loc>
-  </url>
+  <url><loc>https://profitplay.se/</loc></url>
+  <url><loc>https://profitplay.se/results</loc></url>
+  <url><loc>https://profitplay.se/start</loc></url>
+  <url><loc>https://profitplay.se/recension</loc></url>
+  <url><loc>https://profitplay.se/faq</loc></url>
+  <url><loc>https://profitplay.se/contact</loc></url>
+  <url><loc>https://profitplay.se/blog</loc></url>
+  <url><loc>https://profitplay.se/kategori</loc></url>
+  <url><loc>https://profitplay.se/kategori/value-betting</loc></url>
+  <url><loc>https://profitplay.se/kategori/value-betting/grunder</loc></url>
+  <url><loc>https://profitplay.se/kategori/value-betting/strategier</loc></url>
+  <url><loc>https://profitplay.se/kategori/verktyg</loc></url>
+  <url><loc>https://profitplay.se/kategori/verktyg/rebelbetting</loc></url>
+  <url><loc>https://profitplay.se/kategori/risk-psykologi</loc></url>
+  <url><loc>https://profitplay.se/kategori/risk-psykologi/kontohantering</loc></url>
+  <url><loc>https://profitplay.se/kategori/risk-psykologi/mentalt-spel</loc></url>
+  <url><loc>https://profitplay.se/sitemap</loc></url>
+  <url><loc>https://profitplay.se/blog/1</loc></url>
+  <url><loc>https://profitplay.se/blog/2</loc></url>
+  <url><loc>https://profitplay.se/blog/3</loc></url>
+  <url><loc>https://profitplay.se/blog/4</loc></url>
+  <url><loc>https://profitplay.se/blog/5</loc></url>
+  <url><loc>https://profitplay.se/blog/6</loc></url>
+  <url><loc>https://profitplay.se/blog/10</loc></url>
+  <url><loc>https://profitplay.se/blog/11</loc></url>
+  <url><loc>https://profitplay.se/blog/12</loc></url>
+  <url><loc>https://profitplay.se/blog/14</loc></url>
 </urlset>
