@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import AffiliateBanner from "../components/AffiliateBanner";
-import resultatImg from "../images/resultat.png";
+import resultatImg from "../images/resultat-graph.svg";
 import "../css/Results.css";
 
 function Results() {
@@ -63,7 +63,7 @@ function Results() {
         content="Graf och sammanfattning av mina resultat med value betting och RebelBetting. Statistik, ROI och nyckeltal."
       />
       <meta property="og:type" content="article" />
-      <meta property="og:image" content="/images/resultat.png" />
+      <meta property="og:image" content="/images/resultat-graph.svg" />
       <meta property="og:url" content="https://profitplay.se/results" />
 
       <div className="results-page">
@@ -81,7 +81,14 @@ function Results() {
           className={`results-image ${visible ? "visible" : ""}`}
           ref={imageRef}
         >
-          <img src={resultatImg} alt="Resultatgraf" />
+          <img
+            src={resultatImg}
+            alt="Resultatgraf"
+            loading="lazy"
+            decoding="async"
+            width="960"
+            height="540"
+          />
           <p className="caption">
             Exempel på mina resultat – stabil och ökande avkastning med hjälp av RebelBetting.
           </p>

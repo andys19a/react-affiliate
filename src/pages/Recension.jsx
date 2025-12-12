@@ -29,7 +29,15 @@ function Erfarenhet() {
       {/* === Innehåll === */}
       <div className="Recension">
         <h1>Recension av Value Betting</h1>
-        <img src={RecensionBild} alt="Value Betting" className="hero-image" />
+        <img
+          src={RecensionBild}
+          alt="Value Betting"
+          className="hero-image"
+          loading="lazy"
+          decoding="async"
+          width="1280"
+          height="720"
+        />
 
         <p>
           Jag har använt value betting i över två år och har konsekvent genererat

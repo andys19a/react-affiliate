@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /*?*filter=
+Disallow: /*?*tag=
+Disallow: /*?*page=
+Disallow: /*?*sort=
+Allow: /
+
+Sitemap: /sitemap.xml

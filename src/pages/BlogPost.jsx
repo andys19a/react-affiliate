@@ -49,7 +49,13 @@ function BlogPost() {
 
       {/* === Innehåll === */}
       <div className="blog-page blog-post">
-        <img src={post.image} alt={post.title} className="blog-post-thumb" />
+        <img
+          src={post.image}
+          alt={post.title}
+          className="blog-post-thumb"
+          loading="lazy"
+          decoding="async"
+        />
         <h1>{post.title}</h1>
         <p className="date">{new Date(post.date).toLocaleDateString()}</p>
 

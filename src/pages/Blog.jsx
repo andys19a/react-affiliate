@@ -59,7 +59,13 @@ return (
       <div className="blog-list">
         {currentPosts.map((post) => (
           <article key={post.id} className="blog-card">
-            <img src={post.image} className="blog-thumb" alt={post.title} />
+            <img
+              src={post.image}
+              className="blog-thumb"
+              alt={post.title}
+              loading="lazy"
+              decoding="async"
+            />
             <div className="blog-content">
               <div className="blog-header">
                 <h2>{post.title}</h2>

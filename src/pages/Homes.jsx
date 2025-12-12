@@ -3,7 +3,7 @@ import AffiliateBanner from "../components/AffiliateBanner";
 import AffiliateButton from "../components/AffiliateButton";
 import Table from "../components/Tabel";
 import "../css/Home.css";
-import HeroImage from "../images/Hero-affiliate.png";
+import HeroIllustration from "../images/hero-illustration.svg";
 
 function Homes() {
   return (
@@ -16,10 +16,12 @@ function Homes() {
         </p>
 
         <img
-          src={HeroImage}
+          src={HeroIllustration}
           alt="Value betting – graf och mynt som symboliserar stabil avkastning"
           className="hero-image"
           loading="eager"
+          decoding="async"
+          fetchpriority="high"
           width="1280"
           height="720"
         />
