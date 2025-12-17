@@ -1,0 +1,38 @@
+.breadcrumbs {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.breadcrumbs ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs li::after {
+  content: "›";
+  margin-left: 8px;
+  color: #888;
+}
+
+.breadcrumbs li:last-child::after {
+  content: "";
+}
+
+.breadcrumbs a {
+  color: #0b6dd3;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current span {
+  font-weight: 600;
+  color: #111;
+}
