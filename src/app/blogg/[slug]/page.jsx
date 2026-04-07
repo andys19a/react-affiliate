@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getAllPosts, getPostBySlug, getAllSlugs } from '@/lib/blogPosts'
+import { getPostBySlug, getAllSlugs, getRelatedPosts } from '@/lib/blogPosts'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import AffiliateButton from '@/components/AffiliateButton'
 import '@/css/Blog.css'
@@ -49,19 +49,7 @@ export default function BlogPost({ params }) {
   const post = getPostBySlug(params.slug)
   if (!post) notFound()
 
-  const allPosts = getAllPosts()
-
-  const relatedPosts = allPosts
-    .filter(
-      (p) =>
-        p.slug !== post.slug &&
-        (p.subcategory === post.subcategory || p.category === post.category)
-    )
-    .slice(0, 3)
-
-  const popularPosts = allPosts
-    .filter((p) => p.slug !== post.slug)
-    .slice(0, 3)
+  const relatedPosts = getRelatedPosts(post)
 
   const contentHtml = post.content.includes('<')
     ? post.content
@@ -141,18 +129,6 @@ export default function BlogPost({ params }) {
               </li>
             ))}
             {relatedPosts.length === 0 && <li>Fler guider publiceras snart.</li>}
-          </ul>
-        </div>
-        <div className="context-panel">
-          <h3>Populärt just nu</h3>
-          <ul>
-            {popularPosts.map((popular) => (
-              <li key={popular.slug}>
-                <Link href={`/blogg/${popular.slug}`}>
-                  {popular.keywords?.[0] || popular.title}
-                </Link>
-              </li>
-            ))}
           </ul>
         </div>
       </section>

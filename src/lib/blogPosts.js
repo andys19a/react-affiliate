@@ -44,3 +44,14 @@ export function getPostsBySubcategorySlug(categorySlug, subcategorySlug) {
     (post) => post.categorySlug === categorySlug && post.subcategorySlug === subcategorySlug
   )
 }
+
+export function getRelatedPosts(post) {
+  if (post.related && post.related.length > 0) {
+    return post.related.map(slug => getPostBySlug(slug)).filter(Boolean)
+  }
+  // fallback: category-based
+  const all = getAllPosts()
+  return all
+    .filter(p => p.slug !== post.slug && (p.subcategory === post.subcategory || p.category === post.category))
+    .slice(0, 3)
+}
