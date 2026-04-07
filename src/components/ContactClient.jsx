@@ -1,30 +1,21 @@
-import { useState } from "react";
-import "../css/Contact.css";
+'use client'
 
-function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
+import { useState } from 'react'
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
+export default function ContactClient() {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' })
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
-  // Uppdaterar fältens värden
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
 
-  // Hanterar skickning
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitted(true); // visar tack-meddelandet
-    setFormData({ name: "", email: "", message: "" }); // tömmer formuläret
-  };
+    e.preventDefault()
+    setIsSubmitted(true)
+    setFormData({ name: '', email: '', message: '' })
+  }
 
   return (
     <div className="contact-page">
@@ -78,7 +69,5 @@ function Contact() {
         </div>
       )}
     </div>
-  );
+  )
 }
-
-export default Contact;
