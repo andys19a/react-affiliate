@@ -5,4 +5,4 @@ Disallow: /*?*page=
 Disallow: /*?*sort=
 Allow: /
 
-Sitemap: /sitemap.xml
+Sitemap: https://www.profitplay.se/sitemap.xml

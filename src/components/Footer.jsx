@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
-import "../css/Footer.css";
+import Link from 'next/link'
+import '@/css/Footer.css'
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Vänster sektion */}
         <div className="footer-about">
           <h3>Om sidan</h3>
           <p>
@@ -17,26 +16,24 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
             >
-              {" "}RebelBetting
+              {' '}RebelBetting
             </a>.
           </p>
         </div>
 
-        {/* Mitten sektion */}
         <div className="footer-links">
           <h3>Länkar</h3>
           <ul>
-            <li><Link to="/">Hem</Link></li>
-            <li><Link to="/results">Resultat</Link></li>
-            <li><Link to="/blog">Blogg</Link></li>
-            <li><Link to="/start">Kom igång</Link></li>
-            <li><Link to="/recension">Recension</Link></li>
-            <li><Link to="/faq">FAQ</Link></li>
-            <li><Link to="/contact">Kontakt</Link></li>
+            <li><Link href="/">Hem</Link></li>
+            <li><Link href="/results">Resultat</Link></li>
+            <li><Link href="/blog">Blogg</Link></li>
+            <li><Link href="/start">Kom igång</Link></li>
+            <li><Link href="/recension">Recension</Link></li>
+            <li><Link href="/faq">FAQ</Link></li>
+            <li><Link href="/contact">Kontakt</Link></li>
           </ul>
         </div>
 
-        {/* Höger sektion */}
         <div className="footer-contact">
           <h3>Kontakt</h3>
           <p>
@@ -52,12 +49,9 @@ function Footer() {
         </div>
       </div>
 
-      {/* Nedre rad */}
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} ProfitPlay. Alla rättigheter förbehållna.</p>
       </div>
     </footer>
-  );
+  )
 }
-
-export default Footer;

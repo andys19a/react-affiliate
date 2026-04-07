@@ -1,11 +1,23 @@
-import { Link } from "react-router-dom";
-import AffiliateBanner from "../components/AffiliateBanner";
-import AffiliateButton from "../components/AffiliateButton";
-import Table from "../components/Tabel";
-import "../css/Home.css";
-import HeroIllustration from "../images/hero-illustration.svg";
+import Link from 'next/link'
+import AffiliateBanner from '@/components/AffiliateBanner'
+import AffiliateButton from '@/components/AffiliateButton'
+import Table from '@/components/Tabel'
+import '@/css/Home.css'
 
-function Homes() {
+export const metadata = {
+  title: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay',
+  description:
+    'Lär dig value betting med matematik, sannolikhet och disciplin. Vi visar hur du använder RebelBetting och smart bankroll management för att växa hållbart.',
+  openGraph: {
+    title: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay',
+    description:
+      'Lär dig value betting med matematik, sannolikhet och disciplin. Vi visar hur du använder RebelBetting för att växa hållbart.',
+    url: 'https://www.profitplay.se',
+    type: 'website',
+  },
+}
+
+export default function HomePage() {
   return (
     <div className="home-page">
       <section className="intro">
@@ -16,7 +28,11 @@ function Homes() {
         </p>
 
         <img
+<<<<<<< HEAD:src/app/page.jsx
+          src="/images/Hero-affiliate.png"
+=======
           src={HeroIllustration}
+>>>>>>> origin/main:src/pages/Homes.jsx
           alt="Value betting – graf och mynt som symboliserar stabil avkastning"
           className="hero-image"
           loading="eager"
@@ -26,19 +42,18 @@ function Homes() {
           height="720"
         />
 
-        {/* Snabba vägar till nyckelsidor */}
         <nav className="quick-links" aria-label="Snabblänkar">
-          <Link to="/recension" className="chip">Recension av RebelBetting</Link>
-          <Link to="/results" className="chip">Mina resultat</Link>
-          <Link to="/start" className="chip">Kom igång</Link>
-          <Link to="/blog" className="chip">Guider & artiklar</Link>
+          <Link href="/recension" className="chip">Recension av RebelBetting</Link>
+          <Link href="/results" className="chip">Mina resultat</Link>
+          <Link href="/start" className="chip">Kom igång</Link>
+          <Link href="/blog" className="chip">Guider &amp; artiklar</Link>
         </nav>
 
         <ul className="usp-list">
-          <li>🔍 Hitta <strong>felsatta odds</strong> med verktyg som RebelBetting</li>
-          <li>📈 Spela på <strong>positivt värde (EV+)</strong> – vinn på sikt</li>
-          <li>🛡️ Skydda kassan med <Link to="/blog/5">bankroll management</Link></li>
-          <li>🧠 Undvik misstag – lär dig <Link to="/blog/7">psykologin bakom betting</Link></li>
+          <li>Hitta <strong>felsatta odds</strong> med verktyg som RebelBetting</li>
+          <li>Spela på <strong>positivt värde (EV+)</strong> – vinn på sikt</li>
+          <li>Skydda kassan med <Link href="/blog/bankroll-management">bankroll management</Link></li>
+          <li>Undvik misstag – lär dig <Link href="/blog/vanliga-misstag-value-betting">psykologin bakom betting</Link></li>
         </ul>
       </section>
 
@@ -47,7 +62,7 @@ function Homes() {
         <p>
           Jag har använt <strong>RebelBetting</strong> i över två år med stabil, månatlig avkastning.
           Metoden bygger på att konsekvent spela värde och låta sannolikheten göra jobbet.
-          Läs mer i min <Link to="/recension">recension</Link> och se <Link to="/results">resultaten</Link>.
+          Läs mer i min <Link href="/recension">recension</Link> och se <Link href="/results">resultaten</Link>.
         </p>
       </section>
 
@@ -58,7 +73,7 @@ function Homes() {
           mjukvaran gör analysen. Du fokuserar på att <em>följa strategin</em> och lägga spelen.
         </p>
         <p>
-          Är du ny? Börja här: <Link to="/start">Kom igång med value betting</Link>.
+          Är du ny? Börja här: <Link href="/start">Kom igång med value betting</Link>.
         </p>
       </section>
 
@@ -75,12 +90,11 @@ function Homes() {
           </li>
           <li>
             <strong>Sure Betting (Arbitrage):</strong> säkra små vinster genom att täcka alla utfall.
-            Läs jämförelsen: <Link to="/blog/8">Value betting vs Sure betting</Link>.
           </li>
         </ul>
         <p>
           Med <strong>RebelBetting Premium</strong> får du realtidsvärden, insatsrekommendationer och
-          smidig statistik. Se vår <Link to="/recension">recension</Link> innan du väljer plan.
+          smidig statistik. Se vår <Link href="/recension">recension</Link> innan du väljer plan.
         </p>
 
         <AffiliateBanner />
@@ -95,7 +109,6 @@ function Homes() {
         <Table />
       </section>
 
-      {/* FAQ – synligt innehåll (JSON-LD lägger vi i index.html om du vill ha rich results) */}
       <section className="faq-home">
         <h2>Vanliga frågor om value betting</h2>
         <details>
@@ -105,12 +118,12 @@ function Homes() {
         </details>
         <details>
           <summary>Hur stor bankrulle behöver jag?</summary>
-          <p>Det beror på mål och risknivå. Läs vår guide om <Link to="/blog/5">bankroll management</Link> för att hitta rätt nivå.</p>
+          <p>Det beror på mål och risknivå. Läs vår guide om <Link href="/blog/bankroll-management">bankroll management</Link> för att hitta rätt nivå.</p>
         </details>
         <details>
           <summary>Kan jag börja som helt ny?</summary>
-          <p>Absolut. Börja med <Link to="/start">kom igång-guiden</Link> och läs vår
-            <Link to="/recension"> recension av RebelBetting</Link> för att förstå flödet.</p>
+          <p>Absolut. Börja med <Link href="/start">kom igång-guiden</Link> och läs vår
+            <Link href="/recension"> recension av RebelBetting</Link> för att förstå flödet.</p>
         </details>
       </section>
 
@@ -123,7 +136,5 @@ function Homes() {
         <AffiliateButton />
       </section>
     </div>
-  );
+  )
 }
-
-export default Homes;

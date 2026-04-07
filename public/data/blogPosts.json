@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "slug": "vad-ar-value-betting",
     "title": "Vad är value betting? Så fungerar strategin på riktigt",
     "date": "2025-10-01",
     "image": "/images/Thumbnail.png",
@@ -24,6 +25,7 @@
   },
   {
     "id": 2,
+    "slug": "hitta-value-bets-steg-for-steg",
     "title": "Hitta value bets steg-för-steg (med tydliga exempel)",
     "date": "2025-10-08",
     "image": "/images/ThumbnailBlog2.png",
@@ -45,6 +47,7 @@
   },
   {
     "id": 3,
+    "slug": "rebelbetting-recension-2025",
     "title": "RebelBetting recension 2025 – resultat, pris och omdöme",
     "date": "2025-10-15",
     "image": "/images/Value_Traditionell.png",
@@ -67,6 +70,7 @@
   },
   {
     "id": 4,
+    "slug": "hur-rebelbetting-fungerar",
     "title": "Hur RebelBetting fungerar – komplett guide & strategi",
     "date": "2025-10-20",
     "image": "/images/Blog4-hero.png",
@@ -90,6 +94,7 @@
   },
   {
     "id": 5,
+    "slug": "bankroll-management",
     "title": "Bankroll management – nyckeln till hållbar betting",
     "date": "2025-10-25",
     "image": "/images/Bankroll_thumb.png",
@@ -112,11 +117,12 @@
   },
   {
     "id": 6,
+    "slug": "undvika-limitering-spelbolag",
     "title": "Så undviker du limitering hos spelbolag (praktiska tips)",
     "date": "2025-10-28",
     "image": "/images/Limiterad_thumb.png",
     "excerpt": "Spelbolag gillar inte vinnare – men det finns sätt att undvika att bli limiterad. Här är de bästa tipsen för att hålla ditt konto aktivt längre.",
-    "content": "Om du använder value betting-strategier eller verktyg som RebelBetting finns en risk att spelbolagen börjar begränsa ditt konto. Här är praktiska tips för att undvika limitering och fortsätta spela lönsamt.\n\nVariera dina insatser och spelbolag, undvik att alltid spela på samma marknader och håll en jämn volym av spel. Genom att inte sticka ut minskar du chansen att bli flaggad.\n\nAnvänd funktionen cash out sparsamt, spela ibland på marknader med lägre värde och undvik att bara ta “felprissatta” odds från ett enda bolag.\n\nMed en smart strategi kan du fortsätta tjäna pengar utan att kontot begränsas. Det handlar om att smälta in, inte sticka ut.",
+    "content": "Om du använder value betting-strategier eller verktyg som RebelBetting finns en risk att spelbolagen börjar begränsa ditt konto. Här är praktiska tips för att undvika limitering och fortsätta spela lönsamt.\n\nVariera dina insatser och spelbolag, undvik att alltid spela på samma marknader och håll en jämn volym av spel. Genom att inte sticka ut minskar du chansen att bli flaggad.\n\nAnvänd funktionen cash out sparsamt, spela ibland på marknader med lägre värde och undvik att bara ta s.k. felprissatta odds från ett enda bolag.\n\nMed en smart strategi kan du fortsätta tjäna pengar utan att kontot begränsas. Det handlar om att smälta in, inte sticka ut.",
     "meta_description": "Undvik limitering hos spelbolag med smarta tips om insatser, spelval och bankrulle. Fortsätt använda value betting-strategier utan att bli begränsad.",
     "keywords": [
       "undvika limitering",
@@ -133,11 +139,12 @@
   },
   {
     "id": 10,
+    "slug": "risk-vs-beloning-i-betting",
     "title": "Risk vs belöning i betting – hitta rätt balans långsiktigt",
     "date": "2025-11-18",
     "image": "/images/Risk-reward.png",
     "excerpt": "Ju större risk, desto större belöning – men också chans att förlora. Lär dig hur du hittar rätt balans mellan risk och trygghet i value betting.",
-    "content": "Alla som börjar med betting drömmer om att vinna stort, men de flesta glömmer att det är riskhanteringen som avgör om du överlever på sikt. Att förstå sambandet mellan risk och belöning är avgörande för att lyckas inom value betting.\n\nEn bra strategi handlar inte om att ta så stor risk som möjligt – utan att ta rätt risk vid rätt tillfälle. Om du riskerar för mycket av din kassa på ett enda spel kommer variansen slå hårt, även om du har positivt värde.\n\nEtt verktyg som RebelBetting hjälper dig att hålla rätt balans genom att föreslå insatsstorlek baserat på risknivå och bankrulle. Ju större värde på oddset, desto högre rekommenderad insats – men alltid inom säkra gränser.\n\nFör att förstå detta djupare kan du läsa mer om <a href='/blog/5'>bankroll management</a> och hur du skyddar din kassa. För det mentala spelet kan du även läsa <a href='/blog/11'>vanliga misstag inom value betting</a>.\n\nDen perfekta balansen mellan risk och belöning handlar inte om att vinna varje dag, utan om att låta sannolikheten jobba för dig. Value betting är ett maraton – inte ett sprintlopp.",
+    "content": "Alla som börjar med betting drömmer om att vinna stort, men de flesta glömmer att det är riskhanteringen som avgör om du överlever på sikt. Att förstå sambandet mellan risk och belöning är avgörande för att lyckas inom value betting.\n\nEn bra strategi handlar inte om att ta så stor risk som möjligt – utan att ta rätt risk vid rätt tillfälle. Om du riskerar för mycket av din kassa på ett enda spel kommer variansen slå hårt, även om du har positivt värde.\n\nEtt verktyg som RebelBetting hjälper dig att hålla rätt balans genom att föreslå insatsstorlek baserat på risknivå och bankrulle. Ju större värde på oddset, desto högre rekommenderad insats – men alltid inom säkra gränser.\n\nFör att förstå detta djupare kan du läsa mer om <a href='/blog/bankroll-management'>bankroll management</a> och hur du skyddar din kassa. För det mentala spelet kan du även läsa <a href='/blog/vanliga-misstag-value-betting'>vanliga misstag inom value betting</a>.\n\nDen perfekta balansen mellan risk och belöning handlar inte om att vinna varje dag, utan om att låta sannolikheten jobba för dig. Value betting är ett maraton – inte ett sprintlopp.",
     "meta_description": "Balansera risk och avkastning med smart insatsstorlek, bankroll-tänk och värdebaserade spel. Lär dig undvika variansfällor och växa stabilt.",
     "keywords": [
       "risk belöning betting",
@@ -154,11 +161,12 @@
   },
   {
     "id": 11,
+    "slug": "vanliga-misstag-value-betting",
     "title": "Vanliga misstag inom value betting – och hur du undviker dem",
     "date": "2025-11-25",
     "image": "/images/Vanliga_misstag.png",
     "excerpt": "Många nybörjare gör samma misstag inom value betting. Lär dig vilka de är och hur du undviker dem för att öka dina chanser till långsiktig vinst.",
-    "content": "Att börja med value betting är spännande – men det finns fallgropar som nästan alla nybörjare går i. För att lyckas långsiktigt behöver du förstå vad som skiljer en vinnande strategi från slumpmässigt spelande.\n\nEtt av de vanligaste misstagen är att man börjar med för liten bankrulle och satsar för stort. Det leder till onödigt hög varians och risk för att gå minus även om man egentligen har en positiv förväntan. Läs gärna mer om hur du kan bygga en stabil kassa i artikeln <a href='/blog/5'>Bankroll management</a>.\n\nEtt annat vanligt misstag är att blanda in känslor i besluten. Många spelare börjar jaga förluster, ökar insatser efter en dålig dag eller hoppar över spel som känns “osäkra”. Det är precis här <a href='/blog/14'>varians</a> och mindset kommer in – disciplin är viktigare än magkänsla.\n\nEn tredje klassiker är att man inte loggar sina spel. Utan statistik vet du inte vad som faktiskt fungerar. Genom att använda verktyg som RebelBetting kan du automatiskt spara all data och analysera vilka sporter, marknader och spelbolag som ger bäst resultat.\n\nKort sagt: value betting handlar inte om att vinna varje dag – utan om att spela rätt på sikt. Undvik dessa nybörjarmisstag, håll dig till strategin och låt matematiken göra jobbet.",
+    "content": "Att börja med value betting är spännande – men det finns fallgropar som nästan alla nybörjare går i. För att lyckas långsiktigt behöver du förstå vad som skiljer en vinnande strategi från slumpmässigt spelande.\n\nEtt av de vanligaste misstagen är att man börjar med för liten bankrulle och satsar för stort. Det leder till onödigt hög varians och risk för att gå minus även om man egentligen har en positiv förväntan. Läs gärna mer om hur du kan bygga en stabil kassa i artikeln <a href='/blog/bankroll-management'>Bankroll management</a>.\n\nEtt annat vanligt misstag är att blanda in känslor i besluten. Många spelare börjar jaga förluster, ökar insatser efter en dålig dag eller hoppar över spel som känns 'osäkra'. Det är precis här <a href='/blog/varians-bettingresultat'>varians</a> och mindset kommer in – disciplin är viktigare än magkänsla.\n\nEn tredje klassiker är att man inte loggar sina spel. Utan statistik vet du inte vad som faktiskt fungerar. Genom att använda verktyg som RebelBetting kan du automatiskt spara all data och analysera vilka sporter, marknader och spelbolag som ger bäst resultat.\n\nKort sagt: value betting handlar inte om att vinna varje dag – utan om att spela rätt på sikt. Undvik dessa nybörjarmisstag, håll dig till strategin och låt matematiken göra jobbet.",
     "meta_description": "De vanligaste misstagen inom value betting – lär dig undvika fällorna som kostar pengar och bygg en stabil, långsiktig strategi med rätt verktyg.",
     "keywords": [
       "value betting misstag",
@@ -175,11 +183,12 @@
   },
   {
     "id": 12,
+    "slug": "langsiktig-strategi-value-betting",
     "title": "Så bygger du en långsiktig strategi för value betting",
     "date": "2025-12-02",
     "image": "/images/Långsiktig_strategi.png",
     "excerpt": "En tydlig strategi är grunden för framgångsrik value betting. Här får du en guide till hur du planerar, testar och optimerar din strategi över tid.",
-    "content": "För att bli framgångsrik inom value betting räcker det inte att bara spela på värde – du behöver en långsiktig strategi som styr dina beslut. Det är så du minskar risken och maximerar vinsten över tid.\n\nEn bra start är att definiera dina mål: vill du bygga upp din bankrulle, eller skapa en passiv inkomst? Därefter sätter du en risknivå och väljer vilka sporter och ligor du vill fokusera på. Detaljerad planering gör att du kan hålla dig disciplinerad även under perioder av varians.\n\nNär din strategi är på plats behöver du välja rätt verktyg. RebelBetting är ett av de mest effektiva alternativen för både nybörjare och proffs. Läs gärna vår <a href='/blog/3'>recension av RebelBetting</a>.\n\nFör att säkerställa långsiktig hållbarhet krävs också korrekt kapitalförvaltning. I artikeln <a href='/blog/5'>Bankroll management</a> går vi igenom hur du skyddar din kassa och håller dig stabil genom svängningar.\n\nTill sist – analysera alltid din statistik. Gå igenom ROI, träffsäkerhet och varians. Identifiera svaga punkter och justera gradvis. Det är just det kontinuerliga förbättringsarbetet som skiljer framgångsrika value bettors från resten.",
+    "content": "För att bli framgångsrik inom value betting räcker det inte att bara spela på värde – du behöver en långsiktig strategi som styr dina beslut. Det är så du minskar risken och maximerar vinsten över tid.\n\nEn bra start är att definiera dina mål: vill du bygga upp din bankrulle, eller skapa en passiv inkomst? Därefter sätter du en risknivå och väljer vilka sporter och ligor du vill fokusera på. Detaljerad planering gör att du kan hålla dig disciplinerad även under perioder av varians.\n\nNär din strategi är på plats behöver du välja rätt verktyg. RebelBetting är ett av de mest effektiva alternativen för både nybörjare och proffs. Läs gärna vår <a href='/blog/rebelbetting-recension-2025'>recension av RebelBetting</a>.\n\nFör att säkerställa långsiktig hållbarhet krävs också korrekt kapitalförvaltning. I artikeln <a href='/blog/bankroll-management'>Bankroll management</a> går vi igenom hur du skyddar din kassa och håller dig stabil genom svängningar.\n\nTill sist – analysera alltid din statistik. Gå igenom ROI, träffsäkerhet och varians. Identifiera svaga punkter och justera gradvis. Det är just det kontinuerliga förbättringsarbetet som skiljer framgångsrika value bettors från resten.",
     "meta_description": "Bygg en vinnande strategi för value betting. Lär dig planera, analysera och justera din spelstrategi för långsiktig framgång och stabil ROI.",
     "keywords": [
       "value betting strategi",
@@ -196,11 +205,12 @@
   },
   {
     "id": 13,
+    "slug": "hur-mycket-tjana-value-betting",
     "title": "Hur mycket kan du tjäna på value betting? Realistiska siffror och förväntningar",
     "date": "2025-12-09",
     "image": "/images/Avkastning_valuebetting.png",
     "excerpt": "Value betting kan ge stabila vinster – men hur mycket är realistiskt att tjäna? Vi går igenom verkliga exempel, ROI och vad som påverkar din avkastning.",
-    "content": "En vanlig fråga bland nya spelare är: *hur mycket går det egentligen att tjäna på value betting?* Svaret beror på flera faktorer – främst bankrullens storlek, antalet spel och din disciplin över tid.\n\nGenerellt ligger den genomsnittliga ROI (Return on Investment) för seriösa value bettors ofta i spannet några få procent över tid. Det betyder att om du lägger många spel (volym) och håller dig till strategin kan du bygga en stabil utveckling månad för månad.\n\nVerktyg som <strong>RebelBetting</strong> hjälper dig hitta värdespel automatiskt och hålla koll på din statistik. Läs gärna mer i vår <a href='/blog/3'>RebelBetting-recension</a> för att se hur det fungerar i praktiken.\n\nFör att uppnå stabila resultat behöver du dessutom korrekt kapitalhantering. I artikeln <a href='/blog/5'>Bankroll management</a> förklarar vi hur du sätter rätt insatsnivå för att maximera tillväxt och minimera risk.\n\nKom ihåg: value betting är en långsiktig strategi. Det handlar inte om snabba vinster utan om att låta sannolikheten jobba för dig. Med tålamod, volym och rätt verktyg är det fullt möjligt att bygga en stadig sidoinkomst – eller mer.",
+    "content": "En vanlig fråga bland nya spelare är: *hur mycket går det egentligen att tjäna på value betting?* Svaret beror på flera faktorer – främst bankrullens storlek, antalet spel och din disciplin över tid.\n\nGenerellt ligger den genomsnittliga ROI (Return on Investment) för seriösa value bettors ofta i spannet några få procent över tid. Det betyder att om du lägger många spel (volym) och håller dig till strategin kan du bygga en stabil utveckling månad för månad.\n\nVerktyg som <strong>RebelBetting</strong> hjälper dig hitta värdespel automatiskt och hålla koll på din statistik. Läs gärna mer i vår <a href='/blog/rebelbetting-recension-2025'>RebelBetting-recension</a> för att se hur det fungerar i praktiken.\n\nFör att uppnå stabila resultat behöver du dessutom korrekt kapitalhantering. I artikeln <a href='/blog/bankroll-management'>Bankroll management</a> förklarar vi hur du sätter rätt insatsnivå för att maximera tillväxt och minimera risk.\n\nKom ihåg: value betting är en långsiktig strategi. Det handlar inte om snabba vinster utan om att låta sannolikheten jobba för dig. Med tålamod, volym och rätt verktyg är det fullt möjligt att bygga en stadig sidoinkomst – eller mer.",
     "meta_description": "Hur mycket går det att tjäna på value betting? Lär dig realistiska siffror, ROI och vad som krävs för att bygga stabila vinster med RebelBetting.",
     "keywords": [
       "tjäna pengar value betting",
@@ -217,11 +227,12 @@
   },
   {
     "id": 14,
+    "slug": "varians-bettingresultat",
     "title": "Fördjupning: hur varians påverkar dina bettingresultat",
     "date": "2025-12-16",
     "image": "/images/Varians.png",
     "excerpt": "Varians är en del av bettingens natur. Lär dig förstå svängningarna i resultat och hur du kan hantera dem utan att ändra din strategi.",
-    "content": "Även den bästa strategin inom value betting kommer att uppleva både toppar och dalar. Det beror på varians – slumpens naturliga inverkan på kortsiktiga resultat.\n\nDu kan vinna fem spel i rad och sedan förlora tio, trots att alla haft positivt värde. Det betyder inte att din strategi är dålig, bara att sannolikheten inte alltid fördelar sig jämnt på kort sikt.\n\nFör att förstå och hantera detta behöver du rätt mindset. Läs gärna <a href='/blog/11'>vanliga misstag inom value betting</a> (många av dem handlar om hur man reagerar på svackor).\n\nEtt annat sätt att minska variansen är att spela fler värdespel. Ju fler spel du placerar, desto jämnare blir din kurva över tid. Det förklarar vi mer i <a href='/blog/12'>strategiguiden för value betting</a>.\n\nVerktyg som <strong>RebelBetting</strong> kan dessutom hjälpa dig att hålla koll på långsiktiga resultat och visa hur din ROI utvecklas. Kom ihåg: varians är inte din fiende – det är bara matematik som behöver tillräckligt med tid för att visa sitt sanna värde.",
+    "content": "Även den bästa strategin inom value betting kommer att uppleva både toppar och dalar. Det beror på varians – slumpens naturliga inverkan på kortsiktiga resultat.\n\nDu kan vinna fem spel i rad och sedan förlora tio, trots att alla haft positivt värde. Det betyder inte att din strategi är dålig, bara att sannolikheten inte alltid fördelar sig jämnt på kort sikt.\n\nFör att förstå och hantera detta behöver du rätt mindset. Läs gärna <a href='/blog/vanliga-misstag-value-betting'>vanliga misstag inom value betting</a> (många av dem handlar om hur man reagerar på svackor).\n\nEtt annat sätt att minska variansen är att spela fler värdespel. Ju fler spel du placerar, desto jämnare blir din kurva över tid. Det förklarar vi mer i <a href='/blog/langsiktig-strategi-value-betting'>strategiguiden för value betting</a>.\n\nVerktyg som <strong>RebelBetting</strong> kan dessutom hjälpa dig att hålla koll på långsiktiga resultat och visa hur din ROI utvecklas. Kom ihåg: varians är inte din fiende – det är bara matematik som behöver tillräckligt med tid för att visa sitt sanna värde.",
     "meta_description": "Lär dig hur varians påverkar dina bettingresultat och hur du hanterar svängningarna. Förstå sannolikhet, psykologi och strategi inom value betting.",
     "keywords": [
       "varians betting",
@@ -238,6 +249,7 @@
   },
   {
     "id": 15,
+    "slug": "ev-expected-value-betting",
     "title": "Vad är EV (Expected Value) i betting? – den viktigaste faktorn för vinst",
     "date": "2025-11-25",
     "image": "/images/EV.png",
@@ -259,11 +271,12 @@
   },
   {
     "id": 17,
+    "slug": "bankroll-management-skydda-kassa",
     "title": "Bankroll management i betting – så skyddar du din kassa",
     "date": "2025-12-02",
     "image": "/images/BRM.png",
     "excerpt": "Bankroll management är den viktigaste faktorn för att överleva i betting. Här lär du dig hur mycket du ska satsa per spel.",
-    "content": "<h2>Vad är bankroll management?</h2><p>Bankroll management handlar om hur du fördelar dina insatser för att skydda din kassa. Även en bra strategi misslyckas utan rätt insatsstorlek.</p><h2>Hur mycket ska man satsa per spel?</h2><p>En vanlig rekommendation är 1–3 % av total bankrulle per spel. Det minskar risken för stora förluster under perioder av varians.</p><h2>1–3 %-regeln</h2><ul><li>1 % = låg risk</li><li>2 % = balanserad risk</li><li>3 % = högre risk men snabbare tillväxt</li></ul><h2>Vanliga bankroll-misstag</h2><ul><li>Spela för stora insatser</li><li>Jaga förluster</li><li>Öka insatsen efter vinster</li></ul><p>Vill du förstå varför svängningar händer? Läs <a href='/blog/14'>hur varians påverkar dina bettingresultat</a>.</p><p>RebelBetting hjälper dig automatiskt att hålla rätt nivå genom rekommenderad insats per spel.</p>",
+    "content": "<h2>Vad är bankroll management?</h2><p>Bankroll management handlar om hur du fördelar dina insatser för att skydda din kassa. Även en bra strategi misslyckas utan rätt insatsstorlek.</p><h2>Hur mycket ska man satsa per spel?</h2><p>En vanlig rekommendation är 1–3 % av total bankrulle per spel. Det minskar risken för stora förluster under perioder av varians.</p><h2>1–3 %-regeln</h2><ul><li>1 % = låg risk</li><li>2 % = balanserad risk</li><li>3 % = högre risk men snabbare tillväxt</li></ul><h2>Vanliga bankroll-misstag</h2><ul><li>Spela för stora insatser</li><li>Jaga förluster</li><li>Öka insatsen efter vinster</li></ul><p>Vill du förstå varför svängningar händer? Läs <a href='/blog/varians-bettingresultat'>hur varians påverkar dina bettingresultat</a>.</p><p>RebelBetting hjälper dig automatiskt att hålla rätt nivå genom rekommenderad insats per spel.</p>",
     "meta_description": "Lär dig bankroll management i betting. Undvik vanliga misstag och skydda din kassa med rätt insatsstrategi.",
     "keywords": [
       "bankroll management betting",
@@ -278,11 +291,12 @@
   },
   {
     "id": 18,
+    "slug": "varfor-de-flesta-forlorar-betting",
     "title": "Varför de flesta förlorar pengar på betting (och hur du undviker det)",
     "date": "2025-12-05",
     "image": "/images/Forlust.png",
     "excerpt": "De flesta förlorar pengar på betting. Här är anledningarna – och vad vinnande spelare gör annorlunda.",
-    "content": "<h2>Varför förlorar de flesta på betting?</h2><p>Majoriteten förlorar pengar eftersom de spelar utan strategi, saknar disciplin och ignorerar matematik.</p><h2>7 vanliga misstag</h2><ul><li>Spela på känsla</li><li>Jaga förluster</li><li>Ingen bankroll management</li><li>Fel fokus på odds</li><li>Spela för ofta utan värde</li><li>Överskatta kunskap</li><li>Ignorera varians</li></ul><h2>Vad vinnare gör annorlunda</h2><p>Vinnande spelare fokuserar på värde, EV och disciplin. De spelar färre men bättre spel.</p><h2>Hur value betting löser problemet</h2><p>Value betting eliminerar gissningar. Med verktyg som RebelBetting spelar du endast när oddset är fel.</p><p>Läs även <a href='/blog/6'>hur du undviker limitering</a>, <a href='/blog/5'>bankroll management</a> och <a href='/blog/14'>varians</a>.</p>",
+    "content": "<h2>Varför förlorar de flesta på betting?</h2><p>Majoriteten förlorar pengar eftersom de spelar utan strategi, saknar disciplin och ignorerar matematik.</p><h2>7 vanliga misstag</h2><ul><li>Spela på känsla</li><li>Jaga förluster</li><li>Ingen bankroll management</li><li>Fel fokus på odds</li><li>Spela för ofta utan värde</li><li>Överskatta kunskap</li><li>Ignorera varians</li></ul><h2>Vad vinnare gör annorlunda</h2><p>Vinnande spelare fokuserar på värde, EV och disciplin. De spelar färre men bättre spel.</p><h2>Hur value betting löser problemet</h2><p>Value betting eliminerar gissningar. Med verktyg som RebelBetting spelar du endast när oddset är fel.</p><p>Läs även <a href='/blog/undvika-limitering-spelbolag'>hur du undviker limitering</a>, <a href='/blog/bankroll-management'>bankroll management</a> och <a href='/blog/varians-bettingresultat'>varians</a>.</p>",
     "meta_description": "Varför förlorar de flesta pengar på betting? Lär dig misstagen och hur value betting ger dig ett övertag.",
     "keywords": [
       "förlora pengar betting",
