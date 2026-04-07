@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
       description: post.meta_description,
       type: 'article',
       publishedTime: post.date,
-      url: `https://www.profitplay.se/blog/${post.slug}`,
+      url: `https://www.profitplay.se/blogg/${post.slug}`,
       images: [{ url: post.image, width: 1200, height: 630 }],
     },
   }
@@ -80,7 +80,7 @@ export default function BlogPost({ params }) {
     dateModified: datePublished,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://profitplay.se/blog/${post.slug}`,
+      '@id': `https://profitplay.se/blogg/${post.slug}`,
     },
   }
 
@@ -135,7 +135,7 @@ export default function BlogPost({ params }) {
           <ul>
             {relatedPosts.map((related) => (
               <li key={related.slug}>
-                <Link href={`/blog/${related.slug}`}>
+                <Link href={`/blogg/${related.slug}`}>
                   {related.keywords?.[0] || related.title}
                 </Link>
               </li>
@@ -148,7 +148,7 @@ export default function BlogPost({ params }) {
           <ul>
             {popularPosts.map((popular) => (
               <li key={popular.slug}>
-                <Link href={`/blog/${popular.slug}`}>
+                <Link href={`/blogg/${popular.slug}`}>
                   {popular.keywords?.[0] || popular.title}
                 </Link>
               </li>
@@ -158,7 +158,7 @@ export default function BlogPost({ params }) {
       </section>
 
       <AffiliateButton />
-      <Link href="/blog" className="back-link">
+      <Link href="/blogg" className="back-link">
         ← Tillbaka till bloggen
       </Link>
     </div>

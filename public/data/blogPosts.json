@@ -311,6 +311,7 @@
   },
   {
     "id": 19,
+    "slug": "value-betting-vs-sure-betting",
     "title": "Value betting vs sure betting (arbitrage) – vad är bäst för nybörjare?",
     "date": "2025-12-12",
     "image": "/images/Bild19.png",
@@ -326,10 +327,15 @@
       "limitering sure betting",
       "bästa betting strategi nybörjare",
       "rebelbetting value betting"
-    ]
+    ],
+    "category": "Value Betting",
+    "categorySlug": "value-betting",
+    "subcategory": "Strategier",
+    "subcategorySlug": "strategier"
   },
   {
   "id": 20,
+  "slug": "konsekvent-lonsam-betting-rutin",
   "title": "Hur du blir konsekvent lönsam i betting – en enkel rutin som funkar",
   "date": "2025-12-19",
   "image": "/images/Bild20.png",

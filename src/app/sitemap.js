@@ -8,7 +8,7 @@ export default function sitemap() {
 
   const staticPages = [
     { url: BASE, lastModified: new Date() },
-    { url: `${BASE}/blog`, lastModified: new Date() },
+    { url: `${BASE}/blogg`, lastModified: new Date() },
     { url: `${BASE}/kategori`, lastModified: new Date() },
     { url: `${BASE}/results`, lastModified: new Date() },
     { url: `${BASE}/start`, lastModified: new Date() },
@@ -30,7 +30,7 @@ export default function sitemap() {
   )
 
   const blogPages = posts.map((post) => ({
-    url: `${BASE}/blog/${post.slug}`,
+    url: `${BASE}/blogg/${post.slug}`,
     lastModified: new Date(post.date),
   }))
 

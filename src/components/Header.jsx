@@ -15,7 +15,7 @@ export default function Header() {
           <li><Link href="/results">Resultat</Link></li>
           <li><Link href="/start">Kom igång</Link></li>
           <li><Link href="/recension">Recension</Link></li>
-          <li><Link href="/blog">Blogg</Link></li>
+          <li><Link href="/blogg">Blogg</Link></li>
           <li><Link href="/faq">FAQ</Link></li>
         </ul>
       </nav>
