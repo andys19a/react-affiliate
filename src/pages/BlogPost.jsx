@@ -2,7 +2,6 @@ import { useParams, Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import "../css/Blog.css";
 import AffiliateButton from "../components/AffiliateButton";
-import Breadcrumbs from "../components/Breadcrumbs";
 
 function BlogPost() {
   const { id } = useParams();
