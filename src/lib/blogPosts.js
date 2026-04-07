@@ -1,4 +1,6 @@
-import data from '../../public/data/blogPosts.json'
+import rawData from '../../public/data/blogPosts.json'
+
+const data = rawData.filter((post) => post.slug && post.categorySlug && post.subcategorySlug)
 
 export function getAllPosts() {
   return [...data].sort((a, b) => new Date(b.date) - new Date(a.date))
