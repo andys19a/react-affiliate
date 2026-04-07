@@ -308,5 +308,47 @@
     "categorySlug": "risk-psykologi",
     "subcategory": "Mentalt spel",
     "subcategorySlug": "mentalt-spel"
-  }
+  },
+  {
+    "id": 19,
+    "title": "Value betting vs sure betting (arbitrage) – vad är bäst för nybörjare?",
+    "date": "2025-12-12",
+    "image": "/images/Bild19.png",
+    "excerpt": "Value betting och sure betting är två olika sätt att slå spelbolagen. Här jämför vi risk, tid, limitering och vilken metod som passar dig bäst.",
+    "content": "<h2>Vad är skillnaden mellan value betting och sure betting?</h2><p><strong>Kort svar:</strong> Value betting betyder att du spelar på odds med <em>positivt EV</em> (värde) och accepterar varians. Sure betting (arbitrage) betyder att du placerar spel på alla utfall hos olika bolag för att låsa in en liten vinst direkt.</p>\n\n<h2>Vilken metod är bäst för nybörjare?</h2><p><strong>Kort svar:</strong> För de flesta nybörjare är <strong>value betting enklare</strong> att komma igång med, eftersom det kräver mindre konto-setup och färre simultana bets. Sure betting kan kännas “säkrare”, men kräver ofta mer tempo, fler konton och snabbhet när odds rör sig.</p>\n\n<h2>Value betting – fördelar och nackdelar</h2><ul><li><strong>Fördelar:</strong> Skalbart över tid, färre simultana bets, enklare workflow, fungerar bra med verktyg.</li><li><strong>Nackdelar:</strong> Varians (svängningar), kräver tålamod, resultat syns bäst efter många spel.</li></ul>\n\n<h2>Sure betting (arbitrage) – fördelar och nackdelar</h2><ul><li><strong>Fördelar:</strong> Du kan låsa in vinst direkt (teoretiskt), mindre varians per bet.</li><li><strong>Nackdelar:</strong> Hög limiteringsrisk, odds rör sig snabbt, insatser måste matchas exakt, ibland problem med maxinsatser och voids.</li></ul>\n\n<h2>Risk, varians och EV – vad du måste förstå</h2><p>Value betting bygger på <strong>EV</strong> – Expected Value. Om du vill förstå varför value betting fungerar långsiktigt, läs <a href='/blog/15'>Vad är EV i betting?</a>. För att förstå varför du kan gå minus trots att du gör rätt, läs <a href='/blog/14'>hur varians påverkar dina bettingresultat</a>.</p>\n\n<h2>Limitering: vilken metod triggar spelbolagen mest?</h2><p><strong>Kort svar:</strong> Sure betting triggar ofta limitering snabbare, eftersom beteendet är lättare att flagga. Value betting kan också leda till limitering, men du kan ofta spela “mjukare” och sprida volymen. Läs <a href='/blog/6'>så undviker du limitering</a> för praktiska tips.</p>\n\n<h2>Rekommenderad väg: börja så här</h2><ol><li>Börja med grunderna: <a href='/blog/1'>vad är value betting?</a></li><li>Sätt rätt risknivå: <a href='/blog/5'>bankroll management</a></li><li>Undvik klassiska fällor: <a href='/blog/11'>vanliga misstag</a></li><li>Välj verktyg: <a href='/blog/3'>RebelBetting recension</a></li></ol>\n\n<p>Vill du ha en enkel start utan att jaga odds manuellt? Med verktyg som RebelBetting kan du filtrera fram värdespel och följa en stabil metod över tid.</p>",
+    "meta_description": "Jämför value betting och sure betting (arbitrage): risk, varians, limitering, tidsåtgång och vad som passar nybörjare. Lär dig välja rätt metod.",
+    "keywords": [
+      "value betting vs sure betting",
+      "arbitrage betting",
+      "sure betting",
+      "vad är surebetting",
+      "value betting jämförelse",
+      "limitering sure betting",
+      "bästa betting strategi nybörjare",
+      "rebelbetting value betting"
+    ]
+  },
+  {
+  "id": 20,
+  "title": "Hur du blir konsekvent lönsam i betting – en enkel rutin som funkar",
+  "date": "2025-12-19",
+  "image": "/images/Bild20.png",
+  "excerpt": "Det som gör dig lönsam i betting är inte ett “magiskt spel” – utan en rutin. Här får du en enkel daglig checklista som hjälper dig bli konsekvent.",
+  "content": "<h2>Hur blir man konsekvent lönsam i betting?</h2><p><strong>Kort svar:</strong> Du blir konsekvent lönsam när du (1) bara spelar på positivt EV, (2) använder strikt bankroll management och (3) följer en rutin även när resultaten svänger.</p>\n\n<h2>Steg 1: Spela endast EV+ (annars spelar du mot huset)</h2><p>Om du inte spelar på <strong>positivt EV</strong> blir betting i praktiken slump eller underhållning. Läs först <a href='/blog/15'>Vad är EV i betting?</a> och bygg din grund där.</p>\n\n<h2>Steg 2: Sätt en enkel insatsregel (1–3 %)</h2><p><strong>Kort svar:</strong> Satsa 1–3 % av din bankrulle per spel. Det skyddar dig mot svackor och varians. Fördjupning: <a href='/blog/5'>Bankroll management</a>.</p>\n\n<h2>Steg 3: Acceptera varians – annars saboterar du allt</h2><p>Det kommer perioder där du gör “rätt” men ändå går minus. Det är normalt och en del av spelet. Läs <a href='/blog/14'>hur varians påverkar dina bettingresultat</a> så du inte ändrar strategi mitt i en svacka.</p>\n\n<h2>En enkel daglig rutin (10–20 min)</h2><ol><li><strong>Välj marknad:</strong> Bestäm vilka sporter/ligor du spelar (håll det konsekvent).</li><li><strong>Filtrera fram värdespel:</strong> Använd verktyg eller egen metod och spela bara EV+.</li><li><strong>Placera spel enligt insatsregeln:</strong> 1–3 % per spel (ingen improvisation).</li><li><strong>Logga resultat:</strong> ROI, antal spel, snittodds och eventuella avvikelser.</li><li><strong>Ingen jakt:</strong> Vid förlustdagar – följ rutinen, inte känslan.</li></ol>\n\n<h2>3 vanliga saker som förstör din lönsamhet</h2><ul><li><strong>Jaga förluster:</strong> Att höja insatsen efter minusdagar är #1-felet. Se <a href='/blog/18'>varför de flesta förlorar pengar på betting</a>.</li><li><strong>Byta strategi för ofta:</strong> Du hinner aldrig få sample size nog. Se <a href='/blog/12'>långsiktig strategi</a>.</li><li><strong>Ingen disciplin:</strong> Misstag händer när du avviker från rutin. Se <a href='/blog/11'>vanliga misstag inom value betting</a>.</li></ul>\n\n<h2>Vilka verktyg hjälper mest?</h2><p><strong>Kort svar:</strong> Verktyg som RebelBetting kan spara tid genom att hitta värdespel och hålla statistik. Om du vill veta om det passar dig, läs <a href='/blog/3'>RebelBetting recension</a> och <a href='/blog/4'>hur RebelBetting fungerar</a>.</p>\n\n<p>Vill du ha en snabb start? Börja med <a href='/blog/1'>vad är value betting</a> och bygg sedan vidare med <a href='/blog/5'>bankroll management</a>. Det är grunden till konsekvent lönsamhet.</p>",
+  "meta_description": "Så blir du konsekvent lönsam i betting: EV+, 1–3 % insatsregel, hantera varians och följ en enkel daglig rutin. Praktiska tips och interna guider.",
+  "keywords": [
+    "konsekvent lönsam betting",
+    "hur blir man lönsam på betting",
+    "betting rutin",
+    "value betting rutin",
+    "bankroll management 1-3%",
+    "EV betting",
+    "varians betting",
+    "disciplin betting"
+  ],
+  "category": "Value Betting",
+  "categorySlug": "value-betting",
+  "subcategory": "Strategier",
+  "subcategorySlug": "strategier"
+}
 ]

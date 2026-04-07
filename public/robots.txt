@@ -1,4 +1,8 @@
 User-agent: *
+Disallow: /*?*filter=
+Disallow: /*?*tag=
+Disallow: /*?*page=
+Disallow: /*?*sort=
 Allow: /
 
 Sitemap: https://www.profitplay.se/sitemap.xml

@@ -28,10 +28,16 @@ export default function HomePage() {
         </p>
 
         <img
+<<<<<<< HEAD:src/app/page.jsx
           src="/images/Hero-affiliate.png"
+=======
+          src={HeroIllustration}
+>>>>>>> origin/main:src/pages/Homes.jsx
           alt="Value betting – graf och mynt som symboliserar stabil avkastning"
           className="hero-image"
           loading="eager"
+          decoding="async"
+          fetchpriority="high"
           width="1280"
           height="720"
         />
