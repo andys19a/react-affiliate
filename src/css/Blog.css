@@ -166,6 +166,37 @@
   line-height: 1.7;
 }
 
+.article-faq {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f6faff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.article-faq h2 {
+  margin-top: 0;
+  color: #004b82;
+}
+
+.article-faq details {
+  margin: 0.75rem 0;
+  padding: 0.8rem 1rem;
+  background: #fff;
+  border-radius: 8px;
+  border-left: 4px solid #007acc;
+  cursor: pointer;
+}
+
+.article-faq summary {
+  font-weight: 700;
+  color: #00375f;
+}
+
+.article-faq p {
+  margin: 0.5rem 0 0;
+}
+
 .back-link {
   display: inline-block;
   margin-top: 2rem;
