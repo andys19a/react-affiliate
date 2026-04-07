@@ -16,9 +16,17 @@ function Header() {
 
   return (
     <header className="header">
-      <nav className="nav" aria-label="Huvudmeny">
-        <Link to="/" className="logo-link" onClick={closeMenu}>
-          <img src={logo} alt="ProfitPlay" className="logo" />
+      <nav className="nav">
+        <Link to="/" className="logo-link">
+          <img
+            src={logo}
+            alt="Logo"
+            className="logo"
+            loading="lazy"
+            decoding="async"
+            width="120"
+            height="40"
+          />
         </Link>
 
         <button

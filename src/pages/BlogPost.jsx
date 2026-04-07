@@ -72,22 +72,13 @@ function BlogPost() {
 
       {/* === Innehåll === */}
       <div className="blog-page blog-post">
-        <Breadcrumbs
-          items={[
-            { to: "/", label: "Hem" },
-            { to: "/kategori", label: "Kategorier" },
-            {
-              to: `/kategori/${post.categorySlug}`,
-              label: post.category,
-            },
-            {
-              to: `/kategori/${post.categorySlug}/${post.subcategorySlug}`,
-              label: post.subcategory,
-            },
-            { label: post.title },
-          ]}
+        <img
+          src={post.image}
+          alt={post.title}
+          className="blog-post-thumb"
+          loading="lazy"
+          decoding="async"
         />
-        <img src={post.image} alt={post.title} className="blog-post-thumb" />
         <h1>{post.title}</h1>
         <p className="date">{new Date(post.date).toLocaleDateString()}</p>
 
