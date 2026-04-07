@@ -32,7 +32,7 @@
 
 .contact-form input,
 .contact-form textarea {
-  padding: 0.75rem;
+  padding: 0.85rem 0.95rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
@@ -51,14 +51,26 @@
   background-color: #007acc;
   color: white;
   border: none;
-  padding: 0.9rem;
+  padding: 1rem;
   border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
   transition: background 0.3s ease;
+  min-height: 48px;
 }
 
 .contact-form button:hover {
   background-color: #005fa3;
+}
+
+@media (max-width: 640px) {
+  .contact-page {
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+  }
+
+  .contact-page p {
+    font-size: 1rem;
+  }
 }

@@ -9,6 +9,10 @@ import BlogPost from "./pages/BlogPost";
 import Start from "./pages/Start";
 import Recension from "./pages/Recension";
 import Faq from "./pages/Faq";
+import CategoryIndex from "./pages/CategoryIndex";
+import Category from "./pages/Category";
+import CategoryArticles from "./pages/CategoryArticles";
+import Sitemap from "./pages/Sitemap";
 
 
 
@@ -21,7 +25,14 @@ function App() {
           <Route index element={<Homes />} /> 
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:id" element={<BlogPost />} />
-          <Route path="results" element={<Results />} /> 
+          <Route path="kategori" element={<CategoryIndex />} />
+          <Route path="kategori/:categorySlug" element={<Category />} />
+          <Route
+            path="kategori/:categorySlug/:subcategorySlug"
+            element={<CategoryArticles />}
+          />
+          <Route path="sitemap" element={<Sitemap />} />
+          <Route path="results" element={<Results />} />
           <Route path="start" element={<Start />} />
           <Route path="recension" element={<Recension />} />    
           <Route path="faq" element={<Faq />} />  

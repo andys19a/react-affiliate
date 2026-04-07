@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Blog.css";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 function Blog() {
   const [posts, setPosts] = useState([]);
@@ -50,6 +51,7 @@ return (
     />
 
     <div className="blog-page">
+      <Breadcrumbs items={[{ to: "/", label: "Hem" }, { label: "Blogg" }]} />
       <h1>Om Value Betting</h1>
       <p className="intro">
         Lär dig grunderna och strategin inom value betting – Få en fördel mot

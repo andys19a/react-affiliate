@@ -234,3 +234,42 @@
   color: #444;
   line-height: 1.6;
 }
+
+.context-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.context-panel {
+  border: 1px solid #e0e4eb;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.context-panel h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.context-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.context-panel a {
+  color: #0b6dd3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.context-panel a:hover,
+.context-panel a:focus {
+  text-decoration: underline;
+}
