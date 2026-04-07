@@ -87,14 +87,14 @@ export default function HomePage() {
           <Link href="/recension" className="chip">Recension av RebelBetting</Link>
           <Link href="/results" className="chip">Mina resultat</Link>
           <Link href="/start" className="chip">Kom igång</Link>
-          <Link href="/blog" className="chip">Guider &amp; artiklar</Link>
+          <Link href="/blogg" className="chip">Guider &amp; artiklar</Link>
         </nav>
 
         <ul className="usp-list">
           <li>Hitta <strong>felsatta odds</strong> med verktyg som RebelBetting</li>
           <li>Spela på <strong>positivt värde (EV+)</strong> – vinn på sikt</li>
-          <li>Skydda kassan med <Link href="/blog/bankroll-management">bankroll management</Link></li>
-          <li>Undvik misstag – lär dig <Link href="/blog/vanliga-misstag-value-betting">psykologin bakom betting</Link></li>
+          <li>Skydda kassan med <Link href="/blogg/bankroll-management">bankroll management</Link></li>
+          <li>Undvik misstag – lär dig <Link href="/blogg/vanliga-misstag-value-betting">psykologin bakom betting</Link></li>
         </ul>
       </section>
 
@@ -159,7 +159,7 @@ export default function HomePage() {
         </details>
         <details>
           <summary>Hur stor bankrulle behöver jag?</summary>
-          <p>Det beror på mål och risknivå. Läs vår guide om <Link href="/blog/bankroll-management">bankroll management</Link> för att hitta rätt nivå.</p>
+          <p>Det beror på mål och risknivå. Läs vår guide om <Link href="/blogg/bankroll-management">bankroll management</Link> för att hitta rätt nivå.</p>
         </details>
         <details>
           <summary>Kan jag börja som helt ny?</summary>

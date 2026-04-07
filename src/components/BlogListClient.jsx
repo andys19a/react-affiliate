@@ -45,7 +45,7 @@ export default function BlogListClient({ posts }) {
                 </p>
               </div>
               <p className="excerpt">{post.excerpt}</p>
-              <Link href={`/blog/${post.slug}`} className="read-more">
+              <Link href={`/blogg/${post.slug}`} className="read-more">
                 Läs mer →
               </Link>
             </div>

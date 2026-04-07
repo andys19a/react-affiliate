@@ -68,11 +68,6 @@ export default function RecensionPage() {
       <h1>Recension av Value Betting</h1>
       <img src="/images/Recension-bild.png" alt="Value Betting" className="hero-image" />
 
-      <p className="rating-note">
-        Mitt betyg på RebelBetting: <strong>4.8 / 5</strong> baserat på min egen
-        långsiktiga användning.
-      </p>
-
       <p>
         Jag har använt value betting i över två år och har konsekvent genererat
         vinster varje månad tack vare en långsiktig strategi och tydlig

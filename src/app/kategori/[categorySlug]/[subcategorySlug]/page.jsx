@@ -51,7 +51,7 @@ export default function SubcategoryPage({ params }) {
         {posts.map((post) => (
           <div className="taxonomy-card" key={post.slug}>
             <h4>
-              <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+              <Link href={`/blogg/${post.slug}`}>{post.title}</Link>
             </h4>
             <p className="taxonomy-meta">
               {new Date(post.date).toLocaleDateString('sv-SE')} – {post.excerpt}

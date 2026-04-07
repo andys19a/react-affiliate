@@ -135,7 +135,7 @@ export default function BlogPost({ params }) {
           <ul>
             {relatedPosts.map((related) => (
               <li key={related.slug}>
-                <Link href={`/blog/${related.slug}`}>
+                <Link href={`/blogg/${related.slug}`}>
                   {related.keywords?.[0] || related.title}
                 </Link>
               </li>
@@ -148,7 +148,7 @@ export default function BlogPost({ params }) {
           <ul>
             {popularPosts.map((popular) => (
               <li key={popular.slug}>
-                <Link href={`/blog/${popular.slug}`}>
+                <Link href={`/blogg/${popular.slug}`}>
                   {popular.keywords?.[0] || popular.title}
                 </Link>
               </li>
@@ -158,7 +158,7 @@ export default function BlogPost({ params }) {
       </section>
 
       <AffiliateButton />
-      <Link href="/blog" className="back-link">
+      <Link href="/blogg" className="back-link">
         ← Tillbaka till bloggen
       </Link>
     </div>
