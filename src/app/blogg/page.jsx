@@ -29,8 +29,34 @@ export const metadata = {
 export default function BlogPage() {
   const posts = getAllPosts()
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://www.profitplay.se/' },
+      { '@type': 'ListItem', position: 2, name: 'Blogg', item: 'https://www.profitplay.se/blogg' },
+    ],
+  }
+
+  const itemListLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Value betting guider',
+    url: 'https://www.profitplay.se/blogg',
+    itemListElement: posts.map((post, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://www.profitplay.se/blogg/${post.slug}`,
+      name: post.title,
+    })),
+  }
+
   return (
     <div className="blog-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbLd, itemListLd]) }}
+      />
       <Breadcrumbs items={[{ to: '/', label: 'Hem' }, { label: 'Blogg' }]} />
       <h1>Value betting guider</h1>
       <p className="intro">

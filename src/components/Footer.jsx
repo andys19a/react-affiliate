@@ -32,6 +32,7 @@ export default function Footer() {
             <li><Link href="/recension">Recension</Link></li>
             <li><Link href="/faq">FAQ</Link></li>
             <li><Link href="/contact">Kontakt</Link></li>
+            <li><Link href="/sitemap">Sitemap</Link></li>
           </ul>
         </div>
 

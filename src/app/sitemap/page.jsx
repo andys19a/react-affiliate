@@ -10,7 +10,7 @@ const staticPages = [
   { path: '/recension', label: 'Recension' },
   { path: '/faq', label: 'FAQ' },
   { path: '/contact', label: 'Kontakt' },
-  { path: '/blog', label: 'Blogg' },
+  { path: '/blogg', label: 'Blogg' },
   { path: '/kategori', label: 'Kategorier' },
 ]
 

@@ -69,7 +69,7 @@ export default function BlogPost({ params }) {
     '@type': 'Article',
     headline: post.title,
     description: post.meta_description,
-    image: post.image,
+    image: `https://www.profitplay.se${post.image}`,
     author: { '@type': 'Person', name: 'ProfitPlay' },
     datePublished,
     dateModified: new Date().toISOString(),
