@@ -57,7 +57,7 @@ export default function ResultsClient() {
         className={`results-image ${visible ? 'visible' : ''}`}
         ref={imageRef}
       >
-        <img src="/images/resultat.png" alt="Resultatgraf" />
+        <img src="/images/resultat.png" alt="Graf som visar verkliga value betting-resultat med stabil och ökande avkastning via RebelBetting" />
         <p className="caption">
           Exempel på mina resultat – stabil och ökande avkastning med hjälp av RebelBetting.
         </p>

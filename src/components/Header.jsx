@@ -6,7 +6,7 @@ export default function Header() {
     <header className="header">
       <nav className="nav">
         <Link href="/" className="logo-link">
-          <img src="/images/logo.png" alt="Logo" className="logo" />
+          <img src="/images/logo.png" alt="ProfitPlay – value betting guide och resultat" className="logo" />
         </Link>
 
         <ul className="nav-list">
