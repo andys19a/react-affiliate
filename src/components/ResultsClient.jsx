@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 import AffiliateBanner from '@/components/AffiliateBanner'
 
 export default function ResultsClient() {
@@ -57,7 +58,7 @@ export default function ResultsClient() {
         className={`results-image ${visible ? 'visible' : ''}`}
         ref={imageRef}
       >
-        <img src="/images/resultat.png" alt="Graf som visar verkliga value betting-resultat med stabil och ökande avkastning via RebelBetting" />
+        <Image src="/images/resultat.png" alt="Graf som visar verkliga value betting-resultat med stabil och ökande avkastning via RebelBetting" width={1200} height={630} style={{ width: '100%', height: 'auto' }} />
         <p className="caption">
           Exempel på mina resultat – stabil och ökande avkastning med hjälp av RebelBetting.
         </p>

@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { getPostBySlug, getAllSlugs, getRelatedPosts } from '@/lib/blogPosts'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import AffiliateButton from '@/components/AffiliateButton'
@@ -22,7 +23,13 @@ export async function generateMetadata({ params }) {
       type: 'article',
       publishedTime: post.date,
       url: `https://www.profitplay.se/blogg/${post.slug}`,
-      images: [{ url: post.image, width: 1200, height: 630 }],
+      images: [{ url: `https://www.profitplay.se${post.image}`, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${post.title} | ProfitPlay`,
+      description: post.meta_description,
+      images: [`https://www.profitplay.se${post.image}`],
     },
   }
 }
@@ -65,7 +72,7 @@ export default function BlogPost({ params }) {
     image: post.image,
     author: { '@type': 'Person', name: 'ProfitPlay' },
     datePublished,
-    dateModified: datePublished,
+    dateModified: new Date().toISOString(),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `https://profitplay.se/blogg/${post.slug}`,
@@ -110,7 +117,7 @@ export default function BlogPost({ params }) {
           { label: post.title },
         ]}
       />
-      <img src={post.image} alt={post.title} className="blog-post-thumb" />
+      <Image src={post.image} alt={post.title} className="blog-post-thumb" width={1200} height={630} priority style={{ width: '100%', height: 'auto' }} />
       <h1>{post.title}</h1>
       <p className="date">{new Date(post.date).toLocaleDateString('sv-SE')}</p>
 

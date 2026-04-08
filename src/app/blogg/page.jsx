@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { getAllPosts } from '@/lib/blogPosts'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import '@/css/Blog.css'
@@ -17,6 +18,12 @@ export const metadata = {
     type: 'website',
     images: [{ url: 'https://www.profitplay.se/images/Thumbnail.png', width: 1200, height: 630 }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Value betting guider – strategier, verktyg & resultat | ProfitPlay',
+    description: 'Alla guider om value betting samlade på ett ställe.',
+    images: ['https://www.profitplay.se/images/Thumbnail.png'],
+  },
 }
 
 export default function BlogPage() {
@@ -34,7 +41,7 @@ export default function BlogPage() {
       <div className="blog-list">
         {posts.map((post) => (
           <article key={post.id} className="blog-card">
-            <img src={post.image} className="blog-thumb" alt={post.title} loading="lazy" />
+            <Image src={post.image} className="blog-thumb" alt={post.title} width={600} height={340} />
             <div className="blog-content">
               <div className="blog-header">
                 <h2>{post.title}</h2>

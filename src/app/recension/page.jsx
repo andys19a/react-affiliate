@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import AffiliateButton from '@/components/AffiliateButton'
 import '@/css/Erfarenhet.css'
 
@@ -101,7 +102,13 @@ export const metadata = {
       'Jag delar min egen erfarenhet av value betting med RebelBetting – strategier, resultat och tips för att bygga stabil avkastning varje månad.',
     type: 'article',
     url: 'https://www.profitplay.se/recension',
-    images: [{ url: '/images/Recension-bild.png' }],
+    images: [{ url: 'https://www.profitplay.se/images/Recension-bild.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Recension av Value Betting – Min erfarenhet med RebelBetting',
+    description: 'Jag delar min erfarenhet av value betting med RebelBetting – strategier, resultat och tips.',
+    images: ['https://www.profitplay.se/images/Recension-bild.png'],
   },
 }
 
@@ -122,7 +129,7 @@ export default function RecensionPage() {
       />
 
       <h1>Recension av Value Betting</h1>
-      <img src="/images/Recension-bild.png" alt="Recension av RebelBetting – value betting verktyg för långsiktig avkastning" className="hero-image" />
+      <Image src="/images/Recension-bild.png" alt="Recension av RebelBetting – value betting verktyg för långsiktig avkastning" className="hero-image" width={1200} height={630} priority style={{ width: '100%', height: 'auto' }} />
 
       <p>
         Jag har använt value betting i över två år och har konsekvent genererat

@@ -6,9 +6,18 @@ import './globals.css'
 
 export const metadata = {
   metadataBase: new URL('https://www.profitplay.se'),
-  title: 'Lär dig att slå bettingmarknaden över tid med Valuebetting | ProfitPlay',
+  title: {
+    default: 'Value betting – slå spelbolagen med matematik | ProfitPlay',
+    template: '%s | ProfitPlay',
+  },
   description:
     'Lär dig value betting, bankroll management och hur du slår spelbolagen med matematik. Läs guider, recensioner och strategier från ProfitPlay.',
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Value betting – slå spelbolagen med matematik | ProfitPlay',
+    description: 'Lär dig value betting, bankroll management och hur du slår spelbolagen med matematik.',
+    images: ['https://www.profitplay.se/images/Thumbnail.png'],
+  },
 }
 
 export default function RootLayout({ children }) {

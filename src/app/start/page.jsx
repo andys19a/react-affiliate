@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import AffiliateButton from '@/components/AffiliateButton'
 import '@/css/Start.css'
 
@@ -13,7 +14,13 @@ export const metadata = {
       'Steg-för-steg-guide till value betting. Lär dig hur RebelBetting fungerar och börja slå spelbolagen med matematik och strategi.',
     type: 'article',
     url: 'https://www.profitplay.se/start',
-    images: [{ url: '/images/Hero-affiliate.png' }],
+    images: [{ url: 'https://www.profitplay.se/images/Hero-affiliate.png', width: 1280, height: 720 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Value betting: kom igång – steg-för-steg-guide 2025 | ProfitPlay',
+    description: 'Steg-för-steg-guide till value betting. Börja slå spelbolagen med matematik och strategi.',
+    images: ['https://www.profitplay.se/images/Hero-affiliate.png'],
   },
 }
 
@@ -55,10 +62,13 @@ export default function StartPage() {
             <p className="cta-note">Testa verktyget riskfritt och följ guiden steg för steg.</p>
           </div>
         </div>
-        <img
+        <Image
           src="/images/Hero-affiliate.png"
           alt="Illustration av value betting-guide med statistik och odds"
           className="hero-image"
+          width={1280}
+          height={720}
+          style={{ width: '100%', height: 'auto' }}
         />
       </div>
 

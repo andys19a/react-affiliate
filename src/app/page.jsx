@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import AffiliateBanner from '@/components/AffiliateBanner'
 import AffiliateButton from '@/components/AffiliateButton'
 import Table from '@/components/Tabel'
@@ -14,6 +15,13 @@ export const metadata = {
       'Lär dig value betting med matematik, sannolikhet och disciplin. Vi visar hur du använder RebelBetting för att växa hållbart.',
     url: 'https://www.profitplay.se',
     type: 'website',
+    images: [{ url: 'https://www.profitplay.se/images/Hero-affiliate.png', width: 1280, height: 720 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay',
+    description: 'Lär dig value betting med matematik, sannolikhet och disciplin.',
+    images: ['https://www.profitplay.se/images/Hero-affiliate.png'],
   },
 }
 
@@ -146,15 +154,13 @@ export default function HomePage() {
           Vi visar hur du använder RebelBetting och smart <em>bankroll management</em> för att växa hållbart.
         </p>
 
-        <img
+        <Image
           src="/images/Hero-affiliate.png"
           alt="Value betting – graf och mynt som symboliserar stabil avkastning"
           className="hero-image"
-          loading="eager"
-          decoding="async"
-          fetchpriority="high"
-          width="1280"
-          height="720"
+          priority
+          width={1280}
+          height={720}
         />
 
         <nav className="quick-links" aria-label="Snabblänkar">
