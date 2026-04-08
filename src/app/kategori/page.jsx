@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import '@/css/Categories.css'
 
 export const metadata = {
-  title: 'Kategorier – Value Betting guider | ProfitPlay',
+  title: { absolute: 'Kategorier – Value Betting guider | ProfitPlay' },
   description:
     'Utforska alla guider om value betting, verktyg och psykologi. Hitta rätt innehåll oavsett om du är nybörjare eller erfaren spelare.',
   openGraph: {

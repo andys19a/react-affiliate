@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
   const intro = subcategoryIntros[params.subcategorySlug]
   const description = intro || `Alla guider och artiklar inom ${posts[0].subcategory} på ProfitPlay.`
   return {
-    title: `${posts[0].subcategory} – ${posts[0].category} | ProfitPlay`,
+    title: { absolute: `${posts[0].subcategory} – ${posts[0].category} | ProfitPlay` },
     description,
     openGraph: {
       title: `${posts[0].subcategory} – ${posts[0].category} | ProfitPlay`,

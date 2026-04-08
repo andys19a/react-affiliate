@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
   const post = getPostBySlug(params.slug)
   if (!post) return { title: 'Sidan hittades inte' }
   return {
-    title: `${post.title} | ProfitPlay`,
+    title: { absolute: `${post.title} | ProfitPlay` },
     description: post.meta_description,
     keywords: post.keywords?.join(', '),
     openGraph: {

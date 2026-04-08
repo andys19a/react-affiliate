@@ -6,7 +6,7 @@ import Table from '@/components/Tabel'
 import '@/css/Home.css'
 
 export const metadata = {
-  title: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay',
+  title: { absolute: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay' },
   description:
     'Lär dig value betting med matematik, sannolikhet och disciplin. Vi visar hur du använder RebelBetting och smart bankroll management för att växa hållbart.',
   openGraph: {

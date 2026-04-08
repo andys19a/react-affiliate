@@ -3,7 +3,7 @@ import AffiliateButton from '@/components/AffiliateButton'
 import '@/css/Start.css'
 
 export const metadata = {
-  title: 'Value betting: kom igång – steg-för-steg-guide 2025 | ProfitPlay',
+  title: { absolute: 'Value betting: kom igång – steg-för-steg-guide 2025 | ProfitPlay' },
   description:
     'Lär dig value betting steg för steg med uppdaterad guide 2025. Följ checklistan, jämför verktyg och börja spela smartare redan idag.',
   keywords:

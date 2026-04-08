@@ -91,7 +91,7 @@ const productLd = {
 }
 
 export const metadata = {
-  title: 'Recension av Value Betting – Min erfarenhet med RebelBetting | ProfitPlay',
+  title: { absolute: 'Recension av Value Betting – Min erfarenhet med RebelBetting | ProfitPlay' },
   description:
     'Läs min personliga recension av value betting och RebelBetting. Jag berättar hur jag byggt stabil avkastning varje månad och vad som krävs för att lyckas långsiktigt.',
   keywords:

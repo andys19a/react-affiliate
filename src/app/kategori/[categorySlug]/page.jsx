@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
     ? intro.lead
     : `Utforska alla guider och artiklar inom ${posts[0].category} på ProfitPlay.`
   return {
-    title: `${posts[0].category} – guider & artiklar | ProfitPlay`,
+    title: { absolute: `${posts[0].category} – guider & artiklar | ProfitPlay` },
     description,
     openGraph: {
       title: `${posts[0].category} – guider & artiklar | ProfitPlay`,

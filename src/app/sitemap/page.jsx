@@ -15,7 +15,7 @@ const staticPages = [
 ]
 
 export const metadata = {
-  title: 'Sitemap – ProfitPlay',
+  title: { absolute: 'Sitemap – ProfitPlay' },
   description: 'Översikt över alla sidor, kategorier och artiklar på ProfitPlay.',
 }
 

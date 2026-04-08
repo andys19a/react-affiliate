@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import '@/css/Blog.css'
 
 export const metadata = {
-  title: 'Value betting guider – strategier, verktyg & resultat | ProfitPlay',
+  title: { absolute: 'Value betting guider – strategier, verktyg & resultat | ProfitPlay' },
   description:
     'Alla guider om value betting samlade på ett ställe. Lär dig EV, bankroll management, hur RebelBetting fungerar och hur du bygger en stabil sidoinkomst.',
   keywords:

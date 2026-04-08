@@ -2,7 +2,7 @@ import ResultsClient from '@/components/ResultsClient'
 import '@/css/Results.css'
 
 export const metadata = {
-  title: 'Resultat – Min value betting-resa med RebelBetting | ProfitPlay',
+  title: { absolute: 'Resultat – Min value betting-resa med RebelBetting | ProfitPlay' },
   description:
     'Se mina faktiska resultat från value betting. Stabil avkastning månad för månad med hjälp av RebelBetting, disciplin och bankroll management.',
   keywords:

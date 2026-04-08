@@ -1,8 +1,16 @@
 import Script from 'next/script'
+import { Poppins } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import '@/css/Layout.css'
 import './globals.css'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  display: 'swap',
+  variable: '--font-poppins',
+})
 
 export const metadata = {
   metadataBase: new URL('https://www.profitplay.se'),
@@ -26,7 +34,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="sv">
+    <html lang="sv" className={poppins.variable}>
       <body>
         <Script id="gtm" strategy="afterInteractive">{`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

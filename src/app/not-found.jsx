@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Sidan hittades inte – ProfitPlay',
+  title: { absolute: 'Sidan hittades inte – ProfitPlay' },
   description: 'Sidan du söker finns inte. Gå tillbaka till startsidan eller bläddra bland våra guider om value betting.',
 }
 
