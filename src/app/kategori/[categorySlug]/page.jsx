@@ -64,9 +64,9 @@ export default function CategoryPage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://profitplay.se/' },
-      { '@type': 'ListItem', position: 2, name: 'Kategorier', item: 'https://profitplay.se/kategori' },
-      { '@type': 'ListItem', position: 3, name: category.name, item: `https://profitplay.se/kategori/${category.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://www.profitplay.se/' },
+      { '@type': 'ListItem', position: 2, name: 'Kategorier', item: 'https://www.profitplay.se/kategori' },
+      { '@type': 'ListItem', position: 3, name: category.name, item: `https://www.profitplay.se/kategori/${category.slug}` },
     ],
   }
 

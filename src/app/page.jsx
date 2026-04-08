@@ -93,7 +93,7 @@ const productLd = {
   name: 'RebelBetting',
   description:
     'Jämförelse av RebelBettings olika planer med fokus på value betting och felsatta odds.',
-  image: 'https://profitplay.se/images/Hero-affiliate.png',
+  image: 'https://www.profitplay.se/images/Hero-affiliate.png',
   brand: { '@type': 'Brand', name: 'RebelBetting' },
   aggregateRating: {
     '@type': 'AggregateRating',
@@ -123,7 +123,7 @@ const productLd = {
     priceCurrency: offer.currency,
     price: offer.price,
     availability: 'https://schema.org/InStock',
-    url: 'https://profitplay.se/',
+    url: 'https://www.profitplay.se/',
   })),
 }
 

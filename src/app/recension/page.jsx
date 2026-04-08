@@ -6,8 +6,8 @@ const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://profitplay.se/' },
-    { '@type': 'ListItem', position: 2, name: 'Recension av RebelBetting', item: 'https://profitplay.se/recension' },
+    { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://www.profitplay.se/' },
+    { '@type': 'ListItem', position: 2, name: 'Recension av RebelBetting', item: 'https://www.profitplay.se/recension' },
   ],
 }
 
@@ -56,7 +56,7 @@ const productLd = {
   name: 'RebelBetting',
   description:
     'Recension av RebelBetting med fokus på value betting, strategi och långsiktiga resultat.',
-  image: 'https://profitplay.se/images/Recension-bild.png',
+  image: 'https://www.profitplay.se/images/Recension-bild.png',
   brand: { '@type': 'Brand', name: 'RebelBetting' },
   review: {
     '@type': 'Review',
@@ -86,7 +86,7 @@ const productLd = {
     priceCurrency: offer.currency,
     price: offer.price,
     availability: 'https://schema.org/InStock',
-    url: 'https://profitplay.se/recension',
+    url: 'https://www.profitplay.se/recension',
   })),
 }
 

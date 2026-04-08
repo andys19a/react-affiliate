@@ -28,8 +28,8 @@ const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://profitplay.se/' },
-    { '@type': 'ListItem', position: 2, name: 'Kom igång med value betting', item: 'https://profitplay.se/start' },
+    { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://www.profitplay.se/' },
+    { '@type': 'ListItem', position: 2, name: 'Kom igång med value betting', item: 'https://www.profitplay.se/start' },
   ],
 }
 

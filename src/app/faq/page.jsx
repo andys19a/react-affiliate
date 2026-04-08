@@ -6,14 +6,27 @@ export const metadata = {
   description:
     'Vanliga frågor om value betting, bankroll management, limiteringar och hur ProfitPlay arbetar med strategier.',
   keywords: 'value betting FAQ, vanliga frågor betting, RebelBetting frågor, bankroll frågor',
+  openGraph: {
+    title: 'Vanliga frågor om value betting – ProfitPlay',
+    description: 'Vanliga frågor om value betting, bankroll management, limiteringar och hur ProfitPlay arbetar med strategier.',
+    type: 'website',
+    url: 'https://www.profitplay.se/faq',
+    images: [{ url: 'https://www.profitplay.se/images/Thumbnail.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vanliga frågor om value betting – ProfitPlay',
+    description: 'Vanliga frågor om value betting, bankroll management, limiteringar och hur ProfitPlay arbetar med strategier.',
+    images: ['https://www.profitplay.se/images/Thumbnail.png'],
+  },
 }
 
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://profitplay.se/' },
-    { '@type': 'ListItem', position: 2, name: 'Vanliga frågor (FAQ)', item: 'https://profitplay.se/faq' },
+    { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://www.profitplay.se/' },
+    { '@type': 'ListItem', position: 2, name: 'Vanliga frågor (FAQ)', item: 'https://www.profitplay.se/faq' },
   ],
 }
 

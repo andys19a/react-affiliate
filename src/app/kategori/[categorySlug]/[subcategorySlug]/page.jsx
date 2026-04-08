@@ -53,10 +53,10 @@ export default function SubcategoryPage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://profitplay.se/' },
-      { '@type': 'ListItem', position: 2, name: 'Kategorier', item: 'https://profitplay.se/kategori' },
-      { '@type': 'ListItem', position: 3, name: categoryName, item: `https://profitplay.se/kategori/${params.categorySlug}` },
-      { '@type': 'ListItem', position: 4, name: subcategoryName, item: `https://profitplay.se/kategori/${params.categorySlug}/${params.subcategorySlug}` },
+      { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://www.profitplay.se/' },
+      { '@type': 'ListItem', position: 2, name: 'Kategorier', item: 'https://www.profitplay.se/kategori' },
+      { '@type': 'ListItem', position: 3, name: categoryName, item: `https://www.profitplay.se/kategori/${params.categorySlug}` },
+      { '@type': 'ListItem', position: 4, name: subcategoryName, item: `https://www.profitplay.se/kategori/${params.categorySlug}/${params.subcategorySlug}` },
     ],
   }
 

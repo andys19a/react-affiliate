@@ -25,6 +25,7 @@ export default function Footer() {
           <h3>Länkar</h3>
           <ul>
             <li><Link href="/">Hem</Link></li>
+            <li><Link href="/kategori">Kategorier</Link></li>
             <li><Link href="/results">Resultat</Link></li>
             <li><Link href="/blogg">Blogg</Link></li>
             <li><Link href="/start">Kom igång</Link></li>
