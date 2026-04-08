@@ -1,6 +1,3 @@
-'use client'
-
-import { useState } from 'react'
 import AffiliateButton from '@/components/AffiliateButton'
 
 const faqs = [
@@ -31,13 +28,9 @@ const faqs = [
   },
 ]
 
+export { faqs }
+
 export default function FaqClient() {
-  const [activeIndex, setActiveIndex] = useState(null)
-
-  const toggleFaq = (index) => {
-    setActiveIndex(activeIndex === index ? null : index)
-  }
-
   return (
     <div className="faq-page">
       <h1>Vanliga frågor</h1>
@@ -48,23 +41,15 @@ export default function FaqClient() {
 
       <div className="faq-list">
         {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className={`faq-item ${activeIndex === index ? 'active' : ''}`}
-            onClick={() => toggleFaq(index)}
-          >
-            <div className="faq-question">
+          <details key={index} className="faq-item">
+            <summary className="faq-question">
               <h2>{faq.question}</h2>
-              <span className="toggle-icon">
-                {activeIndex === index ? '−' : '+'}
-              </span>
+              <span className="toggle-icon">+</span>
+            </summary>
+            <div className="faq-answer">
+              <p>{faq.answer}</p>
             </div>
-            {activeIndex === index && (
-              <div className="faq-answer">
-                <p>{faq.answer}</p>
-              </div>
-            )}
-          </div>
+          </details>
         ))}
 
         <AffiliateButton />

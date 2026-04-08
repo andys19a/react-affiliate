@@ -12,6 +12,10 @@ export const metadata = {
   },
   description:
     'Lär dig value betting, bankroll management och hur du slår spelbolagen med matematik. Läs guider, recensioner och strategier från ProfitPlay.',
+  openGraph: {
+    siteName: 'ProfitPlay',
+    locale: 'sv_SE',
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Value betting – slå spelbolagen med matematik | ProfitPlay',

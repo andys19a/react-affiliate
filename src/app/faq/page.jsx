@@ -1,4 +1,4 @@
-import FaqClient from '@/components/FaqClient'
+import FaqClient, { faqs } from '@/components/FaqClient'
 import '@/css/Faq.css'
 
 export const metadata = {
@@ -21,6 +21,16 @@ export const metadata = {
   },
 }
 
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+}
+
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -35,7 +45,7 @@ export default function FaqPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([faqLd, breadcrumbLd]) }}
       />
       <FaqClient />
     </>

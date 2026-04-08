@@ -70,7 +70,13 @@ export default function BlogPost({ params }) {
     headline: post.title,
     description: post.meta_description,
     image: `https://www.profitplay.se${post.image}`,
-    author: { '@type': 'Person', name: 'ProfitPlay' },
+    author: { '@type': 'Organization', name: 'ProfitPlay', url: 'https://www.profitplay.se' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'ProfitPlay',
+      url: 'https://www.profitplay.se',
+      logo: { '@type': 'ImageObject', url: 'https://www.profitplay.se/images/logo.png' },
+    },
     datePublished,
     dateModified: new Date().toISOString(),
     mainEntityOfPage: {
