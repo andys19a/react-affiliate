@@ -68,8 +68,20 @@ export default function BlogPost({ params }) {
     dateModified: datePublished,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://profitplay.se/blog/${post.slug}`,
+      '@id': `https://profitplay.se/blogg/${post.slug}`,
     },
+  }
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://profitplay.se/' },
+      { '@type': 'ListItem', position: 2, name: 'Kategorier', item: 'https://profitplay.se/kategori' },
+      { '@type': 'ListItem', position: 3, name: post.category, item: `https://profitplay.se/kategori/${post.categorySlug}` },
+      { '@type': 'ListItem', position: 4, name: post.subcategory, item: `https://profitplay.se/kategori/${post.categorySlug}/${post.subcategorySlug}` },
+      { '@type': 'ListItem', position: 5, name: post.title, item: `https://profitplay.se/blogg/${post.slug}` },
+    ],
   }
 
   const faqLd = {
@@ -86,7 +98,7 @@ export default function BlogPost({ params }) {
     <div className="blog-page blog-post">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleLd, faqLd]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleLd, faqLd, breadcrumbLd]) }}
       />
 
       <Breadcrumbs

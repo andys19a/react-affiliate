@@ -31,8 +31,23 @@ export default function SubcategoryPage({ params }) {
   const categoryName = posts[0].category
   const subcategoryName = posts[0].subcategory
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://profitplay.se/' },
+      { '@type': 'ListItem', position: 2, name: 'Kategorier', item: 'https://profitplay.se/kategori' },
+      { '@type': 'ListItem', position: 3, name: categoryName, item: `https://profitplay.se/kategori/${params.categorySlug}` },
+      { '@type': 'ListItem', position: 4, name: subcategoryName, item: `https://profitplay.se/kategori/${params.categorySlug}/${params.subcategorySlug}` },
+    ],
+  }
+
   return (
     <div className="articles-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <Breadcrumbs
         items={[
           { to: '/', label: 'Hem' },

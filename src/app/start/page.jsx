@@ -17,9 +17,22 @@ export const metadata = {
   },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://profitplay.se/' },
+    { '@type': 'ListItem', position: 2, name: 'Kom igång med value betting', item: 'https://profitplay.se/start' },
+  ],
+}
+
 export default function StartPage() {
   return (
     <div className="Start">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <div className="page-meta">
         <span className="badge">Uppdaterad: februari 2025</span>
         <p className="lede">

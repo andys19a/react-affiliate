@@ -17,6 +17,23 @@ export const metadata = {
   },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://profitplay.se/' },
+    { '@type': 'ListItem', position: 2, name: 'Mina resultat', item: 'https://profitplay.se/results' },
+  ],
+}
+
 export default function ResultsPage() {
-  return <ResultsClient />
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <ResultsClient />
+    </>
+  )
 }

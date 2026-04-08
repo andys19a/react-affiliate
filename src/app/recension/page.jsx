@@ -1,6 +1,15 @@
 import AffiliateButton from '@/components/AffiliateButton'
 import '@/css/Erfarenhet.css'
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hem', item: 'https://profitplay.se/' },
+    { '@type': 'ListItem', position: 2, name: 'Recension av RebelBetting', item: 'https://profitplay.se/recension' },
+  ],
+}
+
 const faqLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -106,6 +115,10 @@ export default function RecensionPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
 
       <h1>Recension av Value Betting</h1>
