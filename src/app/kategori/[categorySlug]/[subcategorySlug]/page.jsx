@@ -28,9 +28,17 @@ export async function generateMetadata({ params }) {
   const posts = getPostsBySubcategorySlug(params.categorySlug, params.subcategorySlug)
   if (posts.length === 0) return { title: 'Underkategori hittades inte' }
   const intro = subcategoryIntros[params.subcategorySlug]
+  const description = intro || `Alla guider och artiklar inom ${posts[0].subcategory} på ProfitPlay.`
   return {
     title: `${posts[0].subcategory} – ${posts[0].category} | ProfitPlay`,
-    description: intro || `Alla guider och artiklar inom ${posts[0].subcategory} på ProfitPlay.`,
+    description,
+    openGraph: {
+      title: `${posts[0].subcategory} – ${posts[0].category} | ProfitPlay`,
+      description,
+      url: `https://www.profitplay.se/kategori/${params.categorySlug}/${params.subcategorySlug}`,
+      type: 'website',
+      images: [{ url: 'https://www.profitplay.se/images/Thumbnail.png', width: 1200, height: 630 }],
+    },
   }
 }
 

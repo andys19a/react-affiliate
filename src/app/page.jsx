@@ -17,6 +17,29 @@ export const metadata = {
   },
 }
 
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'ProfitPlay',
+  url: 'https://www.profitplay.se',
+  description: 'Guider och strategier för value betting – lär dig slå spelbolagen med matematik och disciplin.',
+  inLanguage: 'sv-SE',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://www.profitplay.se/blogg?q={search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
+}
+
+const organizationLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'ProfitPlay',
+  url: 'https://www.profitplay.se',
+  logo: 'https://www.profitplay.se/images/logo.png',
+  sameAs: [],
+}
+
 const faqLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -99,6 +122,14 @@ const productLd = {
 export default function HomePage() {
   return (
     <div className="home-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}

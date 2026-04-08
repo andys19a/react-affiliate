@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
       description: post.meta_description,
       type: 'article',
       publishedTime: post.date,
-      url: `https://www.profitplay.se/blog/${post.slug}`,
+      url: `https://www.profitplay.se/blogg/${post.slug}`,
       images: [{ url: post.image, width: 1200, height: 630 }],
     },
   }

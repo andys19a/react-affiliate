@@ -27,9 +27,9 @@ export default function BlogListClient({ posts }) {
   return (
     <div className="blog-page">
       <Breadcrumbs items={[{ to: '/', label: 'Hem' }, { label: 'Blogg' }]} />
-      <h1>Om Value Betting</h1>
+      <h1>Value betting guider</h1>
       <p className="intro">
-        Lär dig grunderna och strategin inom value betting – Få en fördel mot
+        Lär dig grunderna och strategin inom value betting – få en fördel mot
         spelbolagen genom att utnyttja deras felaktiga odds.
       </p>
 

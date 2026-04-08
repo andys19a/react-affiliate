@@ -7,6 +7,13 @@ export const metadata = {
   title: 'Kategorier – Value Betting guider | ProfitPlay',
   description:
     'Utforska alla guider om value betting, verktyg och psykologi. Hitta rätt innehåll oavsett om du är nybörjare eller erfaren spelare.',
+  openGraph: {
+    title: 'Kategorier – Value Betting guider | ProfitPlay',
+    description: 'Utforska alla guider om value betting, verktyg och psykologi på ProfitPlay.',
+    url: 'https://www.profitplay.se/kategori',
+    type: 'website',
+    images: [{ url: 'https://www.profitplay.se/images/Thumbnail.png', width: 1200, height: 630 }],
+  },
 }
 
 const categoryDescriptions = {
