@@ -15,12 +15,22 @@ export async function generateStaticParams() {
   return params
 }
 
+const subcategoryIntros = {
+  'grunder': 'Förstå grunderna i value betting – vad EV (Expected Value) är, hur oddsvärde fungerar och varför den här strategin slår spelbolagen på lång sikt. Det här är startpunkten för alla som vill lära sig value betting på riktigt.',
+  'strategier': 'Från bankroll management och insatsstrategi till långsiktiga planer och dagliga rutiner. Det är strategin och disciplinen – inte enskilda spel – som avgör om du lyckas med value betting.',
+  'resultat': 'Hur mycket kan du faktiskt tjäna på value betting? Här går vi igenom realistiska siffror, ROI-förväntningar och vad som krävs för att bygga en stabil sidoinkomst med rätt strategi.',
+  'rebelbetting': 'RebelBetting är ett av marknadens mest populära verktyg för value betting. Här hittar du allt om hur verktyget fungerar, hur du ställer in det och hur du maximerar din avkastning – oavsett om du är nybörjare eller erfaren.',
+  'mentalt-spel': 'Psykologi, varians och förmågan att hålla sig till strategin när det svänger – det mentala spelet är det som oftast avgör om en value bettor lyckas eller misslyckas. Här utforskar vi hur du bygger rätt mindset.',
+  'kontohantering': 'Praktiska råd om hur du hanterar dina spelbolagskonton smart. Hur du undviker limitering, fördelar din volym och håller fler konton aktiva längre – allt för att maximera din totala kapacitet.',
+}
+
 export async function generateMetadata({ params }) {
   const posts = getPostsBySubcategorySlug(params.categorySlug, params.subcategorySlug)
   if (posts.length === 0) return { title: 'Underkategori hittades inte' }
+  const intro = subcategoryIntros[params.subcategorySlug]
   return {
     title: `${posts[0].subcategory} – ${posts[0].category} | ProfitPlay`,
-    description: `Alla guider och artiklar inom ${posts[0].subcategory} på ProfitPlay.`,
+    description: intro || `Alla guider och artiklar inom ${posts[0].subcategory} på ProfitPlay.`,
   }
 }
 
@@ -57,10 +67,13 @@ export default function SubcategoryPage({ params }) {
         ]}
       />
       <h1>{subcategoryName}</h1>
-      <p className="intro">
-        Alla guider och artiklar inom {subcategoryName}. Välj en rubrik för att
-        läsa mer.
-      </p>
+      {subcategoryIntros[params.subcategorySlug] ? (
+        <p className="intro">{subcategoryIntros[params.subcategorySlug]}</p>
+      ) : (
+        <p className="intro">
+          Alla guider och artiklar inom {subcategoryName}. Välj en rubrik för att läsa mer.
+        </p>
+      )}
 
       <div className="taxonomy-grid">
         {posts.map((post) => (
@@ -68,8 +81,9 @@ export default function SubcategoryPage({ params }) {
             <h4>
               <Link href={`/blogg/${post.slug}`}>{post.title}</Link>
             </h4>
+            <p className="taxonomy-excerpt">{post.excerpt}</p>
             <p className="taxonomy-meta">
-              {new Date(post.date).toLocaleDateString('sv-SE')} – {post.excerpt}
+              {new Date(post.date).toLocaleDateString('sv-SE')}
             </p>
           </div>
         ))}
