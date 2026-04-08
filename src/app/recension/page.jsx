@@ -1,6 +1,45 @@
 import AffiliateButton from '@/components/AffiliateButton'
 import '@/css/Erfarenhet.css'
 
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Är RebelBetting gratis att prova?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ja, RebelBetting erbjuder en gratis provperiod där du kan testa verktyget och placera riktiga value bets utan att betala något. Det är ett bra sätt att se om tjänsten passar dig innan du väljer en betalplan.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hur lång tid tar det per dag att använda RebelBetting?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Med RebelBetting tar det vanligtvis 15–30 minuter per dag. Verktyget gör analysen automatiskt och presenterar färdiga value bets – du behöver bara granska listan och placera spelen hos relevanta spelbolag.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Riskerar jag att bli limiterad om jag använder RebelBetting?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Det finns alltid en risk att spelbolag begränsar vinnande spelare. Genom att sprida spel på många spelbolag, variera insatsstorlekar och inte enbart spela på felprissatta odds kan du förlänga livslängden på dina konton markant.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Fungerar RebelBetting för nybörjare inom value betting?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ja, RebelBetting är designat för att vara enkelt att komma igång med. Du anger din bankrulle och risknivå, och verktyget visar direkt vilka spel du bör placera och med vilken insatsstorlek. Grundläggande förståelse för value betting och EV rekommenderas dock innan du börjar.',
+      },
+    },
+  ],
+}
+
 const productLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
@@ -64,6 +103,10 @@ export default function RecensionPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
 
       <h1>Recension av Value Betting</h1>
       <img src="/images/Recension-bild.png" alt="Recension av RebelBetting – value betting verktyg för långsiktig avkastning" className="hero-image" />
@@ -106,6 +149,26 @@ export default function RecensionPage() {
           Dock har det varit rebelbetting jag använt för att göra majoriteten av mina bets. Varit super smidigt att använda, noll bluff och jätte duktig support om det behövs. Använd dels för tekniska frågor men även bara att bolla ideér med.
         </li>
       </ul>
+
+      <section className="faq-recension">
+        <h2>Vanliga frågor om RebelBetting</h2>
+        <details>
+          <summary>Är RebelBetting gratis att prova?</summary>
+          <p>Ja, RebelBetting erbjuder en gratis provperiod där du kan testa verktyget och placera riktiga value bets utan att betala något. Det är ett bra sätt att se om tjänsten passar dig innan du väljer en betalplan.</p>
+        </details>
+        <details>
+          <summary>Hur lång tid tar det per dag att använda RebelBetting?</summary>
+          <p>Med RebelBetting tar det vanligtvis 15–30 minuter per dag. Verktyget gör analysen automatiskt och presenterar färdiga value bets – du behöver bara granska listan och placera spelen hos relevanta spelbolag.</p>
+        </details>
+        <details>
+          <summary>Riskerar jag att bli limiterad om jag använder RebelBetting?</summary>
+          <p>Det finns alltid en risk att spelbolag begränsar vinnande spelare. Genom att sprida spel på många spelbolag, variera insatsstorlekar och inte enbart spela på felprissatta odds kan du förlänga livslängden på dina konton markant.</p>
+        </details>
+        <details>
+          <summary>Fungerar RebelBetting för nybörjare inom value betting?</summary>
+          <p>Ja, RebelBetting är designat för att vara enkelt att komma igång med. Du anger din bankrulle och risknivå, och verktyget visar direkt vilka spel du bör placera och med vilken insatsstorlek. Grundläggande förståelse för value betting och EV rekommenderas dock innan du börjar.</p>
+        </details>
+      </section>
 
       <div className="summary-box">
         <p>

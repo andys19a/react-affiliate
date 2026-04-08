@@ -17,6 +17,45 @@ export const metadata = {
   },
 }
 
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Är value betting lagligt?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ja, value betting är en laglig metod. Du spelar på vanliga licensierade spelbolag men med en matematisk strategi som identifierar felprissatta odds. Följ alltid lokala regler och ansvarsfullt spelande.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hur stor bankrulle behöver jag för att börja med value betting?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Det beror på dina mål och risknivå. En bra tumregel är att bankrullen bör vara minst 50 gånger din typiska insatsstorlek. Med 1–3 % per spel och en bankrulle på 5 000–10 000 kr kan du komma igång på ett tryggt sätt.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Kan jag börja med value betting som helt ny?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Absolut. Du behöver inte kunna avancerad statistik – verktyg som RebelBetting gör analysen åt dig. Börja med att lära dig grunderna om value betting och EV, sätt en bankrulle och följ rekommendationerna steg för steg.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Vad är skillnaden mellan value betting och vanlig betting?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Vanlig betting bygger på känsla och gissningar om vem som vinner. Value betting bygger på matematik – du spelar bara när oddset är högre än den verkliga sannolikheten antyder, vilket ger ett positivt förväntad avkastning (EV) på lång sikt.',
+      },
+    },
+  ],
+}
+
 const productLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
@@ -63,6 +102,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
 
       <section className="intro">
