@@ -149,7 +149,7 @@ export default function BlogPost({ params }) {
             {relatedPosts.map((related) => (
               <li key={related.slug}>
                 <Link href={`/blogg/${related.slug}`}>
-                  {related.keywords?.[0] || related.title}
+                  {related.title}
                 </Link>
               </li>
             ))}
