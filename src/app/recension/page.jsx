@@ -60,7 +60,7 @@ const productLd = {
   brand: { '@type': 'Brand', name: 'RebelBetting' },
   review: {
     '@type': 'Review',
-    author: { '@type': 'Person', name: 'ProfitPlay' },
+    author: { '@type': 'Organization', name: 'ProfitPlay', url: 'https://www.profitplay.se' },
     datePublished: '2024-01-15',
     reviewBody:
       'Detaljerad recension av hur RebelBetting fungerar i praktiken, med tips om strategi, risk och verktyg.',

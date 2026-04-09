@@ -65,9 +65,9 @@ export default function BlogPage() {
       </p>
 
       <div className="blog-list">
-        {posts.map((post) => (
+        {posts.map((post, i) => (
           <article key={post.id} className="blog-card">
-            <Image src={post.image} className="blog-thumb" alt={post.title} width={600} height={340} />
+            <Image src={post.image} className="blog-thumb" alt={post.title} width={600} height={340} priority={i === 0} />
             <div className="blog-content">
               <div className="blog-header">
                 <h2>{post.title}</h2>

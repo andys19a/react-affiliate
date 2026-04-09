@@ -24,6 +24,73 @@ export const metadata = {
   },
 }
 
+const howToLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Kom igång med value betting – steg för steg',
+  description: 'Lär dig value betting steg för steg med uppdaterad guide 2025. Följ checklistan och börja spela smartare redan idag.',
+  totalTime: 'PT30M',
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Välj plattform och konto',
+      text: 'RebelBetting är nybörjarvänligt och visar var värdet finns i realtid. Skapa ett konto och starta din gratis provperiod.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Ställ in bankrullen',
+      text: 'Avsätt en separat kassa och riskera högst 1–2 % per spel för stabil tillväxt utan att ta onödig risk.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Analysera oddsen',
+      text: 'Följ rekommendationerna i verktyget och sortera på sporter där du har bäst ROI. Fokusera på spel med positiv EV.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Placera och logga spelen',
+      text: 'Sikta på volym – 500+ spel ger en pålitlig ROI och jämnare kurva. Logga varje spel för att spåra din utveckling.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Utvärdera varje vecka',
+      text: 'Tweaka insatsnivå och marknader, men håll dig till planen för att undvika tilt. Disciplin är nyckeln till långsiktigt resultat.',
+    },
+  ],
+}
+
+const startFaqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Hur mycket kapital behöver jag för value betting?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Börja med en separat kassa på minst 3 000–5 000 kr så att 1–2 % per spel ger rimliga insatser. Lägg aldrig in pengar du inte kan vara utan.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hur snabbt kan jag se resultat med value betting?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Förvänta dig inte snabba vinster. Sikta på 500–1 000 spel för att jämna ut variansen och se den sanna ROI:n. Det tar oftast 4–8 veckor.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Vilka sporter fungerar bäst för value betting?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Fotboll och tennis har hög volym och ofta felprissatta odds. Börja där och filtrera bort sporter där din ROI ligger under målet.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hur undviker jag att bli limiterad av spelbolag?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Variera insatsstorlek något, spela på flera marknader och fördela dina spel över flera spelbolag. Bygg en rutin så att du inte sticker ut med identiska belopp varje gång.' },
+    },
+  ],
+}
+
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -38,7 +105,7 @@ export default function StartPage() {
     <div className="Start">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([howToLd, startFaqLd, breadcrumbLd]) }}
       />
       <div className="page-meta">
         <span className="badge">Uppdaterad: februari 2025</span>
