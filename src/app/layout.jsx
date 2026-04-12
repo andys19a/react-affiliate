@@ -15,19 +15,19 @@ const poppins = Poppins({
 export const metadata = {
   metadataBase: new URL('https://www.profitplay.se'),
   title: {
-    default: 'Value betting – slå spelbolagen med matematik | ProfitPlay',
+    default: 'Value betting – sidoinkomst & extra pengar | ProfitPlay',
     template: '%s | ProfitPlay',
   },
   description:
-    'Lär dig value betting, bankroll management och hur du slår spelbolagen med matematik. Läs guider, recensioner och strategier från ProfitPlay.',
+    'Lär dig value betting som sidoinkomst – matematik, bankroll management och RebelBetting. Tjäna extra pengar på 2–4 timmar per vecka.',
   openGraph: {
     siteName: 'ProfitPlay',
     locale: 'sv_SE',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Value betting – slå spelbolagen med matematik | ProfitPlay',
-    description: 'Lär dig value betting, bankroll management och hur du slår spelbolagen med matematik.',
+    title: 'Value betting – sidoinkomst & extra pengar | ProfitPlay',
+    description: 'Lär dig value betting som sidoinkomst. Tjäna extra pengar med matematik och RebelBetting.',
     images: ['https://www.profitplay.se/images/Thumbnail.png'],
   },
 }

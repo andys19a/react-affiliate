@@ -6,21 +6,21 @@ import Table from '@/components/Tabel'
 import '@/css/Home.css'
 
 export const metadata = {
-  title: { absolute: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay' },
+  title: { absolute: 'Value betting – sidoinkomst & extra pengar | ProfitPlay' },
   description:
-    'Lär dig value betting med matematik, sannolikhet och disciplin. Vi visar hur du använder RebelBetting och smart bankroll management för att växa hållbart.',
+    'Tjäna extra pengar med value betting – en matematikbaserad sidoinkomst du bygger med 2–4 timmar per vecka. Guide, strategi och RebelBetting-recension.',
   openGraph: {
-    title: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay',
+    title: 'Value betting – sidoinkomst & extra pengar | ProfitPlay',
     description:
-      'Lär dig value betting med matematik, sannolikhet och disciplin. Vi visar hur du använder RebelBetting för att växa hållbart.',
+      'Tjäna extra pengar med value betting. Matematikbaserad sidoinkomst med 2–4 timmar per vecka och RebelBetting.',
     url: 'https://www.profitplay.se',
     type: 'website',
     images: [{ url: 'https://www.profitplay.se/images/Hero-affiliate.png', width: 1280, height: 720 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay',
-    description: 'Lär dig value betting med matematik, sannolikhet och disciplin.',
+    title: 'Value betting – sidoinkomst & extra pengar | ProfitPlay',
+    description: 'Tjäna extra pengar med value betting. Matematikbaserad sidoinkomst med 2–4 timmar per vecka.',
     images: ['https://www.profitplay.se/images/Hero-affiliate.png'],
   },
 }
