@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2417"/>
+    </linearGradient>
+    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glowRight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.07"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowRight)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="157" x2="1200" y2="157" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="315" x2="1200" y2="315" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="472" x2="1200" y2="472" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="630" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="630" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="900" y1="0" x2="900" y2="630" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Chart background fill -->
+  <polygon points="580,530 660,475 740,490 820,405 900,345 975,240 1050,170 1130,100 1200,60 1200,590 580,590" fill="url(#chartFill)"/>
+
+  <!-- Chart line -->
+  <polyline points="580,530 660,475 740,490 820,405 900,345 975,240 1050,170 1130,100 1200,60" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Chart dots -->
+  <circle cx="580" cy="530" r="5" fill="#22c55e" opacity="0.8"/>
+  <circle cx="660" cy="475" r="5" fill="#22c55e" opacity="0.8"/>
+  <circle cx="740" cy="490" r="4" fill="#22c55e" opacity="0.8"/>
+  <circle cx="820" cy="405" r="5" fill="#22c55e" opacity="0.8"/>
+  <circle cx="900" cy="345" r="5" fill="#22c55e" opacity="0.8"/>
+  <circle cx="975" cy="240" r="5" fill="#22c55e" opacity="0.8"/>
+  <circle cx="1050" cy="170" r="5" fill="#22c55e" opacity="0.9"/>
+  <circle cx="1130" cy="100" r="6" fill="#22c55e"/>
+  <circle cx="1200" cy="60" r="6" fill="#22c55e"/>
+
+  <!-- Top glow at chart peak -->
+  <circle cx="1130" cy="100" r="40" fill="#22c55e" fill-opacity="0.08"/>
+
+  <!-- Decorative ring -->
+  <circle cx="1100" cy="560" r="180" fill="none" stroke="#22c55e" stroke-opacity="0.05" stroke-width="1.5"/>
+  <circle cx="1100" cy="560" r="140" fill="none" stroke="#22c55e" stroke-opacity="0.07" stroke-width="1"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="85" width="5" height="200" fill="#22c55e" rx="2.5" opacity="0.9"/>
+
+  <!-- "RebelBetting" badge pill -->
+  <rect x="80" y="90" width="230" height="38" rx="19" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.7"/>
+  <text x="195" y="114" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#22c55e" text-anchor="middle" letter-spacing="1">REBELBETTING GUIDE 2025</text>
+
+  <!-- Main headline line 1 -->
+  <text x="78" y="210" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="-1">Tjäna pengar</text>
+
+  <!-- Main headline line 2 -->
+  <text x="78" y="295" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="-1">med <tspan fill="#22c55e">RebelBetting</tspan></text>
+
+  <!-- Subheadline -->
+  <text x="80" y="350" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">Hur mycket kan du egentligen tjäna? Steg-för-steg guide.</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="380" x2="560" y2="380" stroke="#22c55e" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Stats box 1: ROI -->
+  <rect x="80" y="400" width="148" height="88" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#22c55e" stroke-opacity="0.25" stroke-width="1.5"/>
+  <text x="154" y="440" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#22c55e" text-anchor="middle">3–7%</text>
+  <text x="154" y="468" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">genomsnittlig ROI</text>
+
+  <!-- Stats box 2: Free trial -->
+  <rect x="242" y="400" width="148" height="88" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#22c55e" stroke-opacity="0.25" stroke-width="1.5"/>
+  <text x="316" y="440" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#22c55e" text-anchor="middle">Gratis</text>
+  <text x="316" y="468" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">provperiod</text>
+
+  <!-- Stats box 3: Time -->
+  <rect x="404" y="400" width="148" height="88" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#22c55e" stroke-opacity="0.25" stroke-width="1.5"/>
+  <text x="478" y="440" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#22c55e" text-anchor="middle">30 min</text>
+  <text x="478" y="468" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">per dag</text>
+
+  <!-- Skattefri badge -->
+  <rect x="80" y="508" width="170" height="32" rx="8" fill="#22c55e" fill-opacity="0.12" stroke="#22c55e" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="165" y="529" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#22c55e" text-anchor="middle">✓ Skattefria vinster</text>
+
+  <!-- Bottom branding -->
+  <text x="80" y="600" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#22c55e" opacity="0.7">profitplay.se</text>
+</svg>
