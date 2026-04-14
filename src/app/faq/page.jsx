@@ -2,9 +2,9 @@ import FaqClient, { faqs } from '@/components/FaqClient'
 import '@/css/Faq.css'
 
 export const metadata = {
-  title: { absolute: 'ProfitPlay – Vanliga frågor (FAQ)' },
+  title: { absolute: 'Vanliga frågor om value betting och RebelBetting | ProfitPlay' },
   description:
-    'Vanliga frågor om value betting, bankroll management, limiteringar och hur ProfitPlay arbetar med strategier.',
+    'Svar på de vanligaste frågorna om value betting, RebelBetting, bankroll management och limiteringar. Allt du behöver veta innan du börjar.',
   keywords: 'value betting FAQ, vanliga frågor betting, RebelBetting frågor, bankroll frågor',
   openGraph: {
     title: 'Vanliga frågor om value betting – ProfitPlay',

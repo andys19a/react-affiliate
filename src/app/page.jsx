@@ -95,24 +95,6 @@ const productLd = {
     'Jämförelse av RebelBettings olika planer med fokus på value betting och felsatta odds.',
   image: 'https://www.profitplay.se/images/Hero-affiliate.png',
   brand: { '@type': 'Brand', name: 'RebelBetting' },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.8',
-    reviewCount: '1',
-  },
-  review: {
-    '@type': 'Review',
-    author: { '@type': 'Person', name: 'ProfitPlay' },
-    datePublished: '2024-01-15',
-    reviewBody:
-      'Praktisk genomgång av RebelBetting och hur verktyget hjälper till att hitta värdebettingmöjligheter.',
-    reviewRating: {
-      '@type': 'Rating',
-      ratingValue: '4.8',
-      bestRating: '5',
-      worstRating: '1',
-    },
-  },
   offers: [
     { name: 'Trial', price: '0', currency: 'SEK' },
     { name: 'Starter', price: '1300', currency: 'SEK' },

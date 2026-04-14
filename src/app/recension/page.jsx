@@ -1,5 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import AffiliateButton from '@/components/AffiliateButton'
+import Breadcrumbs from '@/components/Breadcrumbs'
 import '@/css/Erfarenhet.css'
 
 const breadcrumbLd = {
@@ -71,11 +73,6 @@ const productLd = {
       worstRating: '1',
     },
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.8',
-    reviewCount: '1',
-  },
   offers: [
     { name: 'Trial', price: '0', currency: 'SEK' },
     { name: 'Starter', price: '1300', currency: 'SEK' },
@@ -128,6 +125,7 @@ export default function RecensionPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
 
+      <Breadcrumbs items={[{ to: '/', label: 'Hem' }, { label: 'Recension av RebelBetting' }]} />
       <h1>Recension av Value Betting</h1>
       <Image src="/images/Recension-bild.png" alt="Recension av RebelBetting – value betting verktyg för långsiktig avkastning" className="hero-image" width={1200} height={630} priority style={{ width: '100%', height: 'auto' }} />
 
@@ -143,7 +141,7 @@ export default function RecensionPage() {
           <strong>Stabil avkastning:</strong> Genom att följa en strikt
           strategi har jag uppnått en genomsnittlig månatlig avkastning på cirka
           30%. Detta har resulterat i en total avkastning på över 180 000 kr under
-          de senaste två åren.
+          de senaste två åren. Se <Link href="/results">mina faktiska resultat</Link>.
         </li>
         <li>
           <strong>Disciplin och tålamod:</strong> Value betting kräver
@@ -153,20 +151,24 @@ export default function RecensionPage() {
         </li>
         <li>
           <strong>Bankrollhantering:</strong> En av de viktigaste aspekterna
-          av value betting är att hantera sin bankrulle på ett ansvarsfullt
-          sätt. Jag har alltid satt upp tydliga gränser för hur mycket jag är
+          av value betting är att hantera sin{' '}
+          <Link href="/blogg/bankroll-management">bankrulle på ett ansvarsfullt sätt</Link>.
+          Jag har alltid satt upp tydliga gränser för hur mycket jag är
           villig att riskera och har aldrig satsat mer än jag har råd att
           förlora. Var lite överaskande att jag inte funderade mer på det än jag gjorde, varit enstaka veckor under 2 års tid där jag faktiskt kännt lite stress.
         </li>
         <li>
           <strong>Utbildning och forskning:</strong> För att bli framgångsrik
-          inom value betting så läs på kring det mest basic och följ rekommendationer från tex rebelbetting. Du kommer gå plus på det sen kan du optimera när du känner du varm i kläderna.
-          Jag började tex filtrera bort vissa marknader eftersom jag inte slog marknaden med den marginalen jag önskade.
+          inom value betting, läs på kring grunderna – börja med{' '}
+          <Link href="/blogg/vad-ar-value-betting">vad value betting är</Link> och{' '}
+          <Link href="/blogg/ev-expected-value-betting">hur EV fungerar</Link>.
+          Du kommer gå plus på det sen kan du optimera när du känner du varm i kläderna.
         </li>
         <li>
-          <strong>Användning av verktyg:</strong> Jag har använt olika verktyg
-          och mjukvaror för att hjälpa mig identifiera värdebettingmöjligheter.
-          Dock har det varit rebelbetting jag använt för att göra majoriteten av mina bets. Varit super smidigt att använda, noll bluff och jätte duktig support om det behövs. Använd dels för tekniska frågor men även bara att bolla ideér med.
+          <strong>Användning av verktyg:</strong>{' '}
+          <Link href="/blogg/hur-rebelbetting-fungerar">RebelBetting</Link> har
+          varit det verktyg jag använt för att göra majoriteten av mina bets. Smidigt att använda,
+          noll bluff och duktig support om det behövs.
         </li>
       </ul>
 
