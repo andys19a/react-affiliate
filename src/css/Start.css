@@ -170,6 +170,11 @@ section {
 @media (max-width: 640px) {
   .Start {
     padding: 1.5rem;
+    margin: 1.5rem auto;
+  }
+
+  .Start h1 {
+    font-size: 1.7rem;
   }
 
   .page-meta {

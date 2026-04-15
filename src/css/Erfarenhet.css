@@ -7,7 +7,7 @@
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
   line-height: 1.7;
   color: #333;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 }
 
 .Recension h1 {
@@ -111,8 +111,17 @@
 
 /* Responsiv justering */
 @media (max-width: 768px) {
+  .Recension {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+  }
+
+  .Recension h1 {
+    font-size: 1.6rem;
+  }
+
   .recension-hero {
-    height: 130px; /* 🔹 halverad från 250px */
+    height: 130px;
   }
 
   .recension-hero-overlay h1 {
@@ -128,11 +137,46 @@
 .hero-image {
   display: block;
   width: 100%;
-  height: 190px; /* halverad höjd */
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 2rem;
-  filter: brightness(0.8);
+}
+
+.faq-recension {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f6faff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-recension h2 {
+  margin-top: 0;
+  color: #004b82;
+}
+
+.faq-recension details {
+  margin: 0.75rem 0;
+  padding: 0.8rem 1rem;
+  background: #fff;
+  border-radius: 8px;
+  border-left: 4px solid #007acc;
+  cursor: pointer;
+}
+
+.faq-recension summary {
+  font-weight: 700;
+  color: #00375f;
+  list-style: none;
+}
+
+.faq-recension summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-recension p {
+  margin: 0.5rem 0 0;
 }
 
 
