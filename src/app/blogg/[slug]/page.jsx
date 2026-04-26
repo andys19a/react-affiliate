@@ -45,6 +45,9 @@ export default function BlogPost({ params }) {
     : '<p>' + post.content.replace(/\n\n/g, '</p><p>') + '</p>'
 
   const datePublished = new Date(post.date).toISOString()
+  const dateModified = post.dateModified
+    ? new Date(post.dateModified).toISOString()
+    : datePublished
 
   const articleLd = {
     '@context': 'https://schema.org',
@@ -60,7 +63,7 @@ export default function BlogPost({ params }) {
       logo: { '@type': 'ImageObject', url: 'https://www.profitplay.se/images/logo.png' },
     },
     datePublished,
-    dateModified: datePublished,
+    dateModified,
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `https://www.profitplay.se/blogg/${post.slug}`,

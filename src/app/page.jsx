@@ -32,11 +32,6 @@ const websiteLd = {
   url: 'https://www.profitplay.se',
   description: 'Guider och strategier för value betting – lär dig slå spelbolagen med matematik och disciplin.',
   inLanguage: 'sv-SE',
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: 'https://www.profitplay.se/blogg?q={search_term_string}',
-    'query-input': 'required name=search_term_string',
-  },
 }
 
 const organizationLd = {
@@ -45,7 +40,6 @@ const organizationLd = {
   name: 'ProfitPlay',
   url: 'https://www.profitplay.se',
   logo: 'https://www.profitplay.se/images/logo.png',
-  sameAs: [],
 }
 
 const faqLd = {
