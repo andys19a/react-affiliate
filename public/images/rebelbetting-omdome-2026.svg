@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2f5e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00c851;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a740;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="980" cy="120" r="220" fill="#ffffff" fill-opacity="0.025"/>
+  <circle cx="1100" cy="480" r="160" fill="#00c851" fill-opacity="0.04"/>
+  <circle cx="200" cy="550" r="100" fill="#00c851" fill-opacity="0.03"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#greenGrad)"/>
+
+  <!-- Left green vertical accent -->
+  <rect x="72" y="160" width="6" height="200" rx="3" fill="#00c851"/>
+
+  <!-- Star rating row -->
+  <text x="100" y="190" font-family="Georgia, serif" font-size="38" fill="#f5c518" letter-spacing="6">★★★★★</text>
+  <text x="330" y="188" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#a8bdd8" font-weight="400">4.8 / 5</text>
+
+  <!-- Main title -->
+  <text x="100" y="290" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800" fill="#ffffff" letter-spacing="-1">RebelBetting</text>
+  <text x="100" y="375" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800" fill="#00c851" letter-spacing="-1">Omdöme 2026</text>
+
+  <!-- Subtitle -->
+  <text x="100" y="430" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#8aa4c8" font-weight="300" letter-spacing="0.5">Erfarenheter, resultat &amp; opartisk bedömning</text>
+
+  <!-- Tag pills -->
+  <rect x="100" y="460" width="190" height="44" rx="22" fill="#00c851" fill-opacity="0.15" stroke="#00c851" stroke-width="1.5"/>
+  <text x="195" y="488" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#00c851" text-anchor="middle" font-weight="600">Value Betting</text>
+
+  <rect x="308" y="460" width="200" height="44" rx="22" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="408" y="488" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#a8bdd8" text-anchor="middle">Tjäna pengar</text>
+
+  <!-- Bottom brand bar -->
+  <rect x="0" y="570" width="1200" height="60" fill="#000000" fill-opacity="0.25"/>
+  <text x="100" y="608" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#ffffff" font-weight="700" letter-spacing="1">ProfitPlay</text>
+  <text x="240" y="608" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4a6080">·  profitplay.se</text>
+
+  <!-- Right side: animated-style bar chart -->
+  <rect x="780" y="450" width="48" height="80" rx="5" fill="#00c851" fill-opacity="0.5"/>
+  <rect x="848" y="400" width="48" height="130" rx="5" fill="#00c851" fill-opacity="0.65"/>
+  <rect x="916" y="330" width="48" height="200" rx="5" fill="#00c851" fill-opacity="0.8"/>
+  <rect x="984" y="360" width="48" height="170" rx="5" fill="#00c851" fill-opacity="0.7"/>
+  <rect x="1052" y="280" width="48" height="250" rx="5" fill="#00c851"/>
+  <rect x="1120" y="300" width="48" height="230" rx="5" fill="#00c851" fill-opacity="0.9"/>
+
+  <!-- Trend line over chart -->
+  <polyline points="804,450 872,400 940,330 1008,360 1076,280 1144,300"
+    fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"
+    stroke-linejoin="round" opacity="0.6"/>
+
+  <!-- Dots on trend line -->
+  <circle cx="804" cy="450" r="6" fill="#ffffff" opacity="0.7"/>
+  <circle cx="872" cy="400" r="6" fill="#ffffff" opacity="0.7"/>
+  <circle cx="940" cy="330" r="6" fill="#ffffff" opacity="0.7"/>
+  <circle cx="1008" cy="360" r="6" fill="#ffffff" opacity="0.7"/>
+  <circle cx="1076" cy="280" r="8" fill="#00c851" stroke="#ffffff" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="1144" cy="300" r="6" fill="#ffffff" opacity="0.7"/>
+
+  <!-- ROI label -->
+  <rect x="1060" y="240" width="100" height="34" rx="8" fill="#00c851"/>
+  <text x="1110" y="263" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" font-weight="700">+ROI</text>
+
+  <!-- Chart label at bottom -->
+  <text x="970" y="545" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#5a7090" text-anchor="middle">Resultatutveckling över tid</text>
+</svg>
