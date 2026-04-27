@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import AffiliateBanner from '@/components/AffiliateBanner'
 import RoiCounter from '@/components/RoiCounter'
 import Breadcrumbs from '@/components/Breadcrumbs'
@@ -82,6 +83,17 @@ export default function ResultsPage() {
           Det viktigaste inom value betting är att vara konsekvent och inte låta kortsiktiga
           resultat påverka strategin. Långsiktigt slår matematik alltid känsla.
         </p>
+      </section>
+
+      <section className="summary">
+        <h2>Vill du förstå hur det fungerar?</h2>
+        <ul>
+          <li><Link href="/blogg/vad-ar-value-betting">Vad är value betting och varför fungerar det?</Link></li>
+          <li><Link href="/blogg/hur-rebelbetting-fungerar">Hur RebelBetting fungerar – komplett guide</Link></li>
+          <li><Link href="/blogg/bankroll-management">Bankroll management – nyckeln till stabil avkastning</Link></li>
+          <li><Link href="/blogg/langsiktig-strategi-value-betting">Så bygger du en långsiktig strategi</Link></li>
+          <li><Link href="/blogg/hur-mycket-tjana-value-betting">Hur mycket kan du tjäna realistiskt?</Link></li>
+        </ul>
       </section>
 
       <section className="cta">

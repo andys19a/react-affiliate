@@ -17,6 +17,7 @@ export async function generateMetadata({ params }) {
     title: { absolute: `${post.title} | ProfitPlay` },
     description: post.meta_description,
     keywords: post.keywords?.join(', '),
+    ...(post.canonical && { alternates: { canonical: post.canonical } }),
     openGraph: {
       title: `${post.title} | ProfitPlay`,
       description: post.meta_description,

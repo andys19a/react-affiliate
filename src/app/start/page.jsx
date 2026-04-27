@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import AffiliateButton from '@/components/AffiliateButton'
 import '@/css/Start.css'
 
@@ -258,6 +259,18 @@ export default function StartPage() {
             ut med identiska belopp varje gång.
           </p>
         </div>
+      </section>
+
+      <section>
+        <h2>Fördjupa dig vidare</h2>
+        <ul className="bullet-grid">
+          <li><Link href="/blogg/vad-ar-value-betting">Vad är value betting? – strategin förklarad</Link></li>
+          <li><Link href="/blogg/ev-expected-value-betting">EV (Expected Value) – den viktigaste faktorn</Link></li>
+          <li><Link href="/blogg/bankroll-management">Bankroll management för nybörjare</Link></li>
+          <li><Link href="/blogg/undvika-limitering-spelbolag">Så undviker du limitering hos spelbolag</Link></li>
+          <li><Link href="/blogg/varians-bettingresultat">Hur varians påverkar dina resultat</Link></li>
+          <li><Link href="/blogg/vanliga-misstag-value-betting">Vanliga misstag inom value betting</Link></li>
+        </ul>
       </section>
 
       <section className="cta-section">
