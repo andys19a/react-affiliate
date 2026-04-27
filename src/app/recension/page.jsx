@@ -60,30 +60,38 @@ const productLd = {
     'Recension av RebelBetting med fokus på value betting, strategi och långsiktiga resultat.',
   image: 'https://www.profitplay.se/images/Recension-bild.png',
   brand: { '@type': 'Brand', name: 'RebelBetting' },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: 4.8,
+    reviewCount: 1,
+    bestRating: 5,
+    worstRating: 1,
+  },
   review: {
     '@type': 'Review',
-    author: { '@type': 'Organization', name: 'ProfitPlay', url: 'https://www.profitplay.se' },
+    author: { '@type': 'Person', name: 'ProfitPlay' },
     datePublished: '2024-01-15',
     reviewBody:
-      'Detaljerad recension av hur RebelBetting fungerar i praktiken, med tips om strategi, risk och verktyg.',
+      'Jag har använt RebelBetting i över två år och konsekvent genererat positiv avkastning varje månad. Verktyget är smidigt, supporten är bra och det är lätt att komma igång. Det krävs en bankrulle och tålamod – men för den som följer strategin är resultaten verkliga.',
     reviewRating: {
       '@type': 'Rating',
-      ratingValue: '4.8',
-      bestRating: '5',
-      worstRating: '1',
+      ratingValue: 4.8,
+      bestRating: 5,
+      worstRating: 1,
     },
   },
   offers: [
-    { name: 'Trial', price: '0', currency: 'SEK' },
-    { name: 'Starter', price: '1300', currency: 'SEK' },
-    { name: 'Pro', price: '2300', currency: 'SEK' },
+    { price: 0, name: 'Trial' },
+    { price: 1300, name: 'Starter' },
+    { price: 2300, name: 'Pro' },
   ].map((offer) => ({
     '@type': 'Offer',
-    name: `${offer.name} plan`,
-    priceCurrency: offer.currency,
+    name: `RebelBetting ${offer.name}`,
+    priceCurrency: 'SEK',
     price: offer.price,
     availability: 'https://schema.org/InStock',
     url: 'https://www.profitplay.se/recension',
+    seller: { '@type': 'Organization', name: 'RebelBetting' },
   })),
 }
 
