@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Tjäna pengar med value betting – nybörjarguide</title>
+  <desc id="desc">Tre steg för att tjäna pengar med value betting: bankrulle, RebelBetting-verktyg och långsiktig strategi.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a" />
+      <stop offset="60%" stop-color="#0f2540" />
+      <stop offset="100%" stop-color="#0b3045" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a9e5c" />
+      <stop offset="100%" stop-color="#26d07c" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffd166" />
+      <stop offset="100%" stop-color="#f7a529" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e2035" />
+      <stop offset="100%" stop-color="#091a2c" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#020d1a" flood-opacity="0.55" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg)" />
+
+  <!-- Subtle glow blobs -->
+  <circle cx="120" cy="160" r="110" fill="#26d07c" opacity="0.05" />
+  <circle cx="1120" cy="90" r="150" fill="#ffd166" opacity="0.06" />
+  <circle cx="600" cy="650" r="220" fill="#1a6b9e" opacity="0.07" />
+
+  <!-- Headline -->
+  <text x="600" y="72" text-anchor="middle" fill="#e8f4ff" font-family="'Inter', system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.5">Tjäna pengar med Value Betting</text>
+  <text x="600" y="112" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="400">3 steg för nybörjare – från start till stabil sidoinkomst</text>
+
+  <!-- Connector line between boxes -->
+  <line x1="394" y1="350" x2="432" y2="350" stroke="#1a4b6e" stroke-width="2" stroke-dasharray="6,4" />
+  <line x1="768" y1="350" x2="806" y2="350" stroke="#26d07c" stroke-width="2" stroke-dasharray="6,4" opacity="0.7" />
+
+  <!-- ===== STEP 1 BOX ===== -->
+  <rect x="58" y="148" width="336" height="400" rx="20" fill="url(#cardGrad)" stroke="#1a4060" stroke-width="1.5" filter="url(#shadow)" />
+
+  <!-- Step badge -->
+  <circle cx="226" cy="212" r="42" fill="url(#greenGrad)" />
+  <text x="226" y="222" text-anchor="middle" fill="white" font-family="'Inter', system-ui" font-size="34" font-weight="800">1</text>
+
+  <text x="226" y="286" text-anchor="middle" fill="#e8f4ff" font-family="'Inter', system-ui" font-size="23" font-weight="700">Bankrulle</text>
+  <text x="226" y="322" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui" font-size="15">Börja med 5 000–15 000 kr</text>
+  <text x="226" y="350" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui" font-size="15">Satsa bara 1–2% per spel</text>
+  <text x="226" y="378" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui" font-size="15">Skydda ditt kapital alltid</text>
+
+  <!-- Gold coin decoration -->
+  <circle cx="190" cy="470" r="36" fill="url(#goldGrad)" />
+  <circle cx="190" cy="470" r="26" fill="#ffe9b0" opacity="0.6" />
+  <text x="190" y="478" text-anchor="middle" fill="#7a4800" font-family="'Inter', system-ui" font-size="22" font-weight="800">kr</text>
+
+  <circle cx="246" cy="455" r="28" fill="url(#goldGrad)" opacity="0.85" />
+  <circle cx="246" cy="455" r="20" fill="#ffe9b0" opacity="0.5" />
+  <text x="246" y="463" text-anchor="middle" fill="#7a4800" font-family="'Inter', system-ui" font-size="17" font-weight="800">kr</text>
+
+  <circle cx="290" cy="475" r="22" fill="url(#goldGrad)" opacity="0.75" />
+  <circle cx="290" cy="475" r="15" fill="#ffe9b0" opacity="0.5" />
+  <text x="290" y="482" text-anchor="middle" fill="#7a4800" font-family="'Inter', system-ui" font-size="13" font-weight="800">kr</text>
+
+  <!-- ===== STEP 2 BOX (highlighted) ===== -->
+  <rect x="432" y="148" width="336" height="400" rx="20" fill="url(#cardGrad)" stroke="#26d07c" stroke-width="2.5" filter="url(#shadow)" />
+
+  <!-- Recommended badge -->
+  <rect x="498" y="132" width="204" height="30" rx="15" fill="#26d07c" />
+  <text x="600" y="152" text-anchor="middle" fill="#041a0e" font-family="'Inter', system-ui" font-size="13" font-weight="800" letter-spacing="0.5">REKOMMENDERAT VERKTYG</text>
+
+  <!-- Step badge -->
+  <circle cx="600" cy="212" r="42" fill="url(#greenGrad)" />
+  <text x="600" y="222" text-anchor="middle" fill="white" font-family="'Inter', system-ui" font-size="34" font-weight="800">2</text>
+
+  <text x="600" y="286" text-anchor="middle" fill="#e8f4ff" font-family="'Inter', system-ui" font-size="23" font-weight="700">RebelBetting</text>
+  <text x="600" y="322" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui" font-size="15">Hitta value bets automatiskt</text>
+  <text x="600" y="350" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui" font-size="15">Realtidsskanning av 200+ bolag</text>
+  <text x="600" y="378" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui" font-size="15">Bara 20–30 min per dag</text>
+
+  <!-- Target/crosshair icon -->
+  <circle cx="600" cy="468" r="36" fill="none" stroke="#26d07c" stroke-width="5" />
+  <circle cx="600" cy="468" r="22" fill="none" stroke="#26d07c" stroke-width="3.5" />
+  <circle cx="600" cy="468" r="7" fill="#26d07c" />
+  <line x1="600" y1="425" x2="600" y2="440" stroke="#26d07c" stroke-width="3" />
+  <line x1="600" y1="496" x2="600" y2="511" stroke="#26d07c" stroke-width="3" />
+  <line x1="557" y1="468" x2="572" y2="468" stroke="#26d07c" stroke-width="3" />
+  <line x1="628" y1="468" x2="643" y2="468" stroke="#26d07c" stroke-width="3" />
+
+  <!-- ===== STEP 3 BOX ===== -->
+  <rect x="806" y="148" width="336" height="400" rx="20" fill="url(#cardGrad)" stroke="#1a4060" stroke-width="1.5" filter="url(#shadow)" />
+
+  <!-- Step badge -->
+  <circle cx="974" cy="212" r="42" fill="url(#greenGrad)" />
+  <text x="974" y="222" text-anchor="middle" fill="white" font-family="'Inter', system-ui" font-size="34" font-weight="800">3</text>
+
+  <text x="974" y="286" text-anchor="middle" fill="#e8f4ff" font-family="'Inter', system-ui" font-size="23" font-weight="700">Strategi &amp; Tålamod</text>
+  <text x="974" y="322" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui" font-size="15">Följ din plan konsekvent</text>
+  <text x="974" y="350" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui" font-size="15">Lita på matematiken</text>
+  <text x="974" y="378" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui" font-size="15">Positiv ROI på lång sikt</text>
+
+  <!-- Growing chart -->
+  <polyline points="870,510 905,490 930,498 960,474 990,480 1020,455 1058,435 1080,442" fill="none" stroke="#26d07c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Arrow head -->
+  <polygon points="1080,442 1062,435 1066,452" fill="#26d07c" />
+  <!-- Data dots -->
+  <circle cx="905" cy="490" r="5" fill="#26d07c" />
+  <circle cx="930" cy="498" r="5" fill="#26d07c" />
+  <circle cx="960" cy="474" r="5" fill="#26d07c" />
+  <circle cx="990" cy="480" r="5" fill="#26d07c" />
+  <circle cx="1020" cy="455" r="5" fill="#26d07c" />
+  <circle cx="1058" cy="435" r="5" fill="#26d07c" />
+
+  <!-- Bottom CTA bar -->
+  <rect x="58" y="576" width="1084" height="72" rx="18" fill="#091e32" stroke="#1a4060" stroke-width="1" />
+  <circle cx="96" cy="612" r="14" fill="#26d07c" opacity="0.9" />
+  <text x="96" y="617" text-anchor="middle" fill="#041a0e" font-family="'Inter', system-ui" font-size="14" font-weight="800">✓</text>
+  <text x="600" y="600" text-anchor="middle" fill="#26d07c" font-family="'Inter', system-ui" font-size="19" font-weight="700">Gratis provperiod – utan kreditkort</text>
+  <text x="600" y="628" text-anchor="middle" fill="#6ba8c8" font-family="'Inter', system-ui" font-size="14">Starta med RebelBetting och placera riktiga value bets utan förskottsbetalning</text>
+</svg>
