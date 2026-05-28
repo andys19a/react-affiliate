@@ -8,9 +8,8 @@ export default function Footer() {
         <div className="footer-about">
           <h3>Om sidan</h3>
           <p>
-            Denna sida handlar om <strong>Value Betting</strong> – hur du kan använda
-            statistik och strategi för att slå oddsen. Jag delar mina erfarenheter och
-            resultat från över 2 års användning av
+            ProfitPlay drivs av André – value bettor sedan 2022 och redaktör bakom
+            sajten. Här delar jag erfarenheter och resultat från över 2 års användning av
             <a
               href="https://www.rebelbetting.com/valuebetting?x=datatrixet&amp;a_bid=df3338f4"
               target="_blank"
@@ -31,6 +30,7 @@ export default function Footer() {
             <li><Link href="/start">Kom igång</Link></li>
             <li><Link href="/recension">Recension</Link></li>
             <li><Link href="/faq">FAQ</Link></li>
+            <li><Link href="/om">Om mig</Link></li>
             <li><Link href="/contact">Kontakt</Link></li>
             <li><Link href="/sitemap">Sitemap</Link></li>
           </ul>

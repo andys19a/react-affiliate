@@ -60,6 +60,7 @@ export default function Header() {
           <li><Link href="/recension" onClick={close}>Recension</Link></li>
           <li><Link href="/blogg" onClick={close}>Blogg</Link></li>
           <li><Link href="/faq" onClick={close}>FAQ</Link></li>
+          <li><Link href="/om" onClick={close}>Om mig</Link></li>
         </ul>
       </nav>
     </header>
