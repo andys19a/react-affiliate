@@ -63,7 +63,7 @@ export default function AboutPage() {
         <div className="about-avatar" aria-hidden="true">A</div>
         <div className="about-intro-text">
           <h1>Hej, jag heter André</h1>
-          <p className="about-tagline">Value bettor, redaktör bakom ProfitPlay – och ja, lägenhetsägare tack vare sports&shy;betting.</p>
+          <p className="about-tagline">Value bettor och redaktör bakom ProfitPlay.</p>
         </div>
       </div>
 
