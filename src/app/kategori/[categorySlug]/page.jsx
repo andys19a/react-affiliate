@@ -33,6 +33,7 @@ export async function generateMetadata({ params }) {
   return {
     title: { absolute: `${posts[0].category} – guider & artiklar | ProfitPlay` },
     description,
+    alternates: { canonical: `/kategori/${params.categorySlug}` },
     openGraph: {
       title: `${posts[0].category} – guider & artiklar | ProfitPlay`,
       description,

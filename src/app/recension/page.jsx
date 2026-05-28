@@ -60,16 +60,9 @@ const productLd = {
     'Recension av RebelBetting med fokus på value betting, strategi och långsiktiga resultat.',
   image: 'https://www.profitplay.se/images/Recension-bild.png',
   brand: { '@type': 'Brand', name: 'RebelBetting' },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: 4.8,
-    reviewCount: 1,
-    bestRating: 5,
-    worstRating: 1,
-  },
   review: {
     '@type': 'Review',
-    author: { '@type': 'Person', name: 'ProfitPlay' },
+    author: { '@type': 'Organization', name: 'ProfitPlay', url: 'https://www.profitplay.se' },
     datePublished: '2024-01-15',
     reviewBody:
       'Jag har använt RebelBetting i över två år och konsekvent genererat positiv avkastning varje månad. Verktyget är smidigt, supporten är bra och det är lätt att komma igång. Det krävs en bankrulle och tålamod – men för den som följer strategin är resultaten verkliga.',
@@ -96,13 +89,14 @@ const productLd = {
 }
 
 export const metadata = {
-  title: { absolute: 'Recension av Value Betting – Min erfarenhet med RebelBetting | ProfitPlay' },
+  title: { absolute: 'RebelBetting Recension – Min erfarenhet av value betting | ProfitPlay' },
   description:
-    'Läs min personliga recension av value betting och RebelBetting. Jag berättar hur jag byggt stabil avkastning varje månad och vad som krävs för att lyckas långsiktigt.',
+    'Läs min recension av RebelBetting. Hur jag byggt stabil avkastning varje månad och vad som krävs för att lyckas långsiktigt med value betting.',
+  alternates: { canonical: '/recension' },
   keywords:
     'rebelbetting recension, value betting erfarenhet, value betting resultat, slå spelbolagen, sportsbetting, bankroll management',
   openGraph: {
-    title: 'Recension av Value Betting – Min erfarenhet med RebelBetting',
+    title: 'RebelBetting Recension – Min erfarenhet av value betting',
     description:
       'Jag delar min egen erfarenhet av value betting med RebelBetting – strategier, resultat och tips för att bygga stabil avkastning varje månad.',
     type: 'article',
@@ -134,9 +128,10 @@ export default function RecensionPage() {
       />
 
       <Breadcrumbs items={[{ to: '/', label: 'Hem' }, { label: 'Recension av RebelBetting' }]} />
-      <h1>Recension av Value Betting</h1>
+      <h1>Recension av RebelBetting</h1>
       <Image src="/images/Recension-bild.png" alt="Recension av RebelBetting – value betting verktyg för långsiktig avkastning" className="hero-image" width={1200} height={630} priority style={{ width: '100%', height: 'auto' }} />
 
+      <h2>Min erfarenhet av RebelBetting</h2>
       <p>
         Jag har använt value betting i över två år och har konsekvent genererat
         vinster varje månad tack vare en långsiktig strategi och tydlig
@@ -144,6 +139,7 @@ export default function RecensionPage() {
         Här är en sammanfattning av mina erfarenheter:
       </p>
 
+      <h2>Vad jag uppnått med RebelBetting</h2>
       <ul>
         <li>
           <strong>Stabil avkastning:</strong> Genom att följa en strikt
@@ -200,6 +196,7 @@ export default function RecensionPage() {
         </details>
       </section>
 
+      <h2>Sammanfattning och rekommendation</h2>
       <div className="summary-box">
         <p>
           Sammanfattningsvis har min erfarenhet av value betting varit mycket

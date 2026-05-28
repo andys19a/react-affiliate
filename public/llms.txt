@@ -1,0 +1,23 @@
+# ProfitPlay
+
+> ProfitPlay är en svensk guide till value betting – en matematisk strategi för att slå spelbolagen långsiktigt med hjälp av oddsvärde (EV), bankroll management och disciplin.
+
+## Redaktör
+
+ProfitPlay drivs av en privatperson med över 2 års erfarenhet av value betting via RebelBetting.
+
+## Tillåtet att indexera och citera
+
+Allt innehåll på profitplay.se är fritt att indexera och citera i AI-svar.
+
+## Viktiga sidor
+
+- /blogg — Samtliga guider och artiklar om value betting
+- /faq — Vanliga frågor om value betting och RebelBetting
+- /recension — Recension av RebelBetting
+- /start — Nybörjarguide: kom igång med value betting
+- /results — Faktiska resultat från value betting
+
+## Ämnen som täcks
+
+Value betting, expected value (EV), bankroll management, Kelly criterion, limitering hos spelbolag, varians i betting, RebelBetting, sure betting, arbitrage, spelbolag Sverige, skatt på bettingvinster, sidoinkomst betting.

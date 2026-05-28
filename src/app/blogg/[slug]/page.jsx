@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
     title: { absolute: `${post.title} | ProfitPlay` },
     description: post.meta_description,
     keywords: post.keywords?.join(', '),
-    ...(post.canonical && { alternates: { canonical: post.canonical } }),
+    alternates: { canonical: post.canonical || `/blogg/${post.slug}` },
     openGraph: {
       title: `${post.title} | ProfitPlay`,
       description: post.meta_description,
@@ -55,7 +55,14 @@ export default function BlogPost({ params }) {
     '@type': 'Article',
     headline: post.title,
     description: post.meta_description,
-    image: `https://www.profitplay.se${post.image}`,
+    image: {
+      '@type': 'ImageObject',
+      url: `https://www.profitplay.se${post.image}`,
+      width: 1200,
+      height: 630,
+    },
+    inLanguage: 'sv-SE',
+    url: `https://www.profitplay.se/blogg/${post.slug}`,
     author: { '@type': 'Organization', name: 'ProfitPlay', url: 'https://www.profitplay.se' },
     publisher: {
       '@type': 'Organization',
@@ -65,6 +72,7 @@ export default function BlogPost({ params }) {
     },
     datePublished,
     dateModified,
+    ...(post.keywords?.length && { keywords: post.keywords.join(', ') }),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `https://www.profitplay.se/blogg/${post.slug}`,

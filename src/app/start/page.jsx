@@ -5,6 +5,7 @@ import '@/css/Start.css'
 
 export const metadata = {
   title: { absolute: 'Value betting: kom igång – steg-för-steg-guide 2025 | ProfitPlay' },
+  alternates: { canonical: '/start' },
   description:
     'Lär dig value betting steg för steg med uppdaterad guide 2025. Följ checklistan, jämför verktyg och börja spela smartare redan idag.',
   keywords:
@@ -106,7 +107,7 @@ export default function StartPage() {
     <div className="Start">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([howToLd, startFaqLd, breadcrumbLd]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([startFaqLd, breadcrumbLd]) }}
       />
       <div className="page-meta">
         <span className="badge">Uppdaterad: februari 2025</span>

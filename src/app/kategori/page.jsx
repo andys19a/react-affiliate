@@ -7,6 +7,7 @@ export const metadata = {
   title: { absolute: 'Kategorier – Value Betting guider | ProfitPlay' },
   description:
     'Utforska alla guider om value betting, verktyg och psykologi. Hitta rätt innehåll oavsett om du är nybörjare eller erfaren spelare.',
+  alternates: { canonical: '/kategori' },
   openGraph: {
     title: 'Kategorier – Value Betting guider | ProfitPlay',
     description: 'Utforska alla guider om value betting, verktyg och psykologi på ProfitPlay.',

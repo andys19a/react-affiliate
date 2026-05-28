@@ -11,6 +11,7 @@ export const metadata = {
     'Se mina faktiska resultat från value betting. Stabil avkastning månad för månad med hjälp av RebelBetting, disciplin och bankroll management.',
   keywords:
     'value betting resultat, RebelBetting resultat, ROI betting, bankroll management, tjäna pengar på betting',
+  alternates: { canonical: '/results' },
   openGraph: {
     title: 'Resultat från value betting – ProfitPlay',
     description:

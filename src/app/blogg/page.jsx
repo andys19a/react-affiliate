@@ -10,6 +10,7 @@ export const metadata = {
     'Alla guider om value betting samlade på ett ställe. Lär dig EV, bankroll management, hur RebelBetting fungerar och hur du bygger en stabil sidoinkomst.',
   keywords:
     'value betting, RebelBetting, bankroll management, betting strategi, sure betting, tjäna pengar på betting, slå spelbolagen',
+  alternates: { canonical: '/blogg' },
   openGraph: {
     title: 'Value betting guider – strategier, verktyg & resultat | ProfitPlay',
     description:

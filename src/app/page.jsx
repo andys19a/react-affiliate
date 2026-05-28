@@ -7,6 +7,7 @@ import '@/css/Home.css'
 
 export const metadata = {
   title: { absolute: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay' },
+  alternates: { canonical: '/' },
   description:
     'Lär dig value betting med matematik, sannolikhet och disciplin. Vi visar hur du använder RebelBetting och smart bankroll management för att växa hållbart.',
   openGraph: {
@@ -37,9 +38,15 @@ const websiteLd = {
 const organizationLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': 'https://www.profitplay.se/#organization',
   name: 'ProfitPlay',
   url: 'https://www.profitplay.se',
-  logo: 'https://www.profitplay.se/images/logo.png',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://www.profitplay.se/images/logo.png',
+    width: 160,
+    height: 45,
+  },
 }
 
 const faqLd = {
@@ -81,46 +88,13 @@ const faqLd = {
   ],
 }
 
-const productLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: 'RebelBetting',
-  description:
-    'Jämförelse av RebelBettings olika planer med fokus på value betting och felsatta odds.',
-  image: 'https://www.profitplay.se/images/Hero-affiliate.png',
-  brand: { '@type': 'Brand', name: 'RebelBetting' },
-  offers: [
-    { name: 'Trial', price: '0', currency: 'SEK' },
-    { name: 'Starter', price: '1300', currency: 'SEK' },
-    { name: 'Pro', price: '2300', currency: 'SEK' },
-  ].map((offer) => ({
-    '@type': 'Offer',
-    name: `${offer.name} plan`,
-    priceCurrency: offer.currency,
-    price: offer.price,
-    availability: 'https://schema.org/InStock',
-    url: 'https://www.profitplay.se/',
-  })),
-}
 
 export default function HomePage() {
   return (
     <div className="home-page">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([websiteLd, organizationLd, faqLd]) }}
       />
 
       <section className="intro">
@@ -221,6 +195,10 @@ export default function HomePage() {
           <summary>Kan jag börja som helt ny?</summary>
           <p>Absolut. Börja med <Link href="/start">kom igång-guiden</Link> och läs vår
             <Link href="/recension"> recension av RebelBetting</Link> för att förstå flödet.</p>
+        </details>
+        <details>
+          <summary>Vad är skillnaden mellan value betting och vanlig betting?</summary>
+          <p>Vanlig betting bygger på känsla och gissningar. Value betting bygger på matematik – du spelar bara när oddset är högre än den verkliga sannolikheten antyder, vilket ger positiv förväntad avkastning (EV) på lång sikt.</p>
         </details>
       </section>
 

@@ -32,6 +32,7 @@ export async function generateMetadata({ params }) {
   return {
     title: { absolute: `${posts[0].subcategory} – ${posts[0].category} | ProfitPlay` },
     description,
+    alternates: { canonical: `/kategori/${params.categorySlug}/${params.subcategorySlug}` },
     openGraph: {
       title: `${posts[0].subcategory} – ${posts[0].category} | ProfitPlay`,
       description,
