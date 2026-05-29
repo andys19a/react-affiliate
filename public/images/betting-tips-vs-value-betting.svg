@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="svgtitle svgdesc">
+  <title id="svgtitle">Tjäna pengar på sport – value betting vs betting tips</title>
+  <desc id="svgdesc">Jämförelse av slumpmässiga betting tips (oregelbunden kurva) mot systematisk value betting (stigande kurva), som visar skillnaden i avkastning över tid.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a1121"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+    <linearGradient id="fillGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="chartClip">
+      <rect x="110" y="90" width="740" height="370"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="540" fill="url(#bgGrad)" rx="20"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.5">
+    <line x1="110" x2="850" y1="460" y2="460"/>
+    <line x1="110" x2="850" y1="368" y2="368"/>
+    <line x1="110" x2="850" y1="276" y2="276"/>
+    <line x1="110" x2="850" y1="184" y2="184"/>
+    <line x1="110" x2="850" y1="92" y2="92"/>
+  </g>
+
+  <!-- Value betting fill area -->
+  <polygon
+    points="110,460 206,440 302,420 398,390 494,355 590,318 686,278 782,238 850,210 850,460"
+    fill="url(#fillGrad)"
+    clip-path="url(#chartClip)"/>
+
+  <!-- Betting tips line – jagged, unpredictable -->
+  <polyline
+    points="110,430 206,350 302,430 398,310 494,400 590,285 686,370 782,300 850,330"
+    fill="none"
+    stroke="#ef4444"
+    stroke-width="4"
+    stroke-dasharray="10,6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.75"
+    clip-path="url(#chartClip)"/>
+
+  <!-- Value betting line – smooth, upward -->
+  <polyline
+    points="110,450 206,440 302,420 398,390 494,355 590,318 686,278 782,238 850,210"
+    fill="none"
+    stroke="url(#greenGrad)"
+    stroke-width="9"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    clip-path="url(#chartClip)"/>
+
+  <!-- Value betting dots -->
+  <g fill="#22c55e" stroke="#0b1c2f" stroke-width="2.5">
+    <circle cx="206" cy="440" r="9"/>
+    <circle cx="398" cy="390" r="9"/>
+    <circle cx="590" cy="318" r="9"/>
+    <circle cx="782" cy="238" r="9"/>
+  </g>
+  <!-- End dot highlighted -->
+  <circle cx="850" cy="210" r="13" fill="#67e8f9" stroke="#0b1c2f" stroke-width="3"/>
+
+  <!-- ROI badge at end of value betting line -->
+  <rect x="862" y="188" width="80" height="34" rx="8" fill="#0f4c29"/>
+  <text x="902" y="210" fill="#22c55e" font-family="'Inter',system-ui,sans-serif" font-size="17" font-weight="700" text-anchor="middle">+ROI</text>
+
+  <!-- Legend box -->
+  <rect x="580" y="56" width="270" height="80" rx="12" fill="#1e293b" opacity="0.92"/>
+  <!-- Tips legend -->
+  <line x1="598" y1="83" x2="638" y2="83" stroke="#ef4444" stroke-width="4" stroke-dasharray="8,4"/>
+  <text x="650" y="88" fill="#fca5a5" font-family="'Inter',system-ui,sans-serif" font-size="15">Slumpmässiga tips</text>
+  <!-- Value betting legend -->
+  <line x1="598" y1="115" x2="638" y2="115" stroke="#22c55e" stroke-width="5"/>
+  <circle cx="618" cy="115" r="5" fill="#22c55e"/>
+  <text x="650" y="120" fill="#86efac" font-family="'Inter',system-ui,sans-serif" font-size="15">Value betting</text>
+
+  <!-- Title -->
+  <text x="110" y="52" fill="#f1f5f9" font-family="'Inter',system-ui,sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">Tjäna pengar på sport 2026</text>
+
+  <!-- Subtitle -->
+  <text x="110" y="510" fill="#64748b" font-family="'Inter',system-ui,sans-serif" font-size="15">Tips vs. systematisk value betting — skillnaden på lång sikt</text>
+
+  <!-- X-axis labels -->
+  <text x="110" y="490" fill="#475569" font-family="'Inter',system-ui,sans-serif" font-size="13">Start</text>
+  <text x="460" y="490" fill="#475569" font-family="'Inter',system-ui,sans-serif" font-size="13" text-anchor="middle">Månad 5</text>
+  <text x="850" y="490" fill="#475569" font-family="'Inter',system-ui,sans-serif" font-size="13" text-anchor="end">Månad 10</text>
+</svg>
