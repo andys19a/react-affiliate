@@ -6,9 +6,9 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import '@/css/Results.css'
 
 export const metadata = {
-  title: { absolute: 'Resultat – Min value betting-resa med RebelBetting | ProfitPlay' },
+  title: { absolute: 'Value betting-resultat – +190 000 kr med RebelBetting | ProfitPlay' },
   description:
-    'Se mina faktiska resultat från value betting. Stabil avkastning månad för månad med hjälp av RebelBetting, disciplin och bankroll management.',
+    'Faktiska siffror: +190 000 kr på 2 år, 25–35 % månadsROI och 10 000+ bets. Ingen marknadsföring – mina verkliga resultat från 2 år med RebelBetting.',
   keywords:
     'value betting resultat, RebelBetting resultat, ROI betting, bankroll management, tjäna pengar på betting',
   alternates: { canonical: '/results' },

@@ -9,11 +9,11 @@ export const metadata = {
   title: { absolute: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay' },
   alternates: { canonical: '/' },
   description:
-    'Lär dig value betting med matematik, sannolikhet och disciplin. Vi visar hur du använder RebelBetting och smart bankroll management för att växa hållbart.',
+    'Lär dig value betting – metoden som gett +190 000 kr på 2 år. Använd RebelBetting och smart bankroll management för stabil, hållbar avkastning.',
   openGraph: {
     title: 'Value Betting – så blir du lönsam på riktigt | ProfitPlay',
     description:
-      'Lär dig value betting med matematik, sannolikhet och disciplin. Vi visar hur du använder RebelBetting för att växa hållbart.',
+      'Lär dig value betting – metoden som gett +190 000 kr på 2 år. Använd RebelBetting och bankroll management för stabil avkastning.',
     url: 'https://www.profitplay.se',
     type: 'website',
     images: [{ url: 'https://www.profitplay.se/images/Hero-affiliate.png', width: 1280, height: 720 }],

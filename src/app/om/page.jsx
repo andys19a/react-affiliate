@@ -6,7 +6,7 @@ import '@/css/About.css'
 export const metadata = {
   title: { absolute: 'Om mig – André bakom ProfitPlay | Value betting' },
   description:
-    'Jag heter André och tjänade ihop till min första lägenhet med value betting. Läs om resan från hobbyspelare till lönsam bettor – med RebelBetting och en hel del tålamod.',
+    'Jag heter André och gick från hobbyspelare till lönsam bettor med value betting. Resan, resultaten och vad som krävs – min ärliga historia.',
   alternates: { canonical: '/om' },
   openGraph: {
     title: 'Om mig – André bakom ProfitPlay',
