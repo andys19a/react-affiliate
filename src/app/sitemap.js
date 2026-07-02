@@ -1,21 +1,23 @@
 import { getAllPosts, getCategories } from '@/lib/blogPosts'
 
 const BASE = 'https://www.profitplay.se'
+const NOW = new Date('2026-07-02')
 
 export default function sitemap() {
   const posts = getAllPosts()
   const categories = getCategories()
 
   const staticPages = [
-    { url: BASE, lastModified: new Date('2026-04-27'), changeFrequency: 'weekly', priority: 1.0 },
-    { url: `${BASE}/recension`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE}/start`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE}/results`, lastModified: new Date('2026-04-27'), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${BASE}/blogg`, lastModified: new Date('2026-04-27'), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${BASE}/kategori`, lastModified: new Date('2026-04-20'), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE}/faq`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${BASE}/contact`, lastModified: new Date('2025-10-01'), changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${BASE}/sitemap`, lastModified: new Date('2026-04-27'), changeFrequency: 'weekly', priority: 0.3 },
+    { url: BASE,                    lastModified: NOW, changeFrequency: 'weekly',  priority: 1.0 },
+    { url: `${BASE}/recension`,     lastModified: NOW, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/start`,         lastModified: NOW, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/results`,       lastModified: NOW, changeFrequency: 'weekly',  priority: 0.8 },
+    { url: `${BASE}/blogg`,         lastModified: NOW, changeFrequency: 'weekly',  priority: 0.8 },
+    { url: `${BASE}/om`,            lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kategori`,      lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/faq`,           lastModified: NOW, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE}/contact`,       lastModified: NOW, changeFrequency: 'yearly',  priority: 0.4 },
+    { url: `${BASE}/sitemap`,       lastModified: NOW, changeFrequency: 'weekly',  priority: 0.3 },
   ]
 
   const categoryPages = categories.map((cat) => ({
@@ -36,7 +38,7 @@ export default function sitemap() {
 
   const blogPages = posts.map((post) => ({
     url: `${BASE}/blogg/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: NOW,
     changeFrequency: 'monthly',
     priority: 0.8,
   }))

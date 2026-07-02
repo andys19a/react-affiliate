@@ -24,6 +24,13 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Redirect non-www to www
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'profitplay.se' }],
+        destination: 'https://www.profitplay.se/:path*',
+        permanent: true,
+      },
       { source: '/blog/1',  destination: '/blogg/vad-ar-value-betting',              permanent: true },
       { source: '/blog/2',  destination: '/blogg/hitta-value-bets-steg-for-steg',    permanent: true },
       { source: '/blog/3',  destination: '/blogg/rebelbetting-recension-2025',        permanent: true },

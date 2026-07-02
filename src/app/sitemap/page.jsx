@@ -9,6 +9,7 @@ const staticPages = [
   { path: '/start', label: 'Kom igång' },
   { path: '/recension', label: 'Recension' },
   { path: '/faq', label: 'FAQ' },
+  { path: '/om', label: 'Om mig' },
   { path: '/contact', label: 'Kontakt' },
   { path: '/blogg', label: 'Blogg' },
   { path: '/kategori', label: 'Kategorier' },
